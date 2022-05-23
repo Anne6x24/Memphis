@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Godt at vide</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <header></header>
+
+    <section>
+      <h1>DET HER GAD ANDRE GODT AT VIDE</h1>
+      <h3>
+        Måske det også er det du gerne vil have svar på, ellers kan du klikke på
+        kontakt i menuen - da du altid er velkommen til at kontakte os.
+      </h3>
+    </section>
+
+    <section>
+      <button class="accordion">Hvem er bag Memphis House?</button>
+      <div class="panel">
+        <p>
+          Vi hedder Amalie og Nanna, og har fulgt hinanden siden 4. klasse.
+          <br />
+          Vi deler nu dette eventyr og fællsskab, som vi kalder Memphis House.
+          <br />
+          Er du nysgerrig på historien bag Memphis House,
+          <a href="">klik her</a> og bliv klogere!
+        </p>
+      </div>
+
+      <button class="accordion">Hvordan laves taskerne?</button>
+      <div class="panel">
+        <p>
+          ALLE TASKER ER LAVET AF 100% GENANVENDT BOMULD OFTES UPCYCLET T-SHIRT
+          GARN. <br />
+        </p>
+        <p>
+          TASKERNE ER HÅNDLAVET. <br />
+          PÅ DEN MÅDE, UNGGÅR VI OVERPRODUKTION. <br />
+          DERFOR BLIVER VORES TASKER KUN PRODUCERET EFTER BESTILLING FOR AT
+          UNDGÅ OVERPRODUCERING.
+        </p>
+      </div>
+
+      <button class="accordion">Hvor kommer materialerne fra?</button>
+      <div class="panel">
+        <p>
+          VI FORSØGER AT MODTAGE ALLE MATERIALER FRA DANSKE PRODUCENTER, OG
+          DETTE GØR VI I FORSØGET OM AT MINDSKE TRANSPORTEN.
+        </p>
+      </div>
+
+      <button class="accordion">Hvor lang tid er en taske undervejs?</button>
+      <div class="panel">
+        <p>
+          TASKERNE PRODUCERES PÅ BESTILLING. PRODUKTIONSTIDEN LIGGER PÅ CA. 3
+          UGER. <br />
+          Send os en mail eller en besked på Instagram, hvis du vil vide den
+          præcise produktionstid lige nu.
+        </p>
+
+        <p>
+          Instagram:
+          <a href="https://www.instagram.com/memphis_house/">@memphis_house</a>
+        </p>
+        <p>
+          Mail:
+          <a href="mailto:kontakt@memphishouse.dk">kontakt@memphishouse.dk</a>
+        </p>
+      </div>
+
+      <button class="accordion">
+        Hvad gør Memphis House med garnresterne?
+      </button>
+      <div class="panel">
+        <p>
+          VI GEMMER VI ALLE RESTER, OG BRUGER DEM SENERE TIL LIMITED
+          EDITION-PRODUKTIONER. <br />
+          VI LADER INTET GÅ TIL SPILDE. <br />
+
+          HOLD ØJE PÅ VORES INSTAGRAM ELLER VORES WEBSHOP, FOR AT OPDAGE LIMITED
+          EDITION TASKERNE.
+        </p>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="accordion.js"></script>
+  </body>
+</html>
+
+<style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+</style>

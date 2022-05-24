@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>GODT AT VIDE</title>
 </head>
 <body>
     
@@ -19,11 +20,14 @@
             Du er til enhver tid også velkommen til at skrive til os på vores Instagram her. </p>
     </section>
 
-    <section>
+    <section class="bund">
         <div>
             <h1>FIND OS HER</h1>
+            <div>
             <a href="https://www.instagram.com/memphis_house/">@memphis_house</a>
+            </div>
             <a href="#">kontakt@memphishouse.dk</a>
+        
             <p>1674 København V</p>
             <p>Enghavevej 2</p>
             <img src="#" alt="">
@@ -31,46 +35,185 @@
 
         <div>
             <ul>
-                <li><strong>Navn</strong> </li>
-                <li><input type="text" id="nr1"></li>
-                <li><strong>E-mail</strong></li>
-                <li><input type="text" id="nr2"></li>
-                <li><strong>Emne</strong></li>
-                <li><input type="text" id="nr3"></li>
-                  <li><strong>Besked</strong></li>
-                  <li><input type="text" id="nr4"></li>
-              </ul>
+                <li>
+                    <div class="col-3 input-effect">
+                    <input class="effect-23" type="text" placeholder="Navn" id="nr1">
+                    <label>Navn</label>
+                    <span class="focus-bg"></span>
+                </div>
+                </li>
+                <li>
+                    <div class="col-3 input-effect">
+                    <input class="effect-23" type="text" placeholder="Email" id="nr2">
+                    <label>Email</label>
+                    <span class="focus-bg"></span>
+                </div>
+                </li>
+                <li>
+                    <div class="col-3 input-effect">
+                    <input class="effect-23" type="text" placeholder="Emne" id="nr3">
+                    <label>Emne</label>
+                    <span class="focus-bg"></span>
+                </div>
+                <li>
+                    <div class="col-3 input-effect">
+                    <input class="effect-23" type="text" placeholder="Skriv..." id="nr4">
+                    <label>Besked</label>
+                    <span class="focus-bg"></span>
+                </div>
+                </li>
+                </li>
+
+            </ul>
               
-              <p class="knap">Send</p>
+              <button class="knap">Send</button>
         </div>
     </section>
 </body>
 </html>
 
-
 <style>
-    ul {
-  margin: 20px 20px 15px 20px;
-  padding: 0;
-}
-li{
-  list-style-type: none;
-  padding: 5px 0;
-  margin: 0;
-  overflow: hidden;
-}
+      :focus {
+    outline: none;
+  }
+  
+  .col-3 {
+    float: left;
+    width: 90%;
+    margin: 1rem 3%;
+    position: relative;
+  } /* necessary to give position: relative to parent. */
+  input[type="text"] {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
+  
+  .effect-23 ~ .focus-bg:before,
+  .effect-23 ~ .focus-bg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: #ededed;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  .effect-23:focus ~ .focus-bg:before,
+  .has-content.effect-23 ~ .focus-bg:before {
+    transition: 0.3s;
+    width: 50%;
+    height: 100%;
+  }
+  .effect-23 ~ .focus-bg:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+  }
+  .effect-23:focus ~ .focus-bg:after,
+  .has-content.effect-23 ~ .focus-bg:after {
+    transition: 0.3s;
+    width: 50%;
+    height: 100%;
+  }
+  .effect-23 ~ label {
+    position: absolute;
+    left: 14px;
+    width: 100%;
+    top: 10px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+  }
+  .effect-23:focus ~ label,
+  .has-content.effect-23 ~ label {
+    top: -18px;
+    left: 0;
+    font-size: 12px;
+    color: #333;
+    transition: 0.3s;
+  }
+  
+  .effect-24 ~ .focus-bg:before,
+  .effect-24 ~ .focus-bg:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background-color: #ededed;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  
+  
+      ul {
+    padding: 0;
+  }
+  li{
+    list-style-type: none;
+    /* padding: 5px 0; */
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  
+  
+  strong{
+    width: 120px;
+    float: left;
+    font-weight: normal
+  }
+  
+  p.knap{
+    margin: 0 0 0 230px;
+    padding: 5px 10px;
+    border: 1px solid #dddddd;
+    float: left;
+    cursor: pointer;
+  }
+  
+  #nr4 {
+      padding-bottom: 4rem;
+  }
 
-strong{
-  width: 120px;
-  float: left;
-  font-weight: normal
-}
+  @media (min-width: 640px){}
 
-p.knap{
-  margin: 0 0 0 230px;
-  padding: 5px 10px;
-  border: 1px solid #dddddd;
-  float: left;
-  cursor: pointer;
-}
+  @media (min-width: 768px){
+    .bund {
+          display: flex;
+          justify-content: space-between;
+      }
+  }
+
+  @media (min-width: 1280px){
+      
+  }
+  
+  @media (min-width: 1538px){}
+
 </style>
+
+
+<script>
+    	$(window).load(function(){
+		$(".col-3 input").val("");
+		
+		$(".input-effect input").focusout(function(){
+			if($(this).val() != ""){
+				$(this).addClass("has-content");
+			}else{
+				$(this).removeClass("has-content");
+			}
+		})
+	});
+</script>
+

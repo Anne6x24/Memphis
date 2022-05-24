@@ -34,7 +34,7 @@ html {
     font-weight: 400;
     line-height: 1.5;
     color: black;
-    background: black;
+    
   }
   
   a,
@@ -196,5 +196,22 @@ html {
     }
   }
 
+
+
+
+
+  /*------------------ Konakt-formular ----------------------*/
+
+ 
+
+  @media (min-width: 640px){}
+
+  @media (min-width: 768px){}
+
+  @media (min-width: 1280px){}
+  
+  @media (min-width: 1538px){}
+
+  
 
   

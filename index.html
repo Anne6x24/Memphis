@@ -40,11 +40,31 @@
       </nav>
     </header>
 
-    <section>
-      <h1>hej</h1>
-    </section>
+    <article id="wrap_kort">
+      <section id="hero_wrap">MEMPHIS HOUSE</section>
+
+      <section id="wrap_bubble">
+        <img src="/img/bubble.svg" alt="" />
+      </section>
+    </article>
   </body>
 </html>
+
+<style>
+  article {
+    margin-bottom: 2em;
+    background-image: url(/img/kortet.png);
+    z-index: -100;
+  }
+
+  #wrap_bubble {
+    background-size: cover;
+    position: relative;
+  }
+  /* #wrap_bubble {
+    background-image: url(/img/bubble.svg);
+  } */
+</style>
 
 <script>
   const burgerMenu = document.getElementById("burger");

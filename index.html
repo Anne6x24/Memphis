@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="burger.js">
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="container">
-          <section class="wrapper">
+          <section class="wrapper_burger">
             <a href="./index.html" class="brand">
               <img src="/img/logo_memphis.svg" alt="Memphis' logo" />
             </a>
@@ -45,7 +46,7 @@
         </div>
       </nav>
     </header>
-
+<main id="forside">
     <article id="wrap_kort">
       <section id="hero_wrap">MEMPHIS HOUSE</section>
 
@@ -53,6 +54,7 @@
         <img src="/img/bubble.svg" alt="" />
       </section>
     </article>
+  </main>
   </body>
 </html>
 
@@ -76,19 +78,3 @@
   } */
 </style>
 
-<script>
-  const burgerMenu = document.getElementById("burger");
-  const navbarMenu = document.getElementById("menu");
-
-  // Show and Hide Navbar Menu
-  burgerMenu.addEventListener("click", () => {
-    burgerMenu.classList.toggle("is-active");
-    navbarMenu.classList.toggle("is-active");
-
-    if (navbarMenu.classList.contains("is-active")) {
-      navbarMenu.style.maxHeight = navbarMenu.scrollHeight + "px";
-    } else {
-      navbarMenu.removeAttribute("style");
-    }
-  });
-</script>

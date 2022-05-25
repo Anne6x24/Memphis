@@ -2,9 +2,11 @@
     /* backgroudcolor */
     --primary-bg-color:#ffffff;
 
-    /* header */
+    /* ------- header ------- */
     --desk-bg-color-header: transparant;
     --header-link-color: #0338E1;
+    --burger-color-primary:#0338E1;
+    --burger-color-secondary:#051036;
 
     /* header mobile*/
     --mobile-bg-color-header: transparant;
@@ -21,7 +23,9 @@
     --button-color: #FDFDFD;
 
 
-    /* headings */
+    /* ------- headings ------ */
+
+     /* fonte */
     --h1--: "Prompt", sans-serif;
     --h2--: "Prompt", sans-serif;
     --h3--: "Prompt", sans-serif;
@@ -30,9 +34,10 @@
     --p--: "Prompt", sans-serif;
     --a--: "Prompt", sans-serif;
 
+    /* hover */
     --a--hover: italic;
 
- 
+    /* font-sizes */
     --h1-size--: clamp(1.9rem, 1.5299999999999998rem + 1.8500000000000003vw, 3.75rem);
     --h2-size--: clamp(1.6rem, 1.3800000000000001rem + 1.1vw, 2.7rem);
     --h3--size-: clamp(1.4rem, 1.23rem + 0.8500000000000001vw, 2.25rem);
@@ -41,17 +46,8 @@
     --p-size--: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
     --a-size--: "Prompt", sans-serif;
 
-    
 
-    /* mobil */
-    --h1-size-m-: 3.75rem;
-    --h2-size-m-: 2.7rem;
-    --h3--size-m: 2.25rem;
-    --h4-size-m-: 2rem;
-    --h5-size-m-: 1.3rem;
-    --p-size-m-: 1.5rem
-    --a-size-m-: "Prompt", sans-serif;
-
+    /* font-colors */
     --h1--color-primary: #051036;
     --h1--color-secondary: #202020;
 
@@ -79,20 +75,47 @@
     --a--color-secondary:#FDFDFD;
     --a--color-third:#202020;
 
-    /*---- GENERELLE REGLER mobil --------*/
+    /* margin headings */
+    --h1--margin-bottom: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
+    --heading--margin-bottom: clamp(1.2rem, 0.94rem + 1.3vw, 2.5rem);
+    --p--margin-bottom: clamp(0.8rem, 0.52rem + 1.4000000000000001vw, 2.2rem);
 
-    
+   
+
+
+    /*---- GENERELLE REGLER mobil --------*/
+    --margin-inline-mobil: 2rem;
+    --margin-bottom-mobil: 2rem;
+
+    /*---- GENERELLE REGLER ipad --------*/
+    --margin-inline-ipad: 3rem;
+    --margin-bottom-ipad: 4rem;
+
+
+    /*---- GENERELLE REGLER desk --------*/
+    --margin-inline-desk: 14rem;
+    --margin-bottom-desk: 8rem;
 
     
 
 }
 
-/*-------------------- GENERELLE REGLER ---------------*/
+/*-------------------------------------------------- GENERELLE REGLER -----------------------------------------------*/
 /* --------- FONTS ------------ */
 @font-face {
     font-family: Prompt;
     src: url(/font/prompt-regular-webfont.woff2) format("woff2");
     font-weight: 100 1000;
+  }
+
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  #forside, #levering_returning, #kontakt, #handelsbetingelser, #godtatvide, #cookie, #bagom {
+    margin-inline: var(--margin-inline-mobil);
+    margin-bottom: var(--margin-bottom-mobil);
   }
 
 h1 {
@@ -101,6 +124,7 @@ h1 {
     font-weight: 322;
     font-variation-settings: "BASE" 500, "SPAC" 200, "HEIG" 456;
     color: var(--h1--color-primary);
+    margin-bottom: var(--h1--margin-bottom);
 }
 
 h2 {
@@ -108,6 +132,7 @@ h2 {
     font-family: var(--h2--);
     font-stretch: 70%;
     color: var(--h2--color-primary);
+    margin-bottom: var(--heading--margin-bottom);
 }
 
 
@@ -116,24 +141,28 @@ h3 {
     font-size: var(--h3--size-);
     font-family: var(--h3--);
     color: var(--h3--color-primary);
+    margin-bottom: var(--heading--margin-bottom);
 }
 
 h4 {
     font-size: var(--h4-size--);
     font-family: var(--h4--);
     color: var(--h4--color-primary);
+    margin-bottom: var(--heading--margin-bottom);
 }
 
 h5 {
     font-size: var(--h5-size--);
     font-family: var(--h5--);
     color: var(--h5--color-primary);
+    margin-bottom: var(--heading--margin-bottom);
 }
 
 p {
     font-size: var(--p-size--);
     font-family: var(--p--);
     color: var(--p--color-primary);
+    margin-bottom: var(--p--margin-bottom);
 }
 
 
@@ -141,10 +170,19 @@ a {
     color: var(--header-link-color);
     font-family: var(--a--);
     color: var(--a--color-primary);
+    cursor: pointer;
+  border: none;
+  outline: none;
+  
+  text-decoration: none;
 }
 
 a:hover {
     font-style: var(--a--hover);
+}
+
+li {
+  list-style: none;
 }
 
 /* --------- BUTTONS ------------ */
@@ -171,19 +209,12 @@ a:hover {
      cursor: pointer;
  }
 
+/* ----------------------------------------------- MENU ------------------------------------------ */
 
 
-li {
-  list-style: none;
-}
 
-/* ----------------- MENU ------------------- */
 
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
+/* --- !! vil gerne have * op i general men margin: 0; fucker med lidt ting  !! ---*/
 *,
 *::before,
 *::after {
@@ -199,24 +230,7 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  
-}
 
-a {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  
-  text-decoration: none;
-}
 
 img,
 video {
@@ -236,10 +250,6 @@ video {
 }
 
 .brand {
-  font-family: inherit;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: inherit;
   border: none;
   outline: none;
   
@@ -258,7 +268,7 @@ video {
   background: white;
   box-shadow: var(--shadow-large);
 }
-.navbar .wrapper {
+.navbar .wrapper_burger {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -280,7 +290,8 @@ video {
   visibility: hidden;
   background: none;
   transform: rotate(0deg);
-  transition: 0.35s ease-in-out;
+  transition: 1.5s ease-in-out;
+  box-shadow: none;
   
 }
 .navbar .burger-line {
@@ -295,7 +306,8 @@ video {
   border-radius: 0.25rem;
   background: black;
   transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: var(--burger-color-primary);
 }
 .navbar .burger-line:nth-child(1) {
   top: 0;
@@ -327,9 +339,7 @@ video {
   gap: 2rem;
 }
 .navbar .menu-link {
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 600;
+  
   line-height: inherit;
   border: none;
   
@@ -338,35 +348,12 @@ video {
   transition: all 0.35s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar .burger {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-  .navbar .menu {
-    width: 100%;
-    max-height: 0rem;
-    padding: 0;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    transition: all 0.35s ease;
-  }
-  .navbar .menu.is-active {
-    opacity: 1;
-    visibility: visible;
-  }
-  .navbar .menu-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    gap: 0.75rem;
-    padding-block: 14rem;
-  }
-}
-
+/*------------------------------------------- Forside-siden ------------------------------------------------*/
+/*------------------------------------------- GODT AT VIDE-siden -------------------------------------------*/
+/*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
+/*------------------------------------------- Cookie-siden -------------------------------------------------*/
+/*------------------------------------------- Bagom-siden --------------------------------------------------*/
 
 
 /* ----------------- ACCORDION ------------------- */
@@ -378,11 +365,6 @@ video {
   margin: 10vh auto;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-}
 
 input {
   display: none;
@@ -513,19 +495,102 @@ input:checked ~ .questions {
   transform: scaleY(1);
 }
 
-/*------------------ Konakt-formular ----------------------*/
+/*--------------------------------------------- Levering og returnering-siden -------------------------------------*/
+
+/*--------------------------------------------- Konakt-siden ------------------------------------------------------*/
+
+/*--------------------------------------------- Konakt-formular ---------------------------------------------------*/
+
+
+
+
+
+
+
+
 
 @media (min-width: 640px) {
+/*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+/*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
+/*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+/*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+/*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+/*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
+/*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
 }
 
 @media (min-width: 768px) {
-  .navbar .wrapper {
+  
+
+
+  .navbar .wrapper_burger {
     justify-content: flex-start;
+  }
+
+  #forside, #levering_returning, #kontakt, #handelsbetingelser, #godtatvide, #cookie, #bagom {
+    margin-inline: var(--margin-inline-ipad);
+    margin-bottom: var(--margin-bottom-ipad);
+  }
+
+/*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+/*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
+/*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+/*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+/*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+/*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
+/*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
+}
+
+/*------------------ KUN BURGER MEDIA ----------------------*/
+@media only screen and (max-width: 768px) {
+  .navbar .burger {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar .menu {
+    width: 100%;
+    max-height: 0rem;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.35s ease;
+  }
+  .navbar .menu.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar .menu-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 0.75rem;
+    padding-block: 14rem;
   }
 }
 
 @media (min-width: 1280px) {
+  #forside, #levering_returning, #kontakt, #handelsbetingelser, #godtatvide, #cookie, #bagom {
+    margin-inline: var(--margin-inline-desk);
+    margin-bottom: var(--margin-bottom-desk);
+  }
+/*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+/*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
+/*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+/*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+/*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+/*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
+/*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
 }
 
 @media (min-width: 1538px) {
+/*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+/*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
+/*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+/*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+/*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+/*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
+/*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/ 
 }

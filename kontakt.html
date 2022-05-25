@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>GODT AT VIDE</title>
+    
+    <title>KONTAKT</title>
 </head>
 <body>
     
 
     <header></header>
-
+<main id="kontakt">
     <section>
         
         <h1>HVAD HAR DU PÅ HJERTET?</h1>
@@ -46,27 +46,27 @@
                 <li>
                     <div class="col-3 input-effect">
                     <input class="effect-23" type="text" placeholder="Navn" id="nr1">
-                    <label>Navn</label>
+                    <label class="label">Navn</label>
                     <span class="focus-bg"></span>
                 </div>
                 </li>
                 <li>
                     <div class="col-3 input-effect">
                     <input class="effect-23" type="text" placeholder="Email" id="nr2">
-                    <label>Email</label>
+                    <label class="label">Email</label>
                     <span class="focus-bg"></span>
                 </div>
                 </li>
                 <li>
                     <div class="col-3 input-effect">
                     <input class="effect-23" type="text" placeholder="Emne" id="nr3">
-                    <label>Emne</label>
+                    <label class="label">Emne</label>
                     <span class="focus-bg"></span>
                 </div>
                 <li>
                     <div class="col-3 input-effect">
                     <input class="effect-23" type="text" placeholder="Skriv..." id="nr4">
-                    <label>Besked</label>
+                    <label class="label">Besked</label>
                     <span class="focus-bg"></span>
                 </div>
                 </li>
@@ -74,9 +74,10 @@
 
             </ul>
               
-              <button class="knap">Send</button>
+              <button>Send</button>
         </div>
     </section>
+  </main>
 </body>
 </html>
 
@@ -90,7 +91,9 @@
     width: 90%;
     margin: 1rem 3%;
     position: relative;
-  } /* necessary to give position: relative to parent. */
+  } 
+
+  
   input[type="text"] {
     font: 15px/24px "Lato", Arial, sans-serif;
     color: #333;
@@ -131,17 +134,18 @@
     height: 100%;
   }
   .effect-23 ~ label {
-    position: absolute;
-    left: 14px;
-    width: 100%;
-    top: 10px;
-    color: #aaa;
-    transition: 0.3s;
-    z-index: -1;
-    letter-spacing: 0.5px;
-  }
-  .effect-23:focus ~ label,
-  .has-content.effect-23 ~ label {
+  position: absolute;
+  left: 14px;
+  width: 100%;
+  top: 10px;
+  color: blue;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+
+  .effect-23:focus ~ .label,
+  .has-content.effect-23 ~ .label {
     top: -18px;
     left: 0;
     font-size: 12px;
@@ -149,15 +153,15 @@
     transition: 0.3s;
   }
   
-  .effect-24 ~ .focus-bg:before,
-  .effect-24 ~ .focus-bg:after {
+  .effect-23 ~ .focus-bg:before,
+  .effect-23 ~ .focus-bg:after {
     content: "";
     position: absolute;
     left: 50%;
     top: 50%;
     width: 0;
     height: 0;
-    background-color: #ededed;
+    background-color: transparent;
     transition: 0.3s;
     z-index: -1;
   }
@@ -166,7 +170,9 @@
       ul {
     padding: 0;
   }
-  li{
+
+
+  li {
     list-style-type: none;
     /* padding: 5px 0; */
     margin: 0;

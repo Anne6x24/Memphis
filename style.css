@@ -1,8 +1,168 @@
+:root{
+    /* backgroudcolor */
+    --primary-bg-color:#ffffff;
+
+    /* header */
+    --desk-bg-color-header: transparant;
+    --header-link-color: #0338E1;
+
+    /* headerc mobile*/
+    --mobile-bg-color-header: transparant;
+    --mobile--link-color: #0338E1;
+
+    /* buttons*/
+    --button--bg-color:#0338E1;
+    --button-padding: 0.75rem 2.2rem;
+    --button-gap: 0.6rem;
+    --button-height: 3.2rem;
+    --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --button-radius: 0.3rem;
+    --button-transform-animation: scale(0.9);
+
+
+    /* headings */
+    --h1--: "Prompt", sans-serif;
+    --h2--: "Prompt", sans-serif;
+    --h3--: "Prompt", sans-serif;
+    --h4--: "Prompt", sans-serif;
+    --h5--: "Prompt", sans-serif;
+    --p--: "Prompt", sans-serif;
+    --a--: "Prompt", sans-serif;
+
+    --a--hover: italic;
+
+    --h1-size--: 3.75rem;
+    --h2-size--: 2.7rem;
+    --h3--size-: 2.25rem;
+    --h4-size--: 2rem;
+    --h5-size--: 1.3rem;
+    --p-size--: 1.5rem
+    --a-size--: "Prompt", sans-serif;
+
+    --h1--color-primary: #051036;
+    --h1--color-secondary: #202020;
+
+    --h2--color-primary:#202020;
+    --h2--color-secondary:#FDFDFD;
+    --h2--color-third:#0338E1;
+
+    --h3--color-primary:#202020;
+    --h3--color-secondary:#FDFDFD;
+    --h3--color-third:#0338E1;
+
+    --h4--color-primary:#202020;
+    --h4--color-secondary:#FDFDFD;
+    --h4--color-third:#0338E1;
+
+    --h5--color-primary:#202020;
+    --h5--color-secondary:#FDFDFD;
+    --h5--color-third:#0338E1;
+
+    --p--color-primary:#202020;
+    --p--color-secondary:#FDFDFD;
+    --p--color-third:#0338E1;
+
+    --a--color-primary:#0338E1;
+    --a--color-secondary:#FDFDFD;
+    --a--color-third:#202020;
+
+    
+
+    
+
+}
+
+/*-------------------- GENERELLE REGLER ---------------*/
+/* --------- FONTS ------------ */
+@font-face {
+    font-family: Prompt;
+    src: url(/prompt-regular-webfont.woff2) format("woff2");
+    font-weight: 100 1000;
+  }
+
+h1 {
+    font-size: var(--h1-size--);
+    font-family: var(--h1--);
+    font-weight: 322;
+    font-variation-settings: "BASE" 500, "SPAC" 200, "HEIG" 456;
+    color: var(--h1--color-primary);
+}
+
+h2 {
+    font-size: var(--h2-size--);
+    font-family: var(--h2--);
+    font-stretch: 70%;
+    color: var(--h2--color-primary);
+}
+
+
+
+h3 {
+    font-size: var(--h3--size-);
+    font-family: var(--h3--);
+    color: var(--h3--color-primary);
+}
+
+h4 {
+    font-size: var(--h4-size--);
+    font-family: var(--h4--);
+    color: var(--h4--color-primary);
+}
+
+h5 {
+    font-size: var(--h5-size--);
+    font-family: var(--h5--);
+    color: var(--h5--color-primary);
+}
+
+p {
+    font-size: var(--p-size--);
+    font-family: var(--p--);
+    color: var(--p--color-primary);
+}
+
+
+a {
+    color: var(--header-link-color);
+    font-family: var(--a--);
+    color: var(--a--color-primary);
+}
+
+a:hover {
+    font-style: var(--a--hover);
+}
+
+/* --------- BUTTONS ------------ */
+ button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--button-padding);
+    gap: var(--button-gap);
+    
+    position: relative;
+    width: auto;
+    height: var(--button-height);
+    
+    background-color: var(--button--bg-color);
+    box-shadow: var(--button-shadow);
+    border-radius: var(--button-radius);
+    border-style: none;
+ }
+
+ button:hover {
+     transform: var(--button-transform-animation);
+     cursor: pointer;
+ }
+
+
+
 li {
   list-style: none;
 }
 
-/* MENU */
+/* ----------------- MENU ------------------- */
 
 html {
   font-size: 100%;
@@ -30,18 +190,17 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: black;
+  
 }
 
-a,
-button {
+a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   cursor: pointer;
   border: none;
   outline: none;
-  background: none;
+  
   text-decoration: none;
 }
 
@@ -69,7 +228,7 @@ video {
   line-height: inherit;
   border: none;
   outline: none;
-  color: indigo;
+  
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
@@ -81,7 +240,7 @@ video {
   padding: 2rem 0;
   border: none;
   outline: none;
-  color: black;
+  
   background: white;
   box-shadow: var(--shadow-large);
 }
@@ -108,7 +267,7 @@ video {
   background: none;
   transform: rotate(0deg);
   transition: 0.35s ease-in-out;
-  color: black;
+  
 }
 .navbar .burger-line {
   display: block;
@@ -159,7 +318,7 @@ video {
   font-weight: 600;
   line-height: inherit;
   border: none;
-  color: black;
+  
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   transition: all 0.35s ease-in-out;

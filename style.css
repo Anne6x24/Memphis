@@ -348,7 +348,7 @@ video {
 /* ----------------- ACCORDION ------------------- */
 
 .wrapper {
-  max-width: 600px;
+  /* max-width: 1000px; */
   width: 100%;
   margin: 10vh auto;
 }
@@ -368,8 +368,8 @@ label {
 
 label div:first-child {
   width: 100%;
-  line-height: 45px;
-  margin-left: 10px;
+  line-height: 60px;
+  /* margin-left: 10px; */
   font-size: 1.2em;
 }
 
@@ -398,6 +398,7 @@ label div:first-child {
   font-size: 0.9em;
   margin: 10px 10px;
   max-height: 0;
+  max-width: 65rem;
   overflow: hidden;
   transition: max-height, 0.5s;
 }

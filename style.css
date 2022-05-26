@@ -38,6 +38,7 @@
   --a--: "Prompt", sans-serif;
   --li--: "Prompt", sans-serif;
 
+
   /* hover */
   --a--hover-primary: italic;
   --a--hover-secondary: underline;
@@ -56,6 +57,9 @@
   --h5-size--: clamp(1.125rem, 1.09rem + 0.17500000000000004vw, 1.3rem);
   --p-size--: clamp(0.8rem, 0.74rem + 0.30000000000000004vw, 1.1rem);
   --a-size--: "Prompt", sans-serif;
+  --banner--font-size--: clamp(0.6rem, 0.5599999999999999rem + 0.2000000000000001vw, 0.8rem);
+
+
 
   --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 
@@ -225,6 +229,21 @@ button:hover {
 }
 
 /* ----------------------------------------------- MENU ------------------------------------------ */
+/* ------------------------ MENU - banner hvid----------------------- */
+.trustpilot_1 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.trustpilot {
+  text-align: center;
+  
+}
+
+.banner_hvid_p, .banner_p {
+  font-size: var(--banner--font-size--);
+}
 
 /* ------------------------ MENU - banner sort----------------------- */
 .banner_1 {
@@ -287,8 +306,11 @@ button:hover {
   text-rendering: optimizeLegibility;
 }
 
-img,
-video {
+#menu {
+  margin-left: 3rem;
+}
+
+.logo {
   display: block;
   max-width: 100%;
   height: auto;
@@ -307,7 +329,7 @@ video {
 .brand {
   border: none;
   outline: none;
-
+  margin: 1.5rem;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   width: 5rem;
@@ -690,6 +712,25 @@ p.knap {
 /*------------------------ Konakt-map ------------------------*/
 
 @media (min-width: 640px) {
+  /* ----------------------------------------------- MENU ------------------------------------------ */
+/* ------------------------ MENU - banner hvid----------------------- */
+/* .trustpilot_1 {
+  display: block;
+  justify-content:space-between;
+} */
+
+.trustpilot {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-block: 0.5rem;
+  
+}
+
+.banner_hvid_p {
+  margin-bottom: 0;
+}
+
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   .levering_returnering_guide_ikoner_tekst {
     justify-content: space-evenly;

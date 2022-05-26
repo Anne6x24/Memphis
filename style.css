@@ -27,13 +27,13 @@
   /* ------- headings ------ */
 
   /* fonte */
-  --h1--: "Encode", sans-serif;
-  --h2--: "Encode", sans-serif;
-  --h3--: "Encode", sans-serif;
-  --h4--: "Encode", sans-serif;
-  --h5--: "Encode", sans-serif;
-  --p--: "Encode", sans-serif;
-  --a--: "Encode", sans-serif;
+  --h1--: "Prompt", sans-serif;
+  --h2--: "Prompt", sans-serif;
+  --h3--: "Prompt", sans-serif;
+  --h4--: "Prompt", sans-serif;
+  --h5--: "Prompt", sans-serif;
+  --p--: "Prompt", sans-serif;
+  --a--: "Prompt", sans-serif;
 
   /* hover */
   --a--hover-primary: italic;
@@ -48,8 +48,15 @@
   --h3--size-: clamp(1.4rem, 1.23rem + 0.8500000000000001vw, 2.25rem);
   --h4-size--: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
   --h5-size--: clamp(1.125rem, 1.09rem + 0.17500000000000004vw, 1.3rem);
-  --p-size--: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  --p-size--: clamp(0.8rem, 0.74rem + 0.30000000000000004vw, 1.1rem);
   --a-size--: "Prompt", sans-serif;
+
+  --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+
+
+  
+
+
 
   /* font-colors */
   --h1--color-primary: #051036;
@@ -100,9 +107,9 @@
 /*-------------------------------------------------- GENERELLE REGLER -----------------------------------------------*/
 /* --------- FONTS ------------ */
 @font-face {
-  font-family: Encode;
-  src: url(/font/encodesans-variablefont_wdthwght-webfont.woff2) format("woff2");
-  /* font-weight: 100 1000; */
+  font-family: Prompt;
+  src: url(/font/prompt-regular-webfont.woff2) format("woff2");
+  font-weight: 100 900;
 }
 
 html {
@@ -121,12 +128,13 @@ html {
   margin-bottom: var(--margin-bottom-mobil);
 }
 
+.test {
+  font-variation-settings: 'wdth' 100;
+}
+
 h1 {
   font-size: var(--h1-size--);
   font-family: var(--h1--);
-  
-  font-variation-settings: 'wght' 775;
-
   color: var(--h1--color-primary);
   margin-bottom: var(--h1--margin-bottom);
 }
@@ -165,6 +173,7 @@ p {
   font-family: var(--p--);
   color: var(--p--color-primary);
   margin-bottom: var(--p--margin-bottom);
+  line-height: var(--p--lineheight);
 }
 
 a {

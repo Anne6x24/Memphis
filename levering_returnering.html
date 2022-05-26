@@ -33,7 +33,7 @@
                   <a href="bagom.html" class="menu-link">BAG OM</a>
                 </li>
                 <li class="menu-item">
-                  <a href="GODT AT VIDE" class="menu-link">GODT AT VIDE</a>
+                  <a href="godtatvide.html" class="menu-link">GODT AT VIDE</a>
                 </li>
                 <li class="menu-item">
                   <a href="kontakt.html" class="menu-link">KONTAKT</a>
@@ -123,17 +123,21 @@
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer id="footer_allaround">
       <article class="footer_article_allaround">
-        <section class="footer_information_links_section">
+
+        <!-- kontaktinformationer, links til andre sider, betaling og levering -->
+        <section class="footer_information_links_betaling_levering_section">
+          <div class="footer_information_links_div">
           <!-- information -->
           <div class="footer_information_div">
             <h4>Memphis House</h4>
             <div class="footer_div">
               <!-- memphis kontaktoplysninger -->
-              <p>Enghavevej 2</p>
-              <p>1674 København V</p>
-              <p>kontakt@memphishouse.dk</p>
+              <address><a class="footer_links_menupunkter" href="https://www.google.dk/maps/place/Enghavevej+2,+1674+K%C3%B8benhavn/@55.6713922,12.5434516,17z/data=!3m1!4b1!4m5!3m4!1s0x4652539f08fbcc73:0x4c71c946c0cc53db!8m2!3d55.6713922!4d12.5456403"
+                >Enghavevej 2, 1674 København V</a></address>
+              <a class="footer_links_menupunkter" href="mailto:kontakt@memphishouse.dk"
+                >kontakt@memphishouse.dk</a>
               <p>CVR: 42753386</p>
             </div>
           </div>
@@ -144,29 +148,28 @@
             <ul>
               <!-- linkedin -->
               <li>
-                <a href="kontakt.html">Kontakt</a>
+                <a class="footer_links_menupunkter" href="kontakt.html">Kontakt</a>
               </li>
               <li>
-                <a href="godtatvide.html">FAQ</a>
+                <a class="footer_links_menupunkter" href="godtatvide.html">FAQ</a>
               </li>
               <li>
-                <a href="handelsbetingelser.html">Sikkerhed og betaling</a>
+                <a class="footer_links_menupunkter" href="handelsbetingelser.html">Sikkerhed og betaling</a>
               </li>
               <li>
-                <a href="levering_returnering.html">Levering og returnering</a>
+                <a class="footer_links_menupunkter" href="levering_returnering.html">Levering og returnering</a>
               </li>
               <li>
-                <a href="handelsbetingelser.html">Handelsbetingelser</a>
+                <a class="footer_links_menupunkter" href="handelsbetingelser.html">Handelsbetingelser</a>
               </li>
               <li>
-                <a href="cookie.html">Cookie og Privatlivspolitik</a>
+                <a class="footer_links_menupunkter" href="cookie.html">Cookie og Privatlivspolitik</a>
               </li>
             </ul>
           </div>
-        </section>
+          </div>
 
-        <section class="footer_betalingsmuligheder_leveringsmuligheder_section">
-          <div>
+          <div class="footer_betalingsmuligheder_div">
             <h4>Betalingsmuligheder</h4>
             <div class="footer_betalingsmuligheder_ikoner">
               <img src="img/betaling/visa.svg" alt="" />
@@ -176,7 +179,7 @@
               <img src="img/betaling/mobilepay.svg" alt="" />
             </div>
 
-            <div>
+            <div class="footer_leveringsmuligheder_div">
               <h4>Leveringsmuligheder</h4>
               <div class="footer_leveringsmuligheder_ikoner">
                 <img src="img/levering/dhl.svg" alt="" />
@@ -184,20 +187,21 @@
                 <img src="img/levering/bring.svg" alt="" />
               </div>
             </div>
-          </div>
+
         </section>
 
+        <!-- instagram, copyright og til toppen -->
         <section class="footer_instagram_copyright_tiltoppen_section">
-          <div>
-            <p>Følg os på Instagram</p>
-            <img src="" alt="" />
+          <div class="footer_instagram_img">
+            <p>FØLG OS PÅ INSTAGRAM</p>
+            <img src="img/ikoner/instagram.svg" alt="Instagram ikon" />
           </div>
           <div>
             <p>Copyright © 2022 - Memphis House</p>
           </div>
           <div class="footer_tiltoppen_pil_div">
-            <a href="levering_returnering.html#header"
-                >Til toppen</a>
+            <a class="footer_links_menupunkter" href="levering_returnering.html#header"
+                >TIL TOPPEN</a>
         </section>
       </article>
     </footer>
@@ -210,40 +214,90 @@
 </html>
 
 <style>
+
   /**** FOOTER ****/
-  .footer_information_links_section {
-    display: flex;
+  #footer_allaround {
+  padding-block: 3rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+
+  .footer_information_links_betaling_levering_section {
     margin-inline: 2rem;
   }
 
-  .footer_betalingsmuligheder_leveringsmuligheder_section {
+
+  .footer_information_links_div {
+    display: flex;
+    margin-inline: 1rem;
+    gap: 0.5rem;
+  }
+
+  /* .footer_links_menupunkter {
+    font-size: var(--p-size--);
+  font-family: var(--p--);
+  color: var(--p--color-primary);
+  margin-bottom: var(--p--margin-bottom);
+  line-height: var(--p--lineheight);
+  } */
+
+    /* footer betaling levering */
+    /* .footer_betalingsmuligheder_leveringsmuligheder_section {
     margin-inline: 2rem;
+    margin-block: 2rem;
+    gap: 1rem;
+  } */
+/* 
+  .footer_betalingsmuligheder_ikoner {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer_leveringsmuligheder_ikoner {
+    margin-bottom: 3rem;
   }
 
   .footer_betalingsmuligheder_ikoner,
   .footer_leveringsmuligheder_ikoner {
     display: flex;
-  }
+  } */
 
-  .levering_returnering_guide_ikoner_tekst {
-    display: flex;
-    gap: 1rem;
-    margin-block: 4rem;
-  }
-
-  .footer_instagram_copyright_tiltoppen_section {
+  /* footer instagram copyright tiltoppen */
+  /* .footer_instagram_copyright_tiltoppen_section {
     text-align: center;
   }
 
-  .footer_tiltoppen_pil_div {
+  .footer_instagram_img {
     display: flex;
     justify-content: center;
-  }
+    gap: 0.5rem;
+  } */
 
   @media (min-width: 640px) {
     /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
-    .levering_returnering_guide_ikoner_tekst {
+
+   /* footer to øverste bokse med kontakt og links */
+  .footer_information_links_section {
+    justify-content: space-evenly;
+    gap: 0rem;
+    margin-inline: 0rem;
+  }
+
+  .footer_betalingsmuligheder_leveringsmuligheder_section {
+    display: flex;
+  }
+  }
+
+
+  @media (min-width: 768px) {
+    /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+
+    .footer_indeholder_info_og_muligheder {
+      display: flex;
+    }
+
+    .footer_instagram_copyright_tiltoppen_section {
+      display: flex;
       justify-content: space-evenly;
     }
+
   }
 </style>

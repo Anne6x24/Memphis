@@ -11,7 +11,7 @@
   <!-- body -->
   <body>
     <!-- header -->
-    <header>
+    <header id="header">
       <nav class="navbar">
         <div class="container">
           <section class="wrapper_burger">
@@ -82,7 +82,7 @@
 
           <div>
             <p>Følg steps herunder:</p>
-            <div>
+            <div class="levering_returnering_guide_allaround">
               <div class="levering_returnering_guide_ikoner_tekst">
                 <img src="img/ikoner/computer_retur_ikon.svg" alt="" />
                 <p>
@@ -124,66 +124,70 @@
 
     <!-- footer -->
     <footer>
-      <section class="footer_section">
-        <!-- links -->
-        <div>
-          <h4>Memphis House</h4>
-          <ul class="footer_div">
-            <!-- memphis kontaktoplysninger -->
-            <li>Enghavevej 2</li>
-            <li>1674 København V</li>
-            <li>kontakt@memphishouse.dk</li>
-            <li>CVR: 42753386</li>
-          </ul>
-        </div>
-
-        <!-- links -->
-        <div class="footer_div_2">
-          <h4>Hjælp og kontakt</h4>
-          <ul>
-            <!-- linkedin -->
-            <li>
-              <a href="kontakt.html">Kontakt</a>
-            </li>
-            <li>
-              <a href="godtatvide.html">FAQ</a>
-            </li>
-            <li>
-              <a href="handelsbetingelser.html">Sikkerhed og betaling</a>
-            </li>
-            <li>
-              <a href="levering_returnering.html">Levering og returnering</a>
-            </li>
-            <li>
-              <a href="handelsbetingelser.html">Handelsbetingelser</a>
-            </li>
-            <li>
-              <a href="cookie.html">Cookie og Privatlivspolitik</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Betalingsmuligheder</h4>
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-
-          <div>
-            <h4>Leveringsmuligheder</h4>
-            <div>
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
+      <article class="footer_article_allaround">
+        <section class="footer_information_links_section">
+          <!-- information -->
+          <div class="footer_information_div">
+            <h4>Memphis House</h4>
+            <div class="footer_div">
+              <!-- memphis kontaktoplysninger -->
+              <p>Enghavevej 2</p>
+              <p>1674 København V</p>
+              <p>kontakt@memphishouse.dk</p>
+              <p>CVR: 42753386</p>
             </div>
           </div>
-        </div>
 
-        <div>
+          <!-- links til andre menupunkter -->
+          <div class="footer_links_div">
+            <h4>Hjælp og kontakt</h4>
+            <ul>
+              <!-- linkedin -->
+              <li>
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+              <li>
+                <a href="godtatvide.html">FAQ</a>
+              </li>
+              <li>
+                <a href="handelsbetingelser.html">Sikkerhed og betaling</a>
+              </li>
+              <li>
+                <a href="levering_returnering.html">Levering og returnering</a>
+              </li>
+              <li>
+                <a href="handelsbetingelser.html">Handelsbetingelser</a>
+              </li>
+              <li>
+                <a href="cookie.html">Cookie og Privatlivspolitik</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer_betalingsmuligheder_leveringsmuligheder_section">
+          <div>
+            <h4>Betalingsmuligheder</h4>
+            <div class="footer_betalingsmuligheder_ikoner">
+              <img src="img/betaling/visa.svg" alt="" />
+              <img src="img/betaling/mastercard.svg" alt="" />
+              <img src="img/betaling/klarna.svg" alt="" />
+              <img src="img/betaling/applepay.svg" alt="" />
+              <img src="img/betaling/mobilepay.svg" alt="" />
+            </div>
+
+            <div>
+              <h4>Leveringsmuligheder</h4>
+              <div class="footer_leveringsmuligheder_ikoner">
+                <img src="img/levering/dhl.svg" alt="" />
+                <img src="img/levering/postnord.svg" alt="" />
+                <img src="img/levering/bring.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="footer_instagram_copyright_tiltoppen_section">
           <div>
             <p>Følg os på Instagram</p>
             <img src="" alt="" />
@@ -191,11 +195,11 @@
           <div>
             <p>Copyright © 2022 - Memphis House</p>
           </div>
-          <div>
-            <p>til toppen</p>
-          </div>
-        </div>
-      </section>
+          <div class="footer_tiltoppen_pil_div">
+            <a href="levering_returnering.html#header"
+                >Til toppen</a>
+        </section>
+      </article>
     </footer>
 
     <!-- script -->
@@ -206,9 +210,40 @@
 </html>
 
 <style>
+  /**** FOOTER ****/
+  .footer_information_links_section {
+    display: flex;
+    margin-inline: 2rem;
+  }
+
+  .footer_betalingsmuligheder_leveringsmuligheder_section {
+    margin-inline: 2rem;
+  }
+
+  .footer_betalingsmuligheder_ikoner,
+  .footer_leveringsmuligheder_ikoner {
+    display: flex;
+  }
+
   .levering_returnering_guide_ikoner_tekst {
     display: flex;
     gap: 1rem;
     margin-block: 4rem;
+  }
+
+  .footer_instagram_copyright_tiltoppen_section {
+    text-align: center;
+  }
+
+  .footer_tiltoppen_pil_div {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 640px) {
+    /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+    .levering_returnering_guide_ikoner_tekst {
+      justify-content: space-evenly;
+    }
   }
 </style>

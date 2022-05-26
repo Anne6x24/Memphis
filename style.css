@@ -499,6 +499,11 @@ input:checked ~ .questions {
 }
 
 /*--------------------------------------------- Levering og returnering-siden -------------------------------------*/
+.levering_returnering_guide_ikoner_tekst {
+  display: flex;
+  gap: 1rem;
+  margin-block: 4rem;
+}
 
 /*--------------------------------------------- Konakt-siden ------------------------------------------------------*/
 .adresse {
@@ -531,28 +536,25 @@ input:checked ~ .questions {
 /*------------------------ Konakt-formular ------------------------*/
 :focus {
   outline: none;
-  }
-  
-  .col-3 {
+}
+
+.col-3 {
   float: left;
   width: 90%;
   margin-block: 1rem 3%;
   position: relative;
-  } 
-  
-  
-  input[type="text"] {
-  
+}
+
+input[type="text"] {
   color: #333;
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 1px;
   padding: 0.4rem;
-  }
-  
-  
-  .effect-23 ~ .focus-bg:before,
-  .effect-23 ~ .focus-bg:after {
+}
+
+.effect-23 ~ .focus-bg:before,
+.effect-23 ~ .focus-bg:after {
   content: "";
   position: absolute;
   left: 0;
@@ -562,26 +564,26 @@ input:checked ~ .questions {
   background-color: #ededed;
   transition: 0.3s;
   z-index: -1;
-  }
-  .effect-23:focus ~ .focus-bg:before,
-  .has-content.effect-23 ~ .focus-bg:before {
+}
+.effect-23:focus ~ .focus-bg:before,
+.has-content.effect-23 ~ .focus-bg:before {
   transition: 0.3s;
   width: 50%;
   height: 100%;
-  }
-  .effect-23 ~ .focus-bg:after {
+}
+.effect-23 ~ .focus-bg:after {
   left: auto;
   right: 0;
   top: auto;
   bottom: 0;
-  }
-  .effect-23:focus ~ .focus-bg:after,
-  .has-content.effect-23 ~ .focus-bg:after {
+}
+.effect-23:focus ~ .focus-bg:after,
+.has-content.effect-23 ~ .focus-bg:after {
   transition: 0.3s;
   width: 50%;
   height: 100%;
-  }
-  .effect-23 ~ .label {
+}
+.effect-23 ~ .label {
   position: absolute;
   left: 14px;
   width: 100%;
@@ -590,19 +592,19 @@ input:checked ~ .questions {
   transition: 0.3s;
   z-index: -1;
   letter-spacing: 0.5px;
-  }
-  
-  .effect-23:focus ~ .label,
-  .has-content.effect-23 ~ .label {
+}
+
+.effect-23:focus ~ .label,
+.has-content.effect-23 ~ .label {
   top: -18px;
   left: 0;
   font-size: 12px;
   color: #333;
   transition: 0.3s;
-  }
-  
-  .effect-23 ~ .focus-bg:before,
-  .effect-23 ~ .focus-bg:after {
+}
+
+.effect-23 ~ .focus-bg:before,
+.effect-23 ~ .focus-bg:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -612,46 +614,44 @@ input:checked ~ .questions {
   background-color: transparent;
   transition: 0.3s;
   z-index: -1;
-  }
-  
-  li {
-  
+}
+
+li {
   /* padding: 5px 0; */
   margin: 0;
   overflow: hidden;
-  }
-  
-  
-  
-  strong{
+}
+
+strong {
   width: 120px;
   float: left;
-  
-  }
-  
-  p.knap{
+}
+
+p.knap {
   margin: 0 0 0 230px;
   padding: 5px 10px;
   border: 1px solid #dddddd;
   float: left;
   cursor: pointer;
-  }
-  
-  #nr4 {
-    padding-bottom: 4rem;
-  }
+}
 
-  /*------------------------ Konakt-map ------------------------*/
+#nr4 {
+  padding-bottom: 4rem;
+}
 
+/*------------------------ Konakt-map ------------------------*/
 
 @media (min-width: 640px) {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+  .levering_returnering_guide_ikoner_tekst {
+    justify-content: space-evenly;
+  }
+
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   .kort {
     width: 35rem;
   }
 
-  
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
 
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
@@ -683,15 +683,15 @@ input:checked ~ .questions {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-}
+  }
 
-.col-3 {
-  width: 96%;
-}
+  .col-3 {
+    width: 96%;
+  }
 
-.bund2 {
-  margin-top: 0;
-}
+  .bund2 {
+    margin-top: 0;
+  }
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/

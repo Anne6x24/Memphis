@@ -262,7 +262,7 @@ button:hover {
   background-color: var(--secondary-bg-color);
 
   animation-name: banner_infinite;
-  animation-duration: 10s;
+  animation-duration: 35s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -319,7 +319,7 @@ button:hover {
 }
 
 .container {
-  max-width: 83rem;
+  max-width: 91rem;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -484,7 +484,7 @@ label div:first-child {
   font-size: 0.9em;
   margin: 10px 10px;
   max-height: 0;
-  max-width: 65rem;
+  max-width: 48rem;
   overflow: hidden;
   transition: max-height, 0.5s;
 }

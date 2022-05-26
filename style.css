@@ -6,7 +6,6 @@
   --desk-bg-color-header: transparant;
   --header-link-color: #0338e1;
 
-
   /* header mobile*/
   --mobile-bg-color-header: transparant;
   --mobile--link-color: #0338e1;
@@ -34,7 +33,7 @@
   --h5--: "Prompt", sans-serif;
   --p--: "Prompt", sans-serif;
   --a--: "Prompt", sans-serif;
-  --li--:"Prompt", sans-serif;
+  --li--: "Prompt", sans-serif;
 
   /* hover */
   --a--hover-primary: italic;
@@ -42,9 +41,12 @@
   --button-hover-primary: italic;
   --button-hover-secondary: underline;
 
-
   /* font-sizes */
-  --h1-size--: clamp(1.9rem,1.5299999999999998rem + 1.8500000000000003vw,3.75rem);
+  --h1-size--: clamp(
+    1.9rem,
+    1.5299999999999998rem + 1.8500000000000003vw,
+    3.75rem
+  );
   --h2-size--: clamp(1.6rem, 1.3800000000000001rem + 1.1vw, 2.7rem);
   --h3--size-: clamp(1.4rem, 1.23rem + 0.8500000000000001vw, 2.25rem);
   --h4-size--: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
@@ -53,11 +55,6 @@
   --a-size--: "Prompt", sans-serif;
 
   --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
-
-
-
-
-
 
   /* font-colors */
   --h1--color-primary: #051036;
@@ -100,6 +97,10 @@
   --margin-inline-ipad: 3rem;
   --margin-bottom-ipad: 4rem;
 
+  /*---- GENERELLE REGLER desk 1024 --------*/
+  --margin-inline-desk--lille: 10rem;
+  --margin-bottom-desk--lille: 8rem;
+
   /*---- GENERELLE REGLER desk --------*/
   --margin-inline-desk: 14rem;
   --margin-bottom-desk: 8rem;
@@ -129,8 +130,6 @@ html {
   margin-bottom: var(--margin-bottom-mobil);
 }
 
-
-
 h1 {
   font-size: var(--h1-size--);
   font-family: var(--h1--);
@@ -141,7 +140,7 @@ h1 {
 h2 {
   font-size: var(--h2-size--);
   font-family: var(--h2--);
-  
+
   color: var(--h2--color-primary);
   margin-bottom: var(--heading--margin-bottom);
 }
@@ -265,8 +264,6 @@ video {
   text-rendering: optimizeLegibility;
   width: 5rem;
 }
-
-
 
 .navbar {
   max-width: 100%;
@@ -507,13 +504,11 @@ input:checked ~ .questions {
 
 /*------------------------ Konakt-formular ------------------------*/
 
-
-
 @media (min-width: 640px) {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
-  
+
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
@@ -583,10 +578,10 @@ input:checked ~ .questions {
   #godtatvide,
   #cookie,
   #bagom {
-    margin-inline: var(--margin-inline-desk);
-    margin-bottom: var(--margin-bottom-desk);
+    margin-inline: var(--margin-inline-desk--lille);
+    margin-bottom: var(--margin-bottom-desk--lille);
   }
-   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+  /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
@@ -596,7 +591,16 @@ input:checked ~ .questions {
 }
 
 @media (min-width: 1280px) {
-  
+  #forside,
+  #levering_returning,
+  #kontakt,
+  #handelsbetingelser,
+  #godtatvide,
+  #cookie,
+  #bagom {
+    margin-inline: var(--margin-inline-desk);
+    margin-bottom: var(--margin-bottom-desk);
+  }
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/

@@ -7,7 +7,10 @@
     <title>Cookie og Privatlivspolitik</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  <!-- body -->
   <body>
+    <!-- header -->
     <header>
       <nav class="navbar">
         <div class="container">
@@ -45,6 +48,8 @@
         </div>
       </nav>
     </header>
+
+    <!-- main -->
     <main id="cookie">
       <section>
         <h1>Cookies og fortrolighed: Vores løfter</h1>
@@ -56,16 +61,21 @@
           personlige oplysninger til andre, de er kun registreret i vores
           kundekartotek. Du kan til enhver tid få slettet dine oplysninger.
         </p>
-        <p>
-          For at du kan indgå aftale med Memphis House, har vi brug for følgende
-          oplysninger:
-        </p>
-        <ol>
-          <li>Navn</li>
-          <li>Adresse</li>
-          <li>E-mail adresse</li>
-          <li>Telefonnummer</li>
-        </ol>
+
+        <div class="cookie_ol_liste">
+          <p>
+            For at du kan indgå aftale med Memphis House, har vi brug for
+            følgende oplysninger:
+          </p>
+
+          <ol>
+            <li>Navn</li>
+            <li>Adresse</li>
+            <li>E-mail adresse</li>
+            <li>Telefonnummer</li>
+          </ol>
+        </div>
+
         <p>
           Vi foretager registreringen af dine personoplysninger med det formål,
           at kunne levere varen til dig. Personoplysningerne registreres hos
@@ -87,31 +97,26 @@
       <section>
         <h2>Kunde og privatlivspolitik</h2>
         <p>
-          På https://www.instagram.com/memphis_house/ anvendes cookies med det
-          formål at optimere hjemmesiden og dets funktionalitet, og dermed gøre
-          besøget så nemt som muligt for dig. Du kan til enhver tid slette
-          cookies fra din computer, se vejledningen på Webshop Cookies og
-          Privatlivspolitik.
+          På Memphis House's hjemmeside anvendes cookies med det formål at
+          optimere hjemmesiden og dets funktionalitet, og dermed gøre besøget så
+          nemt som muligt for dig. Du kan til enhver tid slette cookies fra din
+          computer, se vejledningen på Webshop Cookies og Privatlivspolitik.
         </p>
       </section>
     </main>
+
+    <!-- footer -->
     <footer></footer>
-    <script src="burger.js"></script>
+
+    <!-- script -->
+    <script src="script/burger.js"></script>
+
+    <!-- body slut -->
   </body>
 </html>
 
 <style>
-  article {
-    margin-bottom: 2em;
-    background-image: url(/img/kortet.png);
-    z-index: -100;
+  .cookie_ol_liste {
+    margin-bottom: 1rem;
   }
-
-  #wrap_bubble {
-    background-size: cover;
-    position: relative;
-  }
-  /* #wrap_bubble {
-    background-image: url(/img/bubble.svg);
-  } */
 </style>

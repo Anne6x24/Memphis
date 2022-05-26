@@ -4,24 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>KONTAKT</title>
+    <title>Kontakt</title>
+   
 </head>
-<body>
-    
 
-    <header></header>
-<main id="kontakt">
+    <!-- body -->
+    <body>  
+
+    
+    <!-- <header>
+      <nav class="navbar">
+        <div class="container">
+          <section class="wrapper_burger">
+            <a href="./index.html" class="brand">
+              <img src="/img/logo_memphis.svg" alt="Memphis' logo" />
+            </a>
+            <button type="button" class="burger" id="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </button>
+            <div class="menu" id="menu">
+              <ul class="menu-inner">
+                <li class="menu-item">
+                  <a href="shop.html" class="menu-link">SHOP</a>
+                </li>
+                <li class="menu-item">
+                  <a href="bagom.html" class="menu-link">BAG OM</a>
+                </li>
+                <li class="menu-item">
+                  <a href="GODT AT VIDE" class="menu-link">GODT AT VIDE</a>
+                </li>
+                <li class="menu-item">
+                  <a href="kontakt.html" class="menu-link">KONTAKT</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <!-- SECTION TIL KURV OG SØGEIKON -->
+          </section>
+        </div>
+      </nav>
+    </header> -->
+
+    <!-- main -->
+    <main id="kontakt">
     <section>
         
         <h1>HVAD HAR DU PÅ HJERTET?</h1>
-  
-        <h2>HVAD HAR DU PÅ HJERTET?</h2>
-        <h3>HVAD HAR DU PÅ HJERTET?</h3>
-        <h4>HVAD HAR DU PÅ HJERTET?</h4>
-        <h5>HEY</h5>
-        <button>hej</button>
-        <a href="www.hej.com">hej</a>
         <p>Sidder du med nogle ubesvaret spørgsmål vedrørende 
             Memphis House er du velkommen til at kontakte os via nedenstående 
             kontaktformular, og så vil vi vende tilbage til dig hurtigst muligt! 
@@ -45,7 +78,7 @@
             <ul>
                 <li>
                     <div class="col-3 input-effect">
-                    <input class="effect-23" type="text" placeholder="Navn" id="nr1">
+                    <input class="effect-23 input" type="text" placeholder="Navn" id="nr1">
                     <label class="label">Navn</label>
                     <span class="focus-bg"></span>
                 </div>
@@ -59,13 +92,13 @@
                 </li>
                 <li>
                     <div class="col-3 input-effect">
-                    <input class="effect-23" type="text" placeholder="Emne" id="nr3">
+                    <input class="effect-23 input" type="text" placeholder="Emne" id="nr3">
                     <label class="label">Emne</label>
                     <span class="focus-bg"></span>
                 </div>
                 <li>
                     <div class="col-3 input-effect">
-                    <input class="effect-23" type="text" placeholder="Skriv..." id="nr4">
+                    <input class="effect-23 input" type="text" placeholder="Skriv..." id="nr4">
                     <label class="label">Besked</label>
                     <span class="focus-bg"></span>
                 </div>
@@ -77,10 +110,20 @@
               <button>Send</button>
         </div>
     </section>
-  </main>
+    </main>
+    
+    <!-- footer -->
+    <footer></footer>
+
+  <!-- script -->
+  <script src="script/burger.js"></script>
+  <script src="script/kontakt.js"></script>
+
+  <!-- body slut -->
 </body>
 </html>
 
+<!-- styles -->
 <style>
       :focus {
     outline: none;
@@ -94,7 +137,7 @@
   } 
 
   
-  input[type="text"] {
+  .input[type="text"] {
     font: 15px/24px "Lato", Arial, sans-serif;
     color: #333;
     width: 100%;
@@ -133,7 +176,7 @@
     width: 50%;
     height: 100%;
   }
-  .effect-23 ~ label {
+  .effect-23 ~ .label {
   position: absolute;
   left: 14px;
   width: 100%;
@@ -175,8 +218,8 @@
   li {
     list-style-type: none;
     /* padding: 5px 0; */
-    margin: 0;
-    overflow: hidden;
+    /* margin: 0;
+    overflow: hidden; */
   }
   
   
@@ -216,7 +259,7 @@
 
 </style>
 
-
+<!-- 
 <script>
     	$(window).load(function(){
 		$(".col-3 input").val("");
@@ -229,5 +272,5 @@
 			}
 		})
 	});
-</script>
+</script> -->
 

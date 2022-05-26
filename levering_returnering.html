@@ -134,7 +134,7 @@
             <h4>Memphis House</h4>
             <div class="footer_div">
               <!-- memphis kontaktoplysninger -->
-              <address><a class="footer_links_menupunkter" href="https://www.google.dk/maps/place/Enghavevej+2,+1674+K%C3%B8benhavn/@55.6713922,12.5434516,17z/data=!3m1!4b1!4m5!3m4!1s0x4652539f08fbcc73:0x4c71c946c0cc53db!8m2!3d55.6713922!4d12.5456403"
+              <address><a class="footer_links_menupunkter" href="https://www.google.dk/maps/place/Enghavevej+2,+1674+K%C3%B8benhavn/@55.6713922,12.5434516,17z/data=!3m1!4b1!4m5!3m4!1s0x4652539f08fbcc73:0x4c71c946c0cc53db!8m2!3d55.6713922!4d12.5456403" target="blank"
                 >Enghavevej 2, 1674 København V</a></address>
               <a class="footer_links_menupunkter" href="mailto:kontakt@memphishouse.dk"
                 >kontakt@memphishouse.dk</a>
@@ -169,6 +169,7 @@
           </div>
           </div>
 
+          <div class="footer_betaling_levering_div">
           <div class="footer_betalingsmuligheder_div">
             <h4>Betalingsmuligheder</h4>
             <div class="footer_betalingsmuligheder_ikoner">
@@ -187,17 +188,26 @@
                 <img src="img/levering/bring.svg" alt="" />
               </div>
             </div>
+          </div>
 
         </section>
 
         <!-- instagram, copyright og til toppen -->
         <section class="footer_instagram_copyright_tiltoppen_section">
           <div class="footer_instagram_img">
-            <p>FØLG OS PÅ INSTAGRAM</p>
-            <img src="img/ikoner/instagram.svg" alt="Instagram ikon" />
+            <div>
+              <a class="footer_links_menupunkter" href="https://www.instagram.com/memphis_house/"
+                >FØLG OS PÅ INSTAGRAM</a>
+            
           </div>
           <div>
-            <p>Copyright © 2022 - Memphis House</p>
+            <img src="img/ikoner/instagram.svg" alt="Instagram ikon" />
+          </div>
+          </div>
+
+
+          <div>
+            <p class="footer_copyright">Copyright © 2022 - Memphis House</p>
           </div>
           <div class="footer_tiltoppen_pil_div">
             <a class="footer_links_menupunkter" href="levering_returnering.html#header"
@@ -216,37 +226,33 @@
 <style>
 
   /**** FOOTER ****/
+  /*footer allaround*/
   #footer_allaround {
   padding-block: 3rem;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   }
 
+  /*footer section*/
   .footer_information_links_betaling_levering_section {
-    margin-inline: 2rem;
+    margin-inline: 1rem;
   }
 
-
+  /*footer information links div flex*/
   .footer_information_links_div {
     display: flex;
-    margin-inline: 1rem;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
-  /* .footer_links_menupunkter {
+    /*footer styling af p tags*/
+  .footer_links_menupunkter {
     font-size: var(--p-size--);
   font-family: var(--p--);
   color: var(--p--color-primary);
   margin-bottom: var(--p--margin-bottom);
   line-height: var(--p--lineheight);
-  } */
+  }
 
-    /* footer betaling levering */
-    /* .footer_betalingsmuligheder_leveringsmuligheder_section {
-    margin-inline: 2rem;
-    margin-block: 2rem;
-    gap: 1rem;
-  } */
-/* 
+    /*footer flex på betaling og levering billeder*/
   .footer_betalingsmuligheder_ikoner {
     margin-bottom: 1.5rem;
   }
@@ -258,10 +264,10 @@
   .footer_betalingsmuligheder_ikoner,
   .footer_leveringsmuligheder_ikoner {
     display: flex;
-  } */
+  }
 
   /* footer instagram copyright tiltoppen */
-  /* .footer_instagram_copyright_tiltoppen_section {
+  .footer_instagram_copyright_tiltoppen_section {
     text-align: center;
   }
 
@@ -269,35 +275,67 @@
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-  } */
+  }
 
   @media (min-width: 640px) {
     /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
 
    /* footer to øverste bokse med kontakt og links */
-  .footer_information_links_section {
-    justify-content: space-evenly;
-    gap: 0rem;
-    margin-inline: 0rem;
-  }
+    .footer_information_links_div {
+      justify-content: space-evenly;
+    }
 
-  .footer_betalingsmuligheder_leveringsmuligheder_section {
-    display: flex;
-  }
+     /* FIX DEN */
+    /* .footer_betaling_levering_div {
+      display: flex;
+    } */
   }
 
 
   @media (min-width: 768px) {
     /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+  /*footer allaround*/
+  #footer_allaround {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  }
 
-    .footer_indeholder_info_og_muligheder {
-      display: flex;
-    }
+    .footer_information_links_betaling_levering_section {
+   display: flex;
+   justify-content: space-around;
+ }
 
     .footer_instagram_copyright_tiltoppen_section {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      padding-inline: 1rem;
     }
 
   }
+
+
+  @media (min-width: 1024px) {
+    /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+    .footer_information_links_div {
+      gap: 4rem;
+    }
+    
+    .footer_copyright {
+      margin-right: 8rem;
+    }
+
+  }
+
+  @media (min-width: 1280px) {
+    /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+    .footer_instagram_copyright_tiltoppen_section {
+      padding-inline: 5rem;
+    }
+
+    .footer_information_links_div {
+      gap: 20rem;
+    }
+
+  }
+
 </style>

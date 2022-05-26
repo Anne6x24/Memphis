@@ -2,15 +2,16 @@
   /* backgroudcolor */
   --primary-bg-color: #ffffff;
 
-  /* ------- header ------- */
+  /* ------- header desk ------- */
   --desk-bg-color-header: transparant;
   --header-link-color: #0338e1;
-  --burger-color-primary: #0338e1;
-  --burger-color-secondary: #051036;
+
 
   /* header mobile*/
   --mobile-bg-color-header: transparant;
   --mobile--link-color: #0338e1;
+  --burger-color-primary: #0338e1;
+  --burger-color-secondary: #051036;
 
   /* buttons*/
   --button--bg-color: #0338e1;
@@ -20,28 +21,29 @@
   --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --button-radius: 0.3rem;
   --button-transform-animation: scale(0.9);
+
   --button-color: #fdfdfd;
 
   /* ------- headings ------ */
 
   /* fonte */
-  --h1--: "Prompt", sans-serif;
-  --h2--: "Prompt", sans-serif;
-  --h3--: "Prompt", sans-serif;
-  --h4--: "Prompt", sans-serif;
-  --h5--: "Prompt", sans-serif;
-  --p--: "Prompt", sans-serif;
-  --a--: "Prompt", sans-serif;
+  --h1--: "Encode", sans-serif;
+  --h2--: "Encode", sans-serif;
+  --h3--: "Encode", sans-serif;
+  --h4--: "Encode", sans-serif;
+  --h5--: "Encode", sans-serif;
+  --p--: "Encode", sans-serif;
+  --a--: "Encode", sans-serif;
 
   /* hover */
-  --a--hover: italic;
+  --a--hover-primary: italic;
+  --a--hover-secondary: underline;
+  --button-hover-primary: italic;
+  --button-hover-secondary: underline;
+
 
   /* font-sizes */
-  --h1-size--: clamp(
-    1.9rem,
-    1.5299999999999998rem + 1.8500000000000003vw,
-    3.75rem
-  );
+  --h1-size--: clamp(1.9rem,1.5299999999999998rem + 1.8500000000000003vw,3.75rem);
   --h2-size--: clamp(1.6rem, 1.3800000000000001rem + 1.1vw, 2.7rem);
   --h3--size-: clamp(1.4rem, 1.23rem + 0.8500000000000001vw, 2.25rem);
   --h4-size--: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
@@ -98,9 +100,9 @@
 /*-------------------------------------------------- GENERELLE REGLER -----------------------------------------------*/
 /* --------- FONTS ------------ */
 @font-face {
-  font-family: Prompt;
-  src: url(/font/prompt-regular-webfont.woff2) format("woff2");
-  font-weight: 100 1000;
+  font-family: Encode;
+  src: url(/font/encodesans-variablefont_wdthwght-webfont.woff2) format("woff2");
+  /* font-weight: 100 1000; */
 }
 
 html {
@@ -122,8 +124,9 @@ html {
 h1 {
   font-size: var(--h1-size--);
   font-family: var(--h1--);
-  font-weight: 322;
-  font-variation-settings: "BASE" 500, "SPAC" 200, "HEIG" 456;
+  
+  font-variation-settings: 'wght' 775;
+
   color: var(--h1--color-primary);
   margin-bottom: var(--h1--margin-bottom);
 }
@@ -131,7 +134,7 @@ h1 {
 h2 {
   font-size: var(--h2-size--);
   font-family: var(--h2--);
-  font-stretch: 70%;
+  
   color: var(--h2--color-primary);
   margin-bottom: var(--heading--margin-bottom);
 }
@@ -176,7 +179,8 @@ a {
 }
 
 a:hover {
-  font-style: var(--a--hover);
+  font-style: var(--a--hover-primary);
+  text-decoration: var(--a--hover-secondary);
 }
 
 li {
@@ -205,6 +209,8 @@ button {
 button:hover {
   transform: var(--button-transform-animation);
   cursor: pointer;
+  text-decoration: var(--button-hover-secondary);
+  font-style: var(--button-hover-primary);
 }
 
 /* ----------------------------------------------- MENU ------------------------------------------ */
@@ -248,7 +254,10 @@ video {
 
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
+  width: 5rem;
 }
+
+
 
 .navbar {
   max-width: 100%;
@@ -493,6 +502,7 @@ input:checked ~ .questions {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+  
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
@@ -552,6 +562,16 @@ input:checked ~ .questions {
     gap: 0.75rem;
     padding-block: 14rem;
   }
+}
+
+@media (min-width: 1024px) {
+   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+  /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
+  /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+  /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+  /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+  /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
+  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
 }
 
 @media (min-width: 1280px) {

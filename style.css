@@ -437,20 +437,18 @@ button:hover {
   display: grid;
 }
 
-
 .forside_satellit_div {
-grid-area: 1/1;
+  grid-area: 1/1;
 }
 
 #forside_hero_wrap {
-grid-area: 1/1;
+  grid-area: 1/1;
 }
 
 .forside_satellit_img {
   width: 8rem;
   display: block;
 }
-
 
 .forside_hero_img_flex {
   display: none;
@@ -464,50 +462,45 @@ grid-area: 1/1;
 #wrap_bubble {
   background-size: cover;
   position: relative;
-} 
+}
 
 /* #wrap_bubble {
   background-image: url(/img/bubble.svg);
 } */
 
-
 .forside_hero_content_h2 {
-display: flex;
-justify-content: center;
-max-width: 80vw;
-
+  display: flex;
+  justify-content: center;
+  max-width: 80vw;
 }
 
 .forside_h2_start {
-text-align: right;
-padding-right: 0.2em;
-margin-bottom: 2rem;
-
+  text-align: right;
+  padding-right: 0.2em;
+  margin-bottom: 2rem;
 }
 
 .forside_hero_animation {
-flex: 1;
-
+  flex: 1;
 }
 
 #forside_hero_text {
-color: var(--h2--color-third);
-animation-delay: 0s;
-animation-duration: 2s;
-animation-name: text-a;
-animation-iteration-count: infinite;
-/* -webkit-animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  color: var(--h2--color-third);
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-name: text-a;
+  animation-iteration-count: infinite;
+  /* -webkit-animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
         animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
-
 }
 
 @keyframes text-a {
-0% {
-  color: var(--h2--color-third);
-}
-100% {
-  color: var(--h2--color-third);
-}
+  0% {
+    color: var(--h2--color-third);
+  }
+  100% {
+    color: var(--h2--color-third);
+  }
 }
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
@@ -518,12 +511,13 @@ animation-iteration-count: infinite;
 
 .singleview_ikoner {
   display: flex;
-  justify-content: space-between;
 }
 
 .singleview_ikoner img {
   border: 4px solid #202020;
 }
+
+/* botton kurv */
 
 .singleview_container {
   display: flex;
@@ -662,6 +656,12 @@ animation-iteration-count: infinite;
   transition: width 1s ease 0.3s;
 }
 
+.singleview_stjerner {
+  align-self: center;
+}
+.singleview_h4stars {
+  margin-bottom: 0 !important;
+}
 /* .percent {
   color: #333;
 } */
@@ -1228,11 +1228,22 @@ p.knap {
     margin-top: 3rem;
   }
 
-
-
-
-
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_produktbillede1 img {
+    max-width: 20rem;
+  }
+
+  .singleview_container {
+    max-width: 20rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .singleview_ikoner {
+    margin-top: 2rem;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .godtatvide_speciel_h3 {
@@ -1311,6 +1322,29 @@ p.knap {
     width: 11rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  #singleview_article {
+    display: flex;
+  }
+
+  .singleview_produktbillede1 img {
+    max-width: 20rem;
+    margin-right: 2rem;
+  }
+
+  .singleview_h3 {
+    font-size: 1.3rem !important;
+  }
+
+  .singleview_ikoner {
+    gap: 0.5rem;
+  }
+
+  .singleview_ikontekst {
+    font-size: 0.5rem;
+    margin-bottom: 0 !important;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
   .wrapper {
     margin: 6vh auto;
@@ -1396,6 +1430,21 @@ p.knap {
     gap: 1rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_produktbillede1 img {
+    max-width: 24rem;
+    margin-right: 3rem;
+  }
+
+  .singleview_h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .singleview_ikoner {
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   label div:first-child {
@@ -1450,6 +1499,27 @@ p.knap {
     height: 28rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+  .singleview_produktbillede1 img {
+    max-width: 25rem;
+    margin-right: 3rem;
+  }
+
+  .singleview_h1 {
+    margin-bottom: 2rem !important;
+  }
+  .singleview_h3 {
+    font-size: 1.6rem !important;
+    line-height: 1rem;
+  }
+
+  .singleview_h3_ekstra {
+    margin-bottom: 3rem !important;
+  }
+  .singleview_ikoner {
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .wrapper {
@@ -1474,6 +1544,29 @@ p.knap {
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_produktbillede1 img {
+    max-width: 33rem;
+    margin-right: 5rem;
+  }
+
+  .singleview_h1 {
+    margin-bottom: 3rem !important;
+  }
+  .singleview_h3 {
+    font-size: 2rem !important;
+    line-height: 1.6rem;
+  }
+
+  .singleview_h3_ekstra {
+    margin-bottom: 4rem !important;
+  }
+  .singleview_ikoner {
+    gap: 0.5rem;
+    justify-content: normal;
+    gap: 2rem;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   label {

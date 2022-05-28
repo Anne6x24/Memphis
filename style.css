@@ -528,6 +528,22 @@ button:hover {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+.singleview_h1 {
+  margin-bottom: 2rem !important;
+}
+.singleview_h3 {
+  line-height: 1.5rem;
+}
+
+.singleview_h3_ekstra {
+  margin-bottom: 2.5rem !important;
+}
+.singleview_ikoner {
+  justify-content: normal;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 /* .singleview_col-1 {
   width: 20%;
 }

@@ -426,7 +426,90 @@ button:hover {
   transition: all 0.35s ease-in-out;
 }
 
-/*------------------------------------------- Forside-siden ------------------------------------------------*/
+/*------------------------------------------- Forside-siden -----------------------------------------------------*/
+#forside_article {
+  margin-bottom: 2em;
+  background-image: url(/img/kortet.png);
+  z-index: -100;
+}
+
+.forside_herounit_img_tekst_section {
+  display: grid;
+}
+
+
+.forside_satellit_div {
+grid-area: 1/1;
+}
+
+#forside_hero_wrap {
+grid-area: 1/1;
+}
+
+.forside_satellit_img {
+  width: 8rem;
+  display: block;
+}
+
+
+.forside_hero_img_flex {
+  display: none;
+}
+
+.forside_hero_wrap_tekst {
+  margin-left: 9rem;
+  margin-top: 4rem;
+}
+
+#wrap_bubble {
+  background-size: cover;
+  position: relative;
+} 
+
+/* #wrap_bubble {
+  background-image: url(/img/bubble.svg);
+} */
+
+
+.forside_hero_content_h2 {
+display: flex;
+justify-content: center;
+max-width: 80vw;
+
+}
+
+.forside_h2_start {
+text-align: right;
+padding-right: 0.2em;
+margin-bottom: 2rem;
+
+}
+
+.forside_hero_animation {
+flex: 1;
+
+}
+
+#forside_hero_text {
+color: var(--h2--color-third);
+animation-delay: 0s;
+animation-duration: 2s;
+animation-name: text-a;
+animation-iteration-count: infinite;
+/* -webkit-animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+        animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
+
+}
+
+@keyframes text-a {
+0% {
+  color: var(--h2--color-third);
+}
+100% {
+  color: var(--h2--color-third);
+}
+}
+
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
 .singleview_produktbillede1 img {
@@ -1119,6 +1202,36 @@ p.knap {
 
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+  .forside_satellit_img {
+    width: 15rem;
+  }
+
+  .forside_hero_img_flex {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 3rem;
+  }
+
+  .forside_hero_img {
+    width: 10rem;
+    height: 15rem;
+    box-shadow: var(--button-shadow);
+  }
+
+  #forside_hero_wrap {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .forside_hero_wrap_tekst {
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+
+
+
+
+
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
@@ -1190,6 +1303,13 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+  .forside_satellit_img {
+    width: 20rem;
+  }
+
+  .forside_hero_img {
+    width: 11rem;
+  }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
   .wrapper {
@@ -1263,6 +1383,18 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+  .forside_satellit_img {
+    width: 27rem;
+  }
+
+  .forside_hero_img {
+    width: 16rem;
+    height: 22rem;
+  }
+
+  .forside_hero_img_flex {
+    gap: 1rem;
+  }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
@@ -1309,6 +1441,14 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+  .forside_satellit_img {
+    width: 37rem;
+  }
+
+  .forside_hero_img {
+    width: 20rem;
+    height: 28rem;
+  }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 

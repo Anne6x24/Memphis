@@ -1178,6 +1178,12 @@ p.knap {
   gap: 0.5rem;
 }
 
+@media (max-width: 640px) {
+  .singleview_ikon1 {
+    max-width: 5rem;
+  }
+}
+
 @media (min-width: 640px) {
   /* ----------------------------------------------- MENU ------------------------------------------ */
   /* ------------------------ MENU - banner hvid----------------------- */
@@ -1267,6 +1273,9 @@ p.knap {
     margin-top: 2rem;
   }
 
+  .singleview_ikon1 {
+    max-width: none;
+  }
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .godtatvide_speciel_h3 {
@@ -1466,8 +1475,8 @@ p.knap {
   }
 
   .singleview_ikoner {
-    gap: 0.5rem;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: normal;
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
@@ -1542,8 +1551,8 @@ p.knap {
     margin-bottom: 3rem !important;
   }
   .singleview_ikoner {
-    gap: 0.5rem;
-    justify-content: space-between;
+    gap: 2rem;
+    justify-content: normal;
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
@@ -1591,6 +1600,10 @@ p.knap {
     gap: 0.5rem;
     justify-content: normal;
     gap: 2rem;
+  }
+  .singleview_ikontekst {
+    font-size: 1rem;
+    line-height: 1.6rem;
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/

@@ -76,6 +76,7 @@
   --h2--color-primary: #202020;
   --h2--color-secondary: #fdfdfd;
   --h2--color-third: #0338e1;
+  --h2--color-fouth: #051036;
 
   --h3--color-primary: #202020;
   --h3--color-secondary: #fdfdfd;
@@ -259,6 +260,7 @@ button:hover {
   cursor: pointer;
   text-decoration: var(--button-hover-secondary);
   font-style: var(--button-hover-primary);
+  cursor: url(/img/ikoner/lyn.png), auto;
 }
 
 /* ----------------------------------------------- MENU ------------------------------------------ */
@@ -312,15 +314,6 @@ button:hover {
   margin-bottom: 0;
 }
 
-@keyframes banner_infinite {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -100%;
-  }
-}
 
 /* --- !! vil gerne have * op i general men margin: 0; fucker med lidt ting  !! ---*/
 *,
@@ -532,14 +525,7 @@ font-variation-settings: 'wght' 700, 'wdth' 90;
         animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
 }
 
-@keyframes text-a {
-  0% {
-    color: var(--h2--color-third);
-  }
-  100% {
-    color: var(--h2--color-third);
-  }
-}
+
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
@@ -1614,4 +1600,50 @@ p.knap {
 
   /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
+
+
+  
 }
+
+
+ /*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/
+ @keyframes banner_infinite {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+
+@keyframes text-a {
+  0% {
+    color: var(--h2--color-third);
+  }
+  100% {
+    color: var(--h2--color-third);
+  }
+}
+
+@keyframes slidingText1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+    @keyframes slidingText3 {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
+    }

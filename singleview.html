@@ -85,10 +85,10 @@
 
     <!-- main -->
     <main id="singleview">
-      <article>
+      <article id="singleview_article">
          <!-- venstre sektion -->
         <section>
-          <div class="produktbillede1">
+          <div class="singleview_produktbillede1">
             <img src="/img/produktbilleder/cph.01.01.webp" alt="taske">
           </div>
           <div>
@@ -96,7 +96,145 @@
           </div>
         </section>
          <!-- højre sektion -->
-        <section></section>
+        <section>
+
+        <section>
+          <h1 class="singleview_h1">UMA</h1>
+          <h3 class="singleview_h3">-- 100% genanvendt bomuld</h3>
+          <h3 class="singleview_h3">-- 20x27cm.</h3>
+          <h3 class="singleview_h3 singleview_h3_ekstra">-- Inkl. sort opbevaringspose</h3>
+        </section>
+
+        <section class="singleview_ikoner">
+          <div>
+          <img src="/img/ikoner/Asset 15.svg" alt="taske i bad">
+          <p class="singleview_ikontekst">// 30° maskinevask</p>
+        </div>
+        <div>
+          <img src="/img/ikoner/Asset 13.svg" alt="obs">
+          <p class="singleview_ikontekst"></p>
+        </div>
+        <div>
+          <img src="/img/ikoner/Asset 14.svg" alt="ur">
+          <p class="singleview_ikontekst">// Ca. 3 ugers leveringstid</p>
+        </div>
+      </section>
+
+
+
+      
+        
+          <section class="singleview_center singleview_container">
+
+            <div class="singleview_number singleview_col singleview_col-2">
+              <h2 id="singleview_count">0</h2>
+            </div>
+            <div class="singleview_both_btn">
+            
+            <div class="singleview_button_kurv singleview_col singleview_col-1 single_view_underline">
+              <h3 id="singleview_plus_btn">+</h3>
+            </div>
+            <div class="singleview_button_kurv singleview_col singleview_col-1">
+              <h3 id="singleview_minus_btn">-</h3>
+            </div>
+          </div>
+          <div class="singleview_addtocart">
+            <h4 id="addtocart_btn">Tilføj til kurv</h4>
+          </div>
+        </section>
+
+
+
+        <section class="singleview_accordion">
+          <section class="wrapper">
+            <div class="wrap-1">
+              <input class="input1" type="radio" id="tab-1" name="tabs" />
+              <label for="tab-1" class="singleview_label"
+                ><div><h3>Mere info</h3></div>
+                <div class="cross"></div
+              ></label>
+              <div class="content">
+                <p class="first_p_accordion">
+                  Uma tasken er en del af Memphis House nummer 2 kollektion. Kollektionen er inspireret af sommeren i København, hvor farverige og lette outfits pryder gadebilledet. <br> Taskerne i denne kollektion er blandt andet designet med tanke på sene sommeraftener, hvor man blot har brug for at have et par essentials med sig. 
+    
+                </p>
+                  <p>
+                  
+                    Det er vigtigt at være opmærksom på, at taskernes farve og chunkyness varierer en smule, da de produceres i genbrugsmateriale. <br> Skriv en kommentar til din bestilling, hvis du har et specifikt ønske til din taskes farve eller chunkyness.
+                </p>
+              </div>
+            </div>
+    
+        </section>
+
+
+        <section id="singleview_reviews">
+
+
+
+		<div class="reviews-container">
+			<h3>Anmeldelser (7)</h3>
+
+      <div class="singleview_stars"> 
+        <div><h4 class="singleview_h4stars">4.0 / 5</h4></div>
+        <div class="singleview_stjerner">
+          <img src="http://res.cloudinary.com/dcwodeda4/image/upload/v1503000014/stars_fysiop.png" alt="">
+      </div>
+
+      </div>
+        
+
+			<div class="review">
+				<span class="icon-container">5 <i class="fas fa-star"></i></span>
+				<div class="progress">
+					<div class="progress-done" data-done="100"></div>
+				</div>
+				<!-- <span class="percent"></span> -->
+			</div>
+			<div class="review">
+				<span class="icon-container">4 <i class="fas fa-star"></i></span>
+				<div class="progress">
+					<div class="progress-done" data-done="80"></div>
+				</div>
+				<!-- <span class="percent"></span> -->
+			</div>
+			<div class="review">
+				<span class="icon-container">3 <i class="fas fa-star"></i></span>
+				<div class="progress">
+					<div class="progress-done" data-done="60"></div>
+				</div>
+				<!-- <span class="percent"></span> -->
+			</div>
+			<div class="review">
+				<span class="icon-container">2 <i class="fas fa-star"></i></span>
+				<div class="progress">
+					<div class="progress-done" data-done="40"></div>
+				</div>
+				<!-- <span class="percent">3%</span> -->
+			</div>
+			<div class="review">
+				<span class="icon-container">1 <i class="fas fa-star"></i></span>
+				<div class="progress">
+					<div class="progress-done" data-done="20"></div>
+				</div>
+				<!-- <span class="percent">7%</span> -->
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
       </article>
     </main>
 
@@ -196,6 +334,8 @@
 
     <!-- script -->
     <script src="script/burger.js"></script>
+    <script src="script/addtocart.js"></script>
+    <script src="script/reviews.js"></script>
     
     <!-- body slut -->
   </body>

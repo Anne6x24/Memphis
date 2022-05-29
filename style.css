@@ -145,7 +145,8 @@ html {
 #handelsbetingelser,
 #godtatvide,
 #cookie,
-#bagom, #singleview {
+#bagom,
+#singleview {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: var(--margin-bottom-mobil);
 }
@@ -484,7 +485,6 @@ grid-area: 1/1;
   display: block;
 }
 
-
 .forside_hero_img_flex {
   display: none;
 }
@@ -497,12 +497,11 @@ grid-area: 1/1;
 #wrap_bubble {
   background-size: cover;
   position: relative;
-} 
+}
 
 /* #wrap_bubble {
   background-image: url(/img/bubble.svg);
 } */
-
 
 .forside_hero_content_h2 {
 display: flex;
@@ -524,23 +523,32 @@ font-variation-settings: 'wght' 700, 'wdth' 90;
 }
 
 #forside_hero_text {
-color: var(--h2--color-third);
-animation-delay: 0s;
-animation-duration: 2s;
-animation-name: text-a;
-animation-iteration-count: infinite;
-/* -webkit-animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  color: var(--h2--color-third);
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-name: text-a;
+  animation-iteration-count: infinite;
+  /* -webkit-animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
         animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
-
 }
 
 @keyframes text-a {
-0% {
-  color: var(--h2--color-third);
+  0% {
+    color: var(--h2--color-third);
+  }
+  100% {
+    color: var(--h2--color-third);
+  }
 }
-100% {
-  color: var(--h2--color-third);
+
+/*------------------------------------------- Singleview --------------------------------------------------------*/
+
+.singleview_produktbillede1 img {
+  max-width: 15rem;
 }
+
+.singleview_ikoner {
+  display: flex;
 }
 
 /*------------------- Univers sektion ----------------------*/
@@ -564,9 +572,268 @@ animation-iteration-count: infinite;
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
-.produktbillede1 img {
-  max-width: 20rem;
+.singleview_both_btn {
+  width: 20%;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
 }
+
+#addtocart_btn {
+}
+
+.single_view_underline {
+  border-bottom: 1px solid #ffffff;
+}
+
+#singleview_plus_btn,
+#singleview_minus_btn,
+#addtocart_btn {
+  color: #ffffff;
+}
+
+.singleview_button_kurv {
+  text-align: center;
+}
+
+#singleview_plus_btn,
+#singleview_minus_btn,
+#addtocart_btn,
+#singleview_count {
+  margin-bottom: 0;
+}
+
+.singleview_button_kurv {
+  font-size: 2em;
+}
+
+.singleview_button_kurv {
+  color: #ffffff;
+  user-select: none;
+  outline: none;
+}
+
+.singleview_label {
+  height: 40px !important;
+}
+
+/* Single view reviews */
+
+.reviews-container {
+  background-color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.3); */
+  padding: 20px;
+}
+
+.review {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #777;
+  display: flex;
+  /* font-size: 12px; */
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.review:hover {
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.7);
+}
+
+.progress {
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 5px;
+  position: relative;
+  margin: 0 10px;
+  height: 10px;
+  width: 200px;
+}
+
+.singleview_stars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-done {
+  background: #0338e1;
+  box-shadow: 0 3px 3px -5px rgb(212, 217, 241), 0 2px 5px rgb(51, 78, 231);
+  border-radius: 5px;
+  height: 10px;
+  width: 0;
+  transition: width 1s ease 0.3s;
+}
+
+.singleview_stjerner {
+  align-self: center;
+}
+.singleview_h4stars {
+  margin-bottom: 0 !important;
+}
+/* .percent {
+  color: #333;
+} */
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+  transform: translateX(-10px);
+}
+
+.social-panel {
+  background-color: #fff;
+  border-radius: 16px;
+  /* box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6); */
+  border: 5px solid #001f61;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Muli";
+  position: relative;
+  height: 169px;
+  width: 370px;
+  max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+  border: 0;
+  color: #97a5ce;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+  outline: none;
+}
+
+.social-panel p {
+  background-color: #001f61;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 2px 17px 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 235px;
+}
+
+.social-panel p i {
+  margin: 0 5px;
+}
+
+.social-panel p a {
+  color: #ff7500;
+  text-decoration: none;
+}
+
+.social-panel h4 {
+  margin: 20px 0;
+  color: #97a5ce;
+  font-family: "Muli";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.social-panel ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-panel ul li {
+  margin: 0 10px;
+}
+
+.social-panel ul li a {
+  border: 1px solid #dce1f2;
+  border-radius: 50%;
+  color: #001f61;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+  border-color: #ff6a00;
+  box-shadow: 0 9px 12px -9px #ff6a00;
+}
+
+.floating-btn {
+  border-radius: 26.5px;
+  background-color: #001f61;
+  border: 1px solid #001f61;
+  box-shadow: 0 16px 22px -17px #03153b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.floating-btn:hover {
+  background-color: #ffffff;
+  color: #001f61;
+}
+
+.floating-btn:focus {
+  outline: none;
+}
+
+.floating-text {
+  background-color: #001f61;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-family: "Muli";
+  padding: 7px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 998;
+}
+
+.floating-text a {
+  color: #0338e1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .social-panel-container.visible {
+    transform: translateX(0px);
+  }
+
+  .floating-btn {
+    right: 10px;
+  }
+}
+
 /*------------------------------------------- GODT AT VIDE-siden -------------------------------------------*/
 /*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
 /*------------------------------------------- Cookie-siden -------------------------------------------------*/
@@ -986,10 +1253,20 @@ p.knap {
    }
 
 
+  .singleview_produktbillede1 img {
+    max-width: 20rem;
+  }
 
+  .singleview_container {
+    max-width: 20rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
 
+  .singleview_ikoner {
+    margin-top: 2rem;
+  }
 
-  /*-------------------------------------------- Singleview --------------------------------------------------------*/
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .godtatvide_speciel_h3 {
@@ -1035,7 +1312,8 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom, #singleview {
+  #bagom,
+  #singleview {
     margin-inline: var(--margin-inline-ipad);
     margin-bottom: var(--margin-bottom-ipad);
   }
@@ -1068,6 +1346,29 @@ p.knap {
     width: 11rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  #singleview_article {
+    display: flex;
+  }
+
+  .singleview_produktbillede1 img {
+    max-width: 20rem;
+    margin-right: 2rem;
+  }
+
+  .singleview_h3 {
+    font-size: 1.3rem !important;
+  }
+
+  .singleview_ikoner {
+    gap: 0.5rem;
+  }
+
+  .singleview_ikontekst {
+    font-size: 0.5rem;
+    margin-bottom: 0 !important;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
   .wrapper {
     margin: 6vh auto;
@@ -1130,7 +1431,8 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom, #singleview {
+  #bagom,
+  #singleview {
     margin-inline: var(--margin-inline-desk--lille);
     margin-bottom: var(--margin-bottom-desk--lille);
   }
@@ -1153,6 +1455,21 @@ p.knap {
     gap: 1rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_produktbillede1 img {
+    max-width: 24rem;
+    margin-right: 3rem;
+  }
+
+  .singleview_h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .singleview_ikoner {
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   label div:first-child {
@@ -1185,7 +1502,8 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom, #singleview {
+  #bagom,
+  #singleview {
     margin-inline: var(--margin-inline-desk);
     margin-bottom: var(--margin-bottom-desk);
   }
@@ -1207,6 +1525,27 @@ p.knap {
     height: 28rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+  .singleview_produktbillede1 img {
+    max-width: 25rem;
+    margin-right: 3rem;
+  }
+
+  .singleview_h1 {
+    margin-bottom: 2rem !important;
+  }
+  .singleview_h3 {
+    font-size: 1.6rem !important;
+    line-height: 1rem;
+  }
+
+  .singleview_h3_ekstra {
+    margin-bottom: 3rem !important;
+  }
+  .singleview_ikoner {
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .wrapper {
@@ -1231,6 +1570,29 @@ p.knap {
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_produktbillede1 img {
+    max-width: 33rem;
+    margin-right: 5rem;
+  }
+
+  .singleview_h1 {
+    margin-bottom: 3rem !important;
+  }
+  .singleview_h3 {
+    font-size: 2rem !important;
+    line-height: 1.6rem;
+  }
+
+  .singleview_h3_ekstra {
+    margin-bottom: 4rem !important;
+  }
+  .singleview_ikoner {
+    gap: 0.5rem;
+    justify-content: normal;
+    gap: 2rem;
+  }
+
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   label {

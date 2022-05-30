@@ -258,7 +258,14 @@ button:hover {
 /* ------------------------ MENU - banner hvid----------------------- */
 .trustpilot_1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  /* gap: 0.5rem; */
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.trustpilot_stjerner {
+  display: flex;
   gap: 0.5rem;
 }
 
@@ -266,9 +273,13 @@ button:hover {
   text-align: center;
 }
 
-.banner_hvid_p,
-.banner_p {
+.banner_hvid_p {
   font-size: var(--banner--font-size--);
+  font-variation-settings: "wght" 700, "wdth" 90;
+}
+
+.banner_hvid_p_2 {
+  margin-top: 1rem;
 }
 
 /* ------------------------ MENU - banner sort----------------------- */
@@ -290,8 +301,6 @@ button:hover {
   animation: slidingText1 12s linear infinite;
   font-style: italic;
 }
-
-
 
 /* --- !! vil gerne have * op i general men margin: 0; fucker med lidt ting  !! ---*/
 *,
@@ -1217,15 +1226,13 @@ p.knap {
 @media (min-width: 640px) {
   /* ----------------------------------------------- MENU ------------------------------------------ */
   /* ------------------------ MENU - banner hvid----------------------- */
-  /* .trustpilot_1 {
-  display: block;
-  justify-content:space-between;
-} */
+  .trustpilot_1 {
+    gap: 3rem;
+  }
 
   .trustpilot {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-evenly;
     margin-block: 0.5rem;
   }
 
@@ -1364,12 +1371,22 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+
   .forside_satellit_img {
     width: 20rem;
   }
 
   .forside_hero_img {
     width: 11rem;
+  }
+
+  /* ------------------------ MENU - banner hvid----------------------- */
+  .trustpilot {
+    justify-content: center;
+  }
+
+  .trustpilot_1 {
+    gap: 1rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 

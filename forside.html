@@ -156,13 +156,27 @@
 
           <div id="forside" class="forside_filtrering_div">
             <div class="forside_filtrering_filtrering">
-
+              <h2>Farve</h2>
+              <fieldset class="input-field01" data-filter-group="dagnat">
+               
+                <input type="radio" name="blaa" value=".blaa"><label class="filtrering">Blå</label>
+                <input type="radio" name="gron" value=".gron"><label class="filtrering">Grøn</label>
+                <input type="radio" name="sort" value=".sort"><label class="filtrering">Sort</label>
+                <input type="radio" name="orange" value=".orange"><label class="filtrering">Orange</label>
+                <input type="radio" name="brun" value=".brun"><label class="filtrering">Brun</label>
+                <input type="radio" name="pink" value=".pink"><label class="filtrering">Pink</label>
+          
+                
+            </fieldset>
             </div>
-            <div class="forside_sortering dropdown">
-              
-                <span>Mouse over me</span>
-                <div class="dropdown-content">
-                  <p>Hello World!</p>
+            <div class="forside_sortering">
+              <h2>Sortering</h2>
+              <fieldset class="input-field02" data-filter-group="dagnat">
+                <!-- data-logic="or" -->
+                <input type="radio" name="hojlav" value=".hoj"><label class="sortering">Højeste til laveste pris</label>
+                <input type="radio" name="lavhoj" value=".lav"><label class="sortering">Laveste til højeste pris</label>
+            </fieldset>
+               
                 </div>
              
 
@@ -344,6 +358,23 @@
 <!-- styles -->
 
 <style>
+fieldset {
+  border: none;
+ 
+}
+
+.input-field01, .input-field02 {
+  display: flex;
+  
+}
+
+.sortering, .filtrering {
+  height: auto;
+}
+
+
+
+
 /*** program oversigt i responsivt grid ***/
   .forside_filtrering_produktbilleder {
     display: grid;

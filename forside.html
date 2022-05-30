@@ -197,14 +197,14 @@
             <!-- produktbilleder -->
             <div id="forside" class="forside_filtrering_produktbilleder">
               <div>
-              <a href="singleview.html"><img src="/img/produktbilleder/cph.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
+              <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
               <h4>UMA</h4>
               <h4>765.-</h4>
             </div>
             </div>
             <div>
-              <a href="singleview.html"><img src="/img/produktbilleder/cph.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
+              <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
               <h4>HOLLY</h4>
               <h4>765.-</h4>
@@ -428,6 +428,11 @@ fieldset {
     .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  .forside_filtrering_produktbillede_enkelt:hover {
+    background-image: url(/img/produktbilleder/cph.01.02.webp);
+  }
+  
   }
 
 

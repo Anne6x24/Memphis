@@ -238,6 +238,27 @@
         </div>
         <!-- <span class="percent">7%</span> -->
       </div>
+
+      <button class="open-button">Læs alle anmeldelser her</button>
+
+      <dialog class="singleview_modal" id="singleview_modal">
+        <div class="kryds_titel_luk">
+          <h2>Laura Nielsen</h2>
+          <button class="button close-button">X</button>
+        </div>
+        <p>Købt: 31.10.2020</p>
+        <p>Anmeldt: 12.11.2020</p>
+        <div class="singleview_modal_stjerner_img">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+        </div>
+        <p>Jeg elsker denne taske! Glæder mig så meget til at gå med den til sommer <3</p>
+        <button class="button close-button">Brugbart?</button>
+      </dialog>
+
     </div>
 
         </section>
@@ -344,6 +365,7 @@
     <script src="script/addtocart.js"></script>
     <script src="script/reviews.js"></script>
     <script src="script/productgallery.js"></script>
+    <script src="script/popup.js"></script>
     
     <!-- body slut -->
   </body>
@@ -374,4 +396,52 @@ ul.breadcrumb li + li:before {
 ul.breadcrumb li a:hover {
   text-decoration: underline;
 } 
+
+/*** POPUP ***/
+.singleview_modal {
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  margin-top: 15rem;
+  margin-inline: 2rem;
+
+}
+
+.singleview_modal_stjerner_img {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.singleview_modal_stjerner_img img {
+  width: auto;
+}
+
+.singleview_modal::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.kryds_titel_luk {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 391px) {
+    .singleview_modal {
+      margin-inline: auto auto;
+  }
+  } 
+
+  @media (min-width: 768px) {
+    .singleview_modal {
+  max-width: 60ch;
+}
+  } 
+
+  @media (min-width: 1024px) {
+    .singleview_modal {
+  max-width: 70ch;
+}
+  } 
+
 </style>

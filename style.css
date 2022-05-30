@@ -64,9 +64,6 @@
   );
 
 
- 
-
-
   --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 
   /* font-colors */
@@ -394,7 +391,7 @@ button:hover {
 .navbar .burger-line {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 55%;
   height: 2px;
   left: 0;
   border: none;

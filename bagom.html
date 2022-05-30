@@ -44,6 +44,13 @@
                 alt="Memphis' logo"
               />
             </a>
+
+            <div class="header_ikoner">
+              <img src="/img/ikoner/search.svg" alt="">
+              <img src="img/ikoner/kurv.svg" alt="">
+            </div>
+
+
             <button type="button" class="burger" id="burger">
               <span class="burger-line"></span>
               <span class="burger-line"></span>
@@ -68,9 +75,7 @@
             </div>
           </section>
 
-          <section>
-            <!-- SECTION TIL KURV OG SØGEIKON -->
-          </section>
+          
         </div>
       </nav>
     </header>
@@ -169,6 +174,18 @@
 </html>
 
 <style>
+.header_ikoner {
+  display: flex;
+  height: 2rem;
+  margin-left: 4rem;
+}
+
+.brand {
+  margin: 0;
+}
+
+
+
   img {
     max-width: 100%;
     height: auto;
@@ -179,8 +196,13 @@
     margin-top: 4rem;
   }
 
+
+  .slidingText1:hover, .slidingText2:hover {
+transform: var(--button-transform-animation);
+  }
+
   /* slidingText1 */
-  .slidingText1 {
+  /* .slidingText1 {
     height: 50px;
     overflow: hidden;
     position: relative;
@@ -223,7 +245,7 @@
   .slidingText3 img {
     position: absolute;
     width: 100%;
-    /* height: 100%; */
+
     margin: 0;
     line-height: 50px;
     text-align: center;
@@ -234,11 +256,10 @@
   .slidingText1 img {
     position: absolute;
     width: 100%;
-    /* height: 100%; */
     margin: 0;
     line-height: 50px;
     text-align: center;
     transform: translateX(100%);
     animation: slidingText3 15s linear infinite;
-  }
+  } */
 </style>

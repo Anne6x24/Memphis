@@ -12,6 +12,10 @@
   <body>
     <!-- header -->
     <header id="header">
+      <div class="slidingText1 header_banner">
+        <p>GRATIS FRAGT OG GRATIS RETURNERING</p>
+      </div>
+
       <nav class="navbar">
         <div class="container">
           <section class="wrapper_burger">
@@ -56,27 +60,26 @@
     <!-- main -->
     <main>
       <section class="bagom_top">
-
         <div class="slidingText1">
-        <h1>HVEM ER MEMPHIS HOUSE?</h1>
-      </div>
+          <h1>HVEM ER MEMPHIS HOUSE?</h1>
+        </div>
 
-      <div class="slidingText3">
-            <h1>LÆGGER DET I MEMPHIS?</h1>
-          </div>
-            <div class="slidingText1">
-            <h1>ER DET OVERHOVEDET BÆREDYGTIGT?</h1>
-          </div>
+        <div class="slidingText3">
+          <h1>LÆGGER DET I MEMPHIS?</h1>
+        </div>
+        <div class="slidingText1">
+          <h1>ER DET OVERHOVEDET BÆREDYGTIGT?</h1>
+        </div>
 
-            <div class="slidingText3">
-            <h1>HVORDAN STARTEDE DET HELE?</h1>
-          </div>
-            <div class="slidingText1">
-            <h1>ER TASKERNE LAVET AF T-SHIRTS?</h1>
-          </div>
-            <div class="slidingText3">
-            <h1>LAVER I SELV TASKERNE?</h1>
-          </div>
+        <div class="slidingText3">
+          <h1>HVORDAN STARTEDE DET HELE?</h1>
+        </div>
+        <div class="slidingText1">
+          <h1>ER TASKERNE LAVET AF T-SHIRTS?</h1>
+        </div>
+        <div class="slidingText3">
+          <h1>LAVER I SELV TASKERNE?</h1>
+        </div>
       </section>
       <section id="bagom" class="bagom_historie">
         <h2>
@@ -103,17 +106,15 @@
 
       <section class="bagom_tags">
         <div class="slidingText3">
-            <img src="/img/markat.webp" alt="" />
-            <img src="/img/markat.webp" alt="" />
-            <img src="/img/markat.webp" alt="" />
-          </div>
-          <div class="slidingText1">
-            <img src="/img/markat.webp" alt="" />
-            <img src="/img/markat.webp" alt="" />
-            <img src="/img/markat.webp" alt="" />
-
-          </div>
-        
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+        </div>
+        <div class="slidingText1">
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+        </div>
       </section>
 
       <section id="bagom" class="bagom_bund">
@@ -141,7 +142,6 @@
 
     <!-- footer -->
 
-
     <!-- script -->
     <script src="script/burger.js"></script>
     <script src="script/accordion.js"></script>
@@ -151,96 +151,95 @@
 </html>
 
 <style>
-
-
   /* slidingText1 */
   .slidingText1 {
-      height: 50px;
-      overflow: hidden;
-      position: relative;
-    }
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
 
-    .slidingText1 h1 {
-      font-size: var(--h1-size--);
-      color: var(--h2--color-fouth);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      line-height: 50px;
-      text-align: center;
-      transform: translateX(100%);
-      animation: slidingText1 15s linear infinite;
-      font-style: italic;
-      
-    }
+  .slidingText1 h1 {
+    font-size: var(--h1-size--);
+    color: var(--h2--color-fouth);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: slidingText1 15s linear infinite;
+    font-style: italic;
+  }
 
+  .slidingText3 {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
 
+  .slidingText3 h1 {
+    font-size: var(--h1-size--);
+    color: var(--h2--color-third);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: slidingText3 15s linear infinite;
+    font-style: italic;
+  }
 
+  .slidingText3 img {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: slidingText3 15s linear infinite;
+  }
 
+  .slidingText1 img {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: slidingText3 15s linear infinite;
+  }
 
-    .slidingText3 {
-      height: 50px;
-      overflow: hidden;
-      position: relative;
-    }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
-    .slidingText3 h1 {
-      font-size: var(--h1-size--);
-      color: var(--h2--color-third);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      line-height: 50px;
-      text-align: center;
-      transform: translateX(100%);
-      animation: slidingText3 15s linear infinite;
-      font-style: italic;
-    }
+  .bagom_historie {
+    margin-top: 4rem;
+  }
 
+  .header_banner {
+    background-color: black;
+    height: 20px;
+  }
 
-    .slidingText3 img {
-      
-      position: absolute;
-      width: 100%;
-      /* height: 100%; */
-      margin: 0;
-      line-height: 50px;
-      text-align: center;
-      transform: translateX(100%);
-      animation: slidingText3 15s linear infinite;
-    }
-
-    .slidingText1 img {
-      
-      position: absolute;
-      width: 100%;
-      /* height: 100%; */
-      margin: 0;
-      line-height: 50px;
-      text-align: center;
-      transform: translateX(100%);
-      animation: slidingText3 15s linear infinite;
-    }
-
-    img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-    .bagom_historie {
-      margin-top: 4rem;
-    }
-
-
-
-
-
-
-
-
+  .slidingText1 p {
+    font-size: var(--p-size--);
+    color: var(--p--color-secondary);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: slidingText1 8s linear infinite;
+    font-style: italic;
+  }
 </style>
-

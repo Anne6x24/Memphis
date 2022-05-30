@@ -29,14 +29,14 @@
   /* ------- headings ------ */
 
   /* fonte */
-  --h1--: "Prompt", sans-serif;
-  --h2--: "Prompt", sans-serif;
-  --h3--: "Prompt", sans-serif;
-  --h4--: "Prompt", sans-serif;
-  --h5--: "Prompt", sans-serif;
-  --p--: "Prompt", sans-serif;
-  --a--: "Prompt", sans-serif;
-  --li--: "Prompt", sans-serif;
+  --h1--: "Archivo", sans-serif;
+  --h2--: "Archivo", sans-serif;
+  --h3--: "Archivo", sans-serif;
+  --h4--: "Archivo", sans-serif;
+  --h5--: "Archivo", sans-serif;
+  --p--: "Archivo", sans-serif;
+  --a--: "Archivo", sans-serif;
+  --li--: "Archivo", sans-serif;
 
   /* hover */
   --a--hover-primary: italic;
@@ -118,8 +118,8 @@
 /*-------------------------------------------------- GENERELLE REGLER -----------------------------------------------*/
 /* --------- FONTS ------------ */
 @font-face {
-  font-family: Prompt;
-  src: url(/font/prompt-regular-webfont.woff2) format("woff2");
+  font-family: Archivo;
+  src: url(/font/Archivo-VariableFont_wdth\,wght_2.ttf) format("woff2");
   font-weight: 100 900;
 }
 

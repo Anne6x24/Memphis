@@ -213,13 +213,14 @@ a {
   cursor: pointer;
   border: none;
   outline: none;
-
+  cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
   text-decoration: none;
 }
 
 a:hover {
   font-style: var(--a--hover-primary);
   text-decoration: var(--a--hover-secondary);
+  cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
 }
 
 li {
@@ -239,7 +240,7 @@ button {
   position: relative;
   width: auto;
   height: var(--button-height);
-
+  cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
   background-color: var(--button--bg-color);
   box-shadow: var(--button-shadow);
   border-radius: var(--button-radius);
@@ -252,6 +253,7 @@ button:hover {
   cursor: pointer;
   text-decoration: var(--button-hover-secondary);
   font-style: var(--button-hover-primary);
+  cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
 }
 
 /* ----------------------------------------------- MENU ------------------------------------------ */

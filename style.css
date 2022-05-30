@@ -273,38 +273,26 @@ button:hover {
 }
 
 /* ------------------------ MENU - banner sort----------------------- */
-.banner_1 {
-  display: flex;
-  width: 100rem;
-  align-content: center;
-  color: var(--p--color-secondary);
-  justify-content: space-between;
-  margin-right: 5rem;
+.header_banner {
+  background-color: black;
+  height: 34px;
 }
 
-.banner {
+.slidingText1 p {
+  font-size: var(--p-size--);
+  color: var(--p--color-secondary);
   position: absolute;
-  display: flex;
-  background-color: var(--secondary-bg-color);
-
-  animation-name: banner_infinite;
-  animation-duration: 35s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 3rem;
+  text-align: center;
+  transform: translateX(100%);
+  animation: slidingText1 12s linear infinite;
+  font-style: italic;
 }
 
-.banner_2 {
-  display: flex;
-  width: 100rem;
-  align-content: center;
-  color: var(--p--color-secondary);
-  justify-content: space-between;
-}
 
-.banner_p {
-  color: var(--p--color-secondary);
-  margin-bottom: 0;
-}
 
 /* --- !! vil gerne have * op i general men margin: 0; fucker med lidt ting  !! ---*/
 *,
@@ -332,6 +320,7 @@ button:hover {
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
+  box-shadow: none;
 }
 
 .container {

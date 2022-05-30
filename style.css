@@ -137,7 +137,6 @@ html {
 img {
   width: 100%;
   height: auto;
-  box-shadow: var(--button-shadow);
 }
 
 #forside,
@@ -545,6 +544,10 @@ button:hover {
   justify-content: center;
 }
 
+.forside_filtrering_allaround_container {
+  grid-area: 1/1;
+  margin-top: 20rem;
+}
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/

@@ -83,6 +83,7 @@
   --h5--color-primary: #202020;
   --h5--color-secondary: #fdfdfd;
   --h5--color-third: #0338e1;
+  --h5--color-fourth: #051036;
 
   --p--color-primary: #202020;
   --p--color-secondary: #fdfdfd;
@@ -131,6 +132,7 @@ html {
 img {
   width: 100%;
   height: auto;
+  box-shadow: var(--button-shadow);
 }
 
 #forside,

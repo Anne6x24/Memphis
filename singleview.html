@@ -239,9 +239,9 @@
         <!-- <span class="percent">7%</span> -->
       </div>
 
-      <button class="open-button">Læs alle anmeldelser her</button>
+      <button class="open-button-singleview">Læs alle anmeldelser her</button>
 
-      <dialog class="singleview_modal" id="singleview_modal">
+      <dialog class="modal-singleview" id="modal-singleview">
         <div class="kryds_titel_luk">
           <h2>Laura Nielsen</h2>
           <button class="button close-button">X</button>
@@ -256,7 +256,7 @@
           <img src="/img/ikoner/trustpilot.svg" alt="">
         </div>
         <p>Jeg elsker denne taske! Glæder mig så meget til at gå med den til sommer <3</p>
-        <button class="button close-button">Brugbart?</button>
+        <button class="button close-button-singleview">Brugbart?</button>
       </dialog>
 
     </div>
@@ -398,7 +398,7 @@ ul.breadcrumb li a:hover {
 } 
 
 /*** POPUP ***/
-.singleview_modal {
+.modal-singleview {
   padding: 1em;
   max-width: 50ch;
   border: 0;
@@ -417,7 +417,7 @@ ul.breadcrumb li a:hover {
   width: auto;
 }
 
-.singleview_modal::backdrop {
+.modal-singleview::backdrop {
   background: rgb(0 0 0 / 0.6);
 }
 
@@ -427,19 +427,19 @@ ul.breadcrumb li a:hover {
 }
 
 @media (min-width: 391px) {
-    .singleview_modal {
+    .modal-singleview {
       margin-inline: auto auto;
   }
   } 
 
   @media (min-width: 768px) {
-    .singleview_modal {
+    .modal-singleview {
   max-width: 60ch;
 }
   } 
 
   @media (min-width: 1024px) {
-    .singleview_modal {
+    .modal-singleview {
   max-width: 70ch;
 }
   } 

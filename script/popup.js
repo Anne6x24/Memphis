@@ -1,11 +1,25 @@
-const modal = document.querySelector("#singleview_modal");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
+const modalReview = document.querySelector("#modal-singleview");
+const openModalReview = document.querySelector(".open-button-singleview");
+const closeModalReview = document.querySelector(".close-button-singleview");
 
-openModal.addEventListener("click", () => {
-  modal.showModal();
+const modalEmail = document.querySelector("#modal-email");
+const openModalEmail = document.querySelector(".open-button-email");
+const closeModalEmail = document.querySelector(".close-button-email");
+
+// singleview modal
+openModalReview.addEventListener("click", () => {
+  modalReview.showModal();
 });
 
-closeModal.addEventListener("click", () => {
-  modal.close();
+closeModalReview.addEventListener("click", () => {
+  modalReview.close();
+});
+
+// email modal
+openModalEmail.addEventListener("click", () => {
+  modalEmail.showModal();
+});
+
+closeModalEmail.addEventListener("click", () => {
+  modalEmail.close();
 });

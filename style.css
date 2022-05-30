@@ -145,6 +145,12 @@ h1 {
   font-family: var(--h1--);
   color: var(--h1--color-primary);
   margin-bottom: var(--h1--margin-bottom);
+  font-variation-settings: "wght" 700, "wdth" 90;
+}
+
+.forside_hero_h1 {
+  font-variation-settings: "wght" 900, "wdth" 90;
+  font-size: var(--h1--forside-size--);
 }
 
 h2 {
@@ -153,6 +159,8 @@ h2 {
 
   color: var(--h2--color-primary);
   margin-bottom: var(--heading--margin-bottom);
+  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
+  line-height: var(--p--lineheight);
 }
 
 h3 {
@@ -160,6 +168,8 @@ h3 {
   font-family: var(--h3--);
   color: var(--h3--color-primary);
   margin-bottom: var(--heading--margin-bottom);
+  font-variation-settings: "wght" 700, "wdth" 90, "opsz" 64;
+  line-height: var(--p--lineheight);
 }
 
 h4 {
@@ -167,6 +177,8 @@ h4 {
   font-family: var(--h4--);
   color: var(--h4--color-primary);
   margin-bottom: var(--heading--margin-bottom);
+  font-variation-settings: "wght" 800, "wdth" 90, "opsz" 64;
+  line-height: var(--p--lineheight);
 }
 
 h5 {
@@ -174,6 +186,8 @@ h5 {
   font-family: var(--h5--);
   color: var(--h5--color-primary);
   margin-bottom: var(--heading--margin-bottom);
+  font-variation-settings: "wght" 400, "wdth" 90, "opsz" 64;
+  line-height: var(--p--lineheight);
 }
 
 p {
@@ -182,6 +196,8 @@ p {
   color: var(--p--color-primary);
   margin-bottom: var(--p--margin-bottom);
   line-height: var(--p--lineheight);
+  font-variation-settings: "wght" 400, "wdth" 100;
+  /* max-width: 100ch; */
 }
 
 a {
@@ -222,6 +238,7 @@ button {
   box-shadow: var(--button-shadow);
   border-radius: var(--button-radius);
   border-style: none;
+  font-variation-settings: "wght" 700, "wdth" 100, "opsz" 33;
 }
 
 button:hover {
@@ -280,16 +297,6 @@ button:hover {
 .banner_p {
   color: var(--p--color-secondary);
   margin-bottom: 0;
-}
-
-@keyframes banner_infinite {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -100%;
-  }
 }
 
 /* --- !! vil gerne have * op i general men margin: 0; fucker med lidt ting  !! ---*/
@@ -426,6 +433,10 @@ button:hover {
   transition: all 0.35s ease-in-out;
 }
 
+.menu-item {
+  font-variation-settings: "wght" 700, "wdth" 90;
+}
+
 /*------------------------------------------- Forside-siden -----------------------------------------------------*/
 #forside_article {
   margin-bottom: 2em;
@@ -437,10 +448,7 @@ button:hover {
   display: grid;
 }
 
-.forside_satellit_div {
-  grid-area: 1/1;
-}
-
+.forside_satellit_div,
 #forside_hero_wrap {
   grid-area: 1/1;
 }
@@ -472,16 +480,19 @@ button:hover {
   display: flex;
   justify-content: center;
   max-width: 80vw;
+  font-variation-settings: "wght" 700, "wdth" 90;
 }
 
 .forside_h2_start {
   text-align: right;
   padding-right: 0.2em;
   margin-bottom: 2rem;
+  font-variation-settings: "wght" 700, "wdth" 90;
 }
 
 .forside_hero_animation {
   flex: 1;
+  font-variation-settings: "wght" 700, "wdth" 90;
 }
 
 #forside_hero_text {
@@ -492,15 +503,6 @@ button:hover {
   animation-iteration-count: infinite;
   /* -webkit-animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
         animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
-}
-
-@keyframes text-a {
-  0% {
-    color: var(--h2--color-third);
-  }
-  100% {
-    color: var(--h2--color-third);
-  }
 }
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
@@ -517,6 +519,10 @@ button:hover {
   border: 4px solid #202020;
 }
 
+.forside_univers_p_blaa {
+  color: var(--p--color-third);
+}
+
 /* botton kurv */
 
 .singleview_container {
@@ -528,46 +534,12 @@ button:hover {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-.singleview_h1 {
-  margin-bottom: 2rem !important;
-}
-.singleview_h3 {
-  line-height: 1.5rem;
+.forside_univers_div {
+  grid-area: 1/1;
 }
 
-.singleview_h3_ekstra {
-  margin-bottom: 2.5rem !important;
-}
-.singleview_ikoner {
-  justify-content: normal;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-/* .singleview_col-1 {
-  width: 20%;
-}
-
-.singleview_col-2 {
-  width: 25%;
-} */
-
-.singleview_col-2 h2 {
-  color: white;
-}
-
-.singleview_button_kurv {
-  all: revert;
-}
-.singleview_col > .button_kurv,
-.singleview_number {
-  text-align: center;
-}
-
-.singleview_number {
-  width: 20%;
-  align-self: center;
-  text-align: center;
+.forside_univers_p {
+  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
 }
 
 .singleview_addtocart {
@@ -1250,7 +1222,20 @@ p.knap {
     margin-top: 3rem;
   }
 
-  /*-------------------------------------------- Singleview --------------------------------------------------------*/
+  /*-------------- Univers sektion ---------------*/
+  .forside_univers_tekst {
+    max-width: 60ch;
+  }
+
+  #forside_satellit_img04,
+  #forside_satellit_img03 {
+    display: none;
+  }
+
+  .forside_univers_div {
+    margin: 0rem auto 0rem auto;
+    margin-inline: 0rem;
+  }
 
   .singleview_produktbillede1 img {
     max-width: 20rem;
@@ -1604,4 +1589,44 @@ p.knap {
 
   /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
+}
+
+/*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/
+@keyframes banner_infinite {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes text-a {
+  0% {
+    color: var(--h2--color-third);
+  }
+  100% {
+    color: var(--h2--color-third);
+  }
+}
+
+@keyframes slidingText1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slidingText3 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }

@@ -155,6 +155,67 @@
 
 
           <div id="forside" class="forside_filtrering_div">
+            <div></div>
+            <div></div>
+            <!-- produktbilleder -->
+            <div class="forside_filtrering_produktbilleder">
+              <div>
+              <img src="/img/produktbilleder/cph.01.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>UMA</h4>
+              <h4>765.-</h4>
+            </div>
+            </div>
+            <div>
+              <img src="/img/produktbilleder/cph.02.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>HOLLY</h4>
+              <h4>765.-</h4>
+            </div>
+            </div>
+            <div>
+              <img src="/img/produktbilleder/cph.03.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>ROBERTA</h4>
+              <h4>985.-</h4>
+            </div>
+            </div>
+            <div>
+              <img src="/img/produktbilleder/cph.04.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>VENEDA</h4>
+              <h4>695.-</h4>
+            </div>
+            </div>
+            <div>
+              <img src="/img/produktbilleder/mt.01.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>VICTORIA</h4>
+              <h4>985.-</h4>
+            </div>
+          </div>
+            <div>
+              <img src="/img/produktbilleder/mt.02.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>ISABEL</h4>
+              <h4>985.-</h4>
+            </div>
+            </div>
+            <div>
+              <img src="/img/produktbilleder/mt.03.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>BENEDIKTE</h4>
+              <h4>985.-</h4>
+            </div>
+            </div>
+            <div>
+              <img src="/img/produktbilleder/mt.04.01.webp" alt="">
+              <div class="forside_filtrering_produktbilleder_tekst">
+              <h4>JOSEFINE</h4>
+              <h4>985.-</h4>
+            </div>
+            </div>
+            </div>
 
           </div>
         </div>
@@ -270,5 +331,44 @@
 </html>
 
 <!-- styles -->
+
+<style>
+/*** program oversigt i responsivt grid ***/
+  .forside_filtrering_produktbilleder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 35px;
+    margin-bottom: 5rem;
+  }
+
+  .forside_filtrering_produktbilleder_tekst {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: var(--h5--color-fourth);
+  }
+
+  .forside_filtrering_produktbilleder_tekst h4 {
+    color: var(--h5--color-fourth);
+  }
+
+  @media (min-width: 640px) {
+    .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  }
+
+  @media (min-width: 768px) {
+    .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  }
+  
+  @media (min-width: 768px) {
+    .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  }
+  </style>
 
 

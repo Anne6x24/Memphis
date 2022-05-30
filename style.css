@@ -83,6 +83,7 @@
   --h5--color-primary: #202020;
   --h5--color-secondary: #fdfdfd;
   --h5--color-third: #0338e1;
+  --h5--color-fourth: #051036;
 
   --p--color-primary: #202020;
   --p--color-secondary: #fdfdfd;
@@ -126,6 +127,12 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--button-shadow);
 }
 
 #forside,
@@ -505,8 +512,7 @@ button:hover {
         animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
 }
 
-
- /*------------------- Univers sektion ----------------------*/
+/*------------------- Univers sektion ----------------------*/
 .forside_div_wrapper {
   display: grid;
 }
@@ -514,11 +520,10 @@ button:hover {
 .forside_univers_div {
   grid-area: 1/1;
   margin-inline: 2rem;
-
 }
 
 .forside_univers_p {
-  font-variation-settings: 'wght' 600, 'wdth' 90, 'opsz' 64;
+  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
   font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
 }
 
@@ -530,7 +535,6 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
@@ -1220,8 +1224,6 @@ p.knap {
   .singleview_ikon1 {
     max-width: 5rem;
   }
-
-  
 }
 
 @media (min-width: 640px) {
@@ -1304,12 +1306,6 @@ p.knap {
     margin-top: 4rem;
   }
 
- 
-
-
- 
-
- 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .godtatvide_speciel_h3 {

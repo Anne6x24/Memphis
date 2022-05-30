@@ -29,14 +29,14 @@
   /* ------- headings ------ */
 
   /* fonte */
-  --h1--: "Archivo", sans-serif;
-  --h2--: "Archivo", sans-serif;
-  --h3--: "Archivo", sans-serif;
-  --h4--: "Archivo", sans-serif;
-  --h5--: "Archivo", sans-serif;
-  --p--: "Archivo", sans-serif;
-  --a--: "Archivo", sans-serif;
-  --li--: "Archivo", sans-serif;
+  --h1--: "Prompt", sans-serif;
+  --h2--: "Prompt", sans-serif;
+  --h3--: "Prompt", sans-serif;
+  --h4--: "Prompt", sans-serif;
+  --h5--: "Prompt", sans-serif;
+  --p--: "Prompt", sans-serif;
+  --a--: "Prompt", sans-serif;
+  --li--: "Prompt", sans-serif;
 
   /* hover */
   --a--hover-primary: italic;
@@ -45,8 +45,6 @@
   --button-hover-secondary: underline;
 
   /* font-sizes */
-  --h1--forside-size--: clamp(3rem, 2.2rem + 4vw, 7rem);
-
   --h1-size--: clamp(
     1.9rem,
     1.5299999999999998rem + 1.8500000000000003vw,
@@ -73,7 +71,6 @@
   --h2--color-primary: #202020;
   --h2--color-secondary: #fdfdfd;
   --h2--color-third: #0338e1;
-  --h2--color-fouth: #051036;
 
   --h3--color-primary: #202020;
   --h3--color-secondary: #fdfdfd;
@@ -126,12 +123,6 @@
   font-weight: 100 900;
 }
 
-@font-face {
-  font-family: Archivo;
-  src: url(/font/Archivo-VariableFont_wdth\,wght_2.ttf);
-  font-weight: 100 900;
-}
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -154,21 +145,14 @@ h1 {
   font-family: var(--h1--);
   color: var(--h1--color-primary);
   margin-bottom: var(--h1--margin-bottom);
-  font-variation-settings: "wght" 700, "wdth" 90;
-}
-
-.forside_hero_h1 {
-  font-variation-settings: "wght" 900, "wdth" 90;
-  font-size: var(--h1--forside-size--);
 }
 
 h2 {
   font-size: var(--h2-size--);
   font-family: var(--h2--);
+
   color: var(--h2--color-primary);
   margin-bottom: var(--heading--margin-bottom);
-  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
-  line-height: var(--p--lineheight);
 }
 
 h3 {
@@ -176,8 +160,6 @@ h3 {
   font-family: var(--h3--);
   color: var(--h3--color-primary);
   margin-bottom: var(--heading--margin-bottom);
-  font-variation-settings: "wght" 700, "wdth" 90, "opsz" 64;
-  line-height: var(--p--lineheight);
 }
 
 h4 {
@@ -185,8 +167,6 @@ h4 {
   font-family: var(--h4--);
   color: var(--h4--color-primary);
   margin-bottom: var(--heading--margin-bottom);
-  font-variation-settings: "wght" 800, "wdth" 90, "opsz" 64;
-  line-height: var(--p--lineheight);
 }
 
 h5 {
@@ -194,8 +174,6 @@ h5 {
   font-family: var(--h5--);
   color: var(--h5--color-primary);
   margin-bottom: var(--heading--margin-bottom);
-  font-variation-settings: "wght" 400, "wdth" 90, "opsz" 64;
-  line-height: var(--p--lineheight);
 }
 
 p {
@@ -204,8 +182,6 @@ p {
   color: var(--p--color-primary);
   margin-bottom: var(--p--margin-bottom);
   line-height: var(--p--lineheight);
-  font-variation-settings: "wght" 400, "wdth" 100;
-  /* max-width: 100ch; */
 }
 
 a {
@@ -241,11 +217,11 @@ button {
   position: relative;
   width: auto;
   height: var(--button-height);
+
   background-color: var(--button--bg-color);
   box-shadow: var(--button-shadow);
   border-radius: var(--button-radius);
   border-style: none;
-  font-variation-settings: "wght" 700, "wdth" 100, "opsz" 33;
 }
 
 button:hover {
@@ -253,7 +229,6 @@ button:hover {
   cursor: pointer;
   text-decoration: var(--button-hover-secondary);
   font-style: var(--button-hover-primary);
-  cursor: url(/img/ikoner/lyn.png), auto;
 }
 
 /* ----------------------------------------------- MENU ------------------------------------------ */
@@ -305,6 +280,16 @@ button:hover {
 .banner_p {
   color: var(--p--color-secondary);
   margin-bottom: 0;
+}
+
+@keyframes banner_infinite {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
 }
 
 /* --- !! vil gerne have * op i general men margin: 0; fucker med lidt ting  !! ---*/
@@ -441,13 +426,7 @@ button:hover {
   transition: all 0.35s ease-in-out;
 }
 
-.menu-item {
-  font-variation-settings: "wght" 700, "wdth" 90;
-}
-
 /*------------------------------------------- Forside-siden -----------------------------------------------------*/
-
-/*------------------- Hero ----------------------*/
 #forside_article {
   margin-bottom: 2em;
   background-image: url(/img/kortet.png);
@@ -458,7 +437,10 @@ button:hover {
   display: grid;
 }
 
-.forside_satellit_div,
+.forside_satellit_div {
+  grid-area: 1/1;
+}
+
 #forside_hero_wrap {
   grid-area: 1/1;
 }
@@ -490,19 +472,16 @@ button:hover {
   display: flex;
   justify-content: center;
   max-width: 80vw;
-  font-variation-settings: "wght" 700, "wdth" 90;
 }
 
 .forside_h2_start {
   text-align: right;
   padding-right: 0.2em;
   margin-bottom: 2rem;
-  font-variation-settings: "wght" 700, "wdth" 90;
 }
 
 .forside_hero_animation {
   flex: 1;
-  font-variation-settings: "wght" 700, "wdth" 90;
 }
 
 #forside_hero_text {
@@ -515,6 +494,15 @@ button:hover {
         animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
 }
 
+@keyframes text-a {
+  0% {
+    color: var(--h2--color-third);
+  }
+  100% {
+    color: var(--h2--color-third);
+  }
+}
+
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
 .singleview_produktbillede1 img {
@@ -525,34 +513,72 @@ button:hover {
   display: flex;
 }
 
-/*------------------- Univers sektion ----------------------*/
-
-.forside_div_wrapper {
-  display: grid;
+.singleview_ikoner img {
+  border: 4px solid #202020;
 }
 
-.forside_univers_div {
-  grid-area: 1/1;
+/* botton kurv */
+
+.singleview_container {
+  display: flex;
+  background-color: #0338e1;
+  /* height: 4rem; */
+  border-radius: 0.3rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-.forside_univers_p {
-  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
+.singleview_h1 {
+  margin-bottom: 2rem !important;
+}
+.singleview_h3 {
+  line-height: 1.5rem;
 }
 
-.forside_univers_p_blaa {
-  color: var(--p--color-third);
+.singleview_h3_ekstra {
+  margin-bottom: 2.5rem !important;
+}
+.singleview_ikoner {
+  justify-content: normal;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.forside_univers_tekst {
+/* .singleview_col-1 {
+  width: 20%;
+}
+
+.singleview_col-2 {
+  width: 25%;
+} */
+
+.singleview_col-2 h2 {
+  color: white;
+}
+
+.singleview_button_kurv {
+  all: revert;
+}
+.singleview_col > .button_kurv,
+.singleview_number {
   text-align: center;
 }
 
-.forside_univers_knap {
-  display: flex;
-  justify-content: center;
+.singleview_number {
+  width: 20%;
+  align-self: center;
+  text-align: center;
 }
 
-/*------------------------------------------- Singleview --------------------------------------------------------*/
+.singleview_addtocart {
+  width: 60%;
+  align-self: center;
+  text-align: center;
+}
+
+.singleview_h1 {
+  margin-bottom: 1rem !important;
+}
 
 .singleview_both_btn {
   width: 20%;
@@ -978,7 +1004,6 @@ input:checked ~ .questions {
 .kort {
   margin-top: 1rem;
   box-shadow: var(--button-shadow);
-  width: -moz-available;
 }
 
 .kort:hover {
@@ -1199,7 +1224,6 @@ p.knap {
 
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-  /*------------------- Hero ----------------------*/
   .forside_satellit_img {
     width: 15rem;
   }
@@ -1226,26 +1250,25 @@ p.knap {
     margin-top: 3rem;
   }
 
-  /*-------------- Univers sektion ---------------*/
-  .forside_univers_div {
-    display: flex;
+  /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_produktbillede1 img {
+    max-width: 20rem;
+  }
+
+  .singleview_container {
+    max-width: 20rem;
     justify-content: center;
-    gap: 3rem;
+    margin-top: 2rem;
   }
 
-  .forside_univers_tekst {
-    max-width: 60ch;
+  .singleview_ikoner {
+    margin-top: 2rem;
   }
 
-  #forside_satellit_img04,
-  #forside_satellit_img03 {
-    display: none;
+  .singleview_ikon1 {
+    max-width: none;
   }
-
-  .forside_univers_knap {
-    margin-top: 4rem;
-  }
-
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .godtatvide_speciel_h3 {
@@ -1316,7 +1339,6 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-  /*------------------- Hero ----------------------*/
   .forside_satellit_img {
     width: 20rem;
   }
@@ -1346,24 +1368,6 @@ p.knap {
   .singleview_ikontekst {
     font-size: 0.5rem;
     margin-bottom: 0 !important;
-  }
-
-  .singleview_produktbillede1 img {
-    max-width: 20rem;
-  }
-
-  .singleview_container {
-    max-width: 20rem;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .singleview_ikoner {
-    margin-top: 2rem;
-  }
-
-  .singleview_ikon1 {
-    max-width: none;
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
@@ -1438,7 +1442,6 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-  /*------------------- Hero ----------------------*/
   .forside_satellit_img {
     width: 27rem;
   }
@@ -1512,7 +1515,6 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-  /*------------------- Hero ----------------------*/
   .forside_satellit_img {
     width: 37rem;
   }
@@ -1563,7 +1565,7 @@ p.knap {
 @media (min-width: 1538px) {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
-  /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+  /*-------------------------------------------- Cookiesiden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
@@ -1602,44 +1604,4 @@ p.knap {
 
   /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
-}
-
-/*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/
-@keyframes banner_infinite {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -100%;
-  }
-}
-
-@keyframes text-a {
-  0% {
-    color: var(--h2--color-third);
-  }
-  100% {
-    color: var(--h2--color-third);
-  }
-}
-
-@keyframes slidingText1 {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slidingText3 {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
 }

@@ -505,6 +505,33 @@ button:hover {
         animation: flip-horizontal-bottom 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both; */
 }
 
+
+ /*------------------- Univers sektion ----------------------*/
+.forside_div_wrapper {
+  display: grid;
+}
+
+.forside_univers_div {
+  grid-area: 1/1;
+  margin-inline: 2rem;
+
+}
+
+.forside_univers_p {
+  font-variation-settings: 'wght' 600, 'wdth' 90, 'opsz' 64;
+  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
+}
+
+.forside_univers_p_blaa {
+  color: var(--p--color-third);
+}
+
+.forside_univers_knap {
+  display: flex;
+  justify-content: center;
+}
+
+
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
@@ -1193,6 +1220,8 @@ p.knap {
   .singleview_ikon1 {
     max-width: 5rem;
   }
+
+  
 }
 
 @media (min-width: 640px) {
@@ -1254,7 +1283,8 @@ p.knap {
     margin-top: 3rem;
   }
 
-  /*-------------- Univers sektion ---------------*/
+  /*-------------- Univers sektion !! ---------------*/
+
   .forside_univers_tekst {
     max-width: 60ch;
   }
@@ -1265,27 +1295,21 @@ p.knap {
   }
 
   .forside_univers_div {
-    margin: 0rem auto 0rem auto;
-    margin-inline: 0rem;
-  }
-
-  .singleview_produktbillede1 img {
-    max-width: 20rem;
-  }
-
-  .singleview_container {
-    max-width: 20rem;
+    display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    gap: 3rem;
   }
 
-  .singleview_ikoner {
-    margin-top: 2rem;
+  .forside_univers_knap {
+    margin-top: 4rem;
   }
 
-  .singleview_ikon1 {
-    max-width: none;
-  }
+ 
+
+
+ 
+
+ 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .godtatvide_speciel_h3 {
@@ -1364,6 +1388,24 @@ p.knap {
     width: 11rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_produktbillede1 img {
+    max-width: 20rem;
+  }
+
+  .singleview_container {
+    max-width: 20rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .singleview_ikoner {
+    margin-top: 2rem;
+  }
+
+  .singleview_ikon1 {
+    max-width: none;
+  }
 
   #singleview_article {
     display: flex;
@@ -1471,6 +1513,14 @@ p.knap {
   .forside_hero_img_flex {
     gap: 1rem;
   }
+
+  #forside_satellit_img02 {
+    display: none;
+  }
+
+  .forside_univers_div {
+    margin-top: 2rem;
+  }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
@@ -1539,6 +1589,10 @@ p.knap {
   .forside_hero_img {
     width: 20rem;
     height: 28rem;
+  }
+
+  #forside_satellit_img02 {
+    display: none;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   .singleview_produktbillede1 img {

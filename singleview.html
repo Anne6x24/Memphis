@@ -85,7 +85,14 @@
 
     <!-- main -->
     <main id="singleview">
+                      <!-- breadcrums på singleview -->
+                      <ul class="breadcrumb">
+                        <li><a href="http://katjalevring.dk/kea/10_eksamensprojekt/made_by_nicholas/">Hjem</a></li>
+                      <li><a href="http://katjalevring.dk/kea/10_eksamensprojekt/made_by_nicholas/produkter/">Produktoversigt</a></li>
+                        <li>Produktdetaljer</li>
+                        </ul>
       <article id="singleview_article">
+
          <!-- venstre sektion -->
         <section>
           <div class="singleview_produktbillede1">
@@ -233,18 +240,6 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
         </section>
 
       </article>
@@ -353,3 +348,30 @@
     <!-- body slut -->
   </body>
 </html>
+
+<style>
+  /* placering af brødkrummesti */
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* styling på ord */
+ul.breadcrumb li a {
+  color: var(--primary);
+  font-family: var(--a--);
+}
+
+/* styling af pil mellem links */
+ul.breadcrumb li + li:before {
+  /* color: var(--primary); */
+  padding-right: 2rem;
+  content: ">";
+}
+
+/* styling med underlinje */
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+} 
+</style>

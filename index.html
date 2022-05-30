@@ -131,9 +131,27 @@
     </div>
     </div>
 
-        <!-- <section id="wrap_bubble">
-          <img src="/img/bubble.svg" alt="" />
-        </section> -->
+
+
+    <div class="modal-email" id="modal-email">
+      <div class="modal-email-luk">
+      <h4>Tilmeld dig her og få adgang til vores limited edition tasker før alle andre!</h4>
+      <button class="button close-button-email">Luk</button>
+    </div>
+    
+        <form class="form" method="dialog">
+          <li>
+            <div class="col-3 input-effect">
+            <input class="effect-23 input" type="text" placeholder="Email" id="nr2">
+            <label class="label">Email</label>
+            <span class="focus-bg"></span>
+        </div>
+        </li>
+        <button class="button" type="submit">Tilmeld</button>
+      </form>
+    
+    </div>
+
 
       </section>
       </article>
@@ -236,6 +254,7 @@
     <!-- script -->
     <script src="script/burger.js"></script>
     <script src="script/hero.js"></script>
+    <script src="script/popupemail.js"></script>
 
     <!-- body slut -->
   </body>
@@ -243,6 +262,7 @@
 
 <!-- styles -->
 <style>
+   /*** cookie ***/
   .forside_cookie_container {
     background-color: var(--secondary-bg-color);
     padding-inline: 2rem;
@@ -257,6 +277,28 @@
   .forside_cookie_individuel_knap {
     margin-bottom: 1rem;
   }
+
+    /*** POPUP ***/
+.modal-email {
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  margin-top: 15rem;
+  margin-inline: 2rem;
+}
+
+ .modal-email::backdrop {
+  background: rgb(0 0 0 / 0.8);
+}
+
+.modal-email-luk {
+  display: flex;
+}
+
+form {
+  display: flex;
+}
 
   @media (min-width: 1024px) {
     .forside_cookie_boks_tekst {

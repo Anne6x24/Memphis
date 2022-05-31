@@ -83,7 +83,9 @@
     <!-- main -->
     <main>
       <section class="bagom_top">
-        <div class="slidingText1">
+        <h1>HVEM ER MEMPHIS HOUSE?</h1>
+        
+        <!-- <div class="slidingText1">
           <h1>HVEM ER MEMPHIS HOUSE?</h1>
         </div>
 
@@ -102,38 +104,40 @@
         </div>
         <div class="slidingText3">
           <h1>LAVER I SELV TASKERNE?</h1>
-        </div>
+        </div> -->
       </section>
       <section id="bagom" class="bagom_historie">
         <h2>
-          MEMPHIS HOUSE KOMMER AF TO VENINDER, DER STARTEDE EN HOBBY UNDER
-          CORONA- KRISEN I 2020. DENNE HOBBY DELTE VI UD AF PÅ INSTAGRAM. HAVDE
-          DET IKKE VÆRET FOR DEN STORE EFTERSPØRGSEL PÅ INSTAGRAM, VAR DET NOK
-          ALDRIG BLEVET MERE END EN HOBBY. DET ER VI MEGET TAKNEMLIGE FOR. TAK.
+
+          Memphis House kommer af to veninder, der startede en
+          <span class="bagom_blaa">hobby under corona-krisen</span> i 2020. Denne hobber delte vi ud af på Instagram.
+          Havde det ikke været for den store efterspørgsel på Instagram, var det nok aldrig blevet til
+          mere end en hobby.
+          <span class="bagom_blaa">Det er vi meget taknemmelige for. Tak</span> 
         </h2>
 
         <h2>
-          VI HEDDER AMAILE OG ANNA OG HAR FULGT HINANDEN SIDEN 4. KLASSE OG
-          DELER NU DETTE EVENTYR OG FÆLLESSKAB VI KALDER MEMPHIS HOUSE.
+          Vi hedder <span class="bagom_blaa">Amalie og Anna</span> og har fulgt hinanden siden 4. klasse og
+          deler nu dette <span class="bagom_blaa">eventyr og fællesskab</span>  Vi kalder Memphis House.
         </h2>
 
         <h2>
-          ET FÆLLESSKAB DER BYGGER PÅ EN FÆLLES REJSE GENNEM MEMPHIS, TENNESSEE.
-          ET OMRÅDE SOM ER INSPIRATIONS- GRUNDLAGET FOR DE VÆRDIER MEMPHIS HOUSE
-          BYGGER PÅ. ROLIGE VIBRATIOENR, LAID-BACK STEMNING OG EN FED PROGRESSIV
-          ENERGI INSPIRERET AF KØBENHAVN.
+          Et fælleskab der bygger på en fælles rejse gennem Memphis, Tennesee.
+          Et område som er inspirations-grundlaget for de værdier Memphis House
+          bygger på. <span class="bagom_blaa">Rolige vibrationer, laid-back stemning og en fed progressiv
+          energi inspireret af København.</span> 
         </h2>
 
-        <h2>VI HUSER DERFOR I KØBENHAVN OG IKKE I MEMPHIS.</h2>
+        <h2> Vi huser derfor i København og <span class="bagom_blaa">ikke i Memphis.</span></h2>
       </section>
 
       <section class="bagom_tags">
-        <div class="slidingText3">
+        <div class="slidingText3 bagom_tags_img">
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
         </div>
-        <div class="slidingText1">
+        <div class="slidingText1 bagom_tags_img">
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
@@ -142,22 +146,22 @@
 
       <section id="bagom" class="bagom_bund">
         <h2>
-          VI GEMMER VI ALLE RESTER, OG BRUGER DEM SENERE TIL LIMITED
-          EDITION-PRODUKTIONER. VI LADER INTET GÅ TIL SPILDE. HOLD ØJE PÅ DENNE
+          VI GEMMER VI ALLE RESTER, OG BRUGER DEM SENERE TIL <span class="bagom_blaa">LIMITED
+          EDITION-PRODUKTIONER.</span>  VI LADER INTET GÅ TIL SPILDE. <span class="bagom_blaa">HOLD ØJE</span> PÅ DENNE
           HJEMMESIDE OG VORES INSTAGRAM.
         </h2>
 
         <h2>
-          PÅ DEN MÅDE, UNGGÅR VI OVERPRODUKTION. DERFOR BLIVER VORES TASKER KUN
-          PRODUCERET EFTER BESTILLING FOR AT UNDGÅ OVERPRODUCERING.
+          PÅ DEN MÅDE, <span class="bagom_blaa">UNGGÅR VI OVERPRODUKTION.</span>  DERFOR BLIVER VORES TASKER KUN
+          PRODUCERET EFTER BESTILLING.
         </h2>
 
         <h2>
-          T-SHIRT GARN ER IKKE T-SHIRTS - MEN EN TYPE AF GARN VI BENYTTER OS AF.
+          <span class="bagom_blaa">T-SHIRT GARN ER IKKE T-SHIRTS</span>  - MEN EN TYPE AF GARN VI BENYTTER OS AF.
         </h2>
 
         <h2>
-          VI FORSØGER AT FÅ ALLE VORES MATERIALER FRA DANSKE PRODUCENTER FOR AT
+          VI FORSØGER AT FÅ ALLE VORES MATERIALER FRA <span class="bagom_blaa">DANSKE PRODUCENTER</span> FOR AT
           MINDSKE TRANSPORTEN
         </h2>
       </section>
@@ -185,6 +189,22 @@
 }
 
 
+.bagom_blaa {
+    color: var( --h2--color-third);
+    animation: none;
+    border-right: none;
+  }
+
+
+.bagom_tags_img {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  transform: translateX(100%);
+  animation: slidingText1 12s linear infinite;
+  position: relative;
+  
+}
 
   img {
     max-width: 100%;
@@ -197,9 +217,18 @@
   }
 
 
-  .slidingText1:hover, .slidingText2:hover {
-transform: var(--button-transform-animation);
+  .bagom_top {
+    margin-block: 2rem;
   }
+
+
+
+
+
+
+
+
+
 
   /* slidingText1 */
   /* .slidingText1 {
@@ -262,4 +291,80 @@ transform: var(--button-transform-animation);
     transform: translateX(100%);
     animation: slidingText3 15s linear infinite;
   } */
+
+
+
+  span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes banner_infinite {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
 </style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+  // array with texts to type in typewriter
+  var dataText = [
+    "LÆGGER DET I MEMPHIS?",
+    
+    "ER TASKERNE LAVET AF T-SHIRTS?",
+    "HVORDAN STARTEDE DET HELE?"
+  ];
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < text.length) {
+      // add next character to h1
+      document.querySelector("h1").innerHTML =
+        text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function () {
+        typeWriter(text, i + 1, fnCallback);
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == "function") {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+  function StartTextAnimation(i) {
+    if (typeof dataText[i] == "undefined") {
+      setTimeout(function () {
+        StartTextAnimation(0);
+      }, 20000);
+    }
+    // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+      typeWriter(dataText[i], 0, function () {
+        // after callback (and whole text has been animated), start next text
+        StartTextAnimation(i + 1);
+      });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+</script>

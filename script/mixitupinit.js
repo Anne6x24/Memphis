@@ -1,0 +1,1 @@
+var mixer = mixitup('.forside_filtrering_div');

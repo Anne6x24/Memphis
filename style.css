@@ -1675,12 +1675,7 @@ p.knap {
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
 
-  /* baggrundsbilledet */
-  .forside_plet {
-    background-image: url(/img/1538.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+ 
 
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
@@ -1691,13 +1686,15 @@ p.knap {
 
   .singleview_h1 {
     margin-bottom: 3rem !important;
+  }
+/* 
     .forside_filtrering_produktbilleder {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .forside_filtrering_produktbillede_enkelt:hover {
       background-image: url(/img/produktbilleder/cph.01.02.webp);
-    }
+    } */
   }
   .singleview_h3 {
     font-size: 2rem !important;
@@ -1725,7 +1722,7 @@ p.knap {
 
   /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
-}
+
 
 /*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/
 @keyframes banner_infinite {
@@ -1765,4 +1762,14 @@ p.knap {
   100% {
     transform: translateX(100%);
   }
+}
+
+@media (min-width: 1494px) {
+ /* baggrundsbilledet */
+ .forside_plet {
+  background-image: url(/img/1538.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 }

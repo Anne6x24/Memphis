@@ -143,18 +143,32 @@
 
 <div class="forside_filtrering_allaround_container">
 
-          <div id="forside" class="forside_filtrering_div">
+          <div class="forside_filtrering_div">
             
             
-            <!-- produktbilleder -->
-            <div id="forside" class="forside_filtrering_produktbilleder">
+            <fieldset data-filter-group="hoj_lav" class="forside_top_sortering"> 
+              <h3>Sortering</h3>
+              <select name="hojlav" id="hojlav1">
+                <option value="alle" data-filter="all">Alle</option>
+                <option value="høj" data-sort="name:asc">Højeste til laveste pris</option>
+                <option value="sort" data-sort="name:desc">Laveste til højeste pris</option>
+              </select>
+            </fieldset>
+            
+            <div id="forside" class="forside_desk_produkter_filtrering">
 
+
+              <!-- NAVIGATION -->
               <div class="forside_filtrering_nav">
                 <form>
-                  <fieldset data-filter-group="farve_storrelse">
+
+                  <!-- DESK -->
+                  
+
+
+                  <div class="forside_farver_størrelser">
+                  <fieldset data-filter-group="farve_storrelse_desk" class="farve_storrelse_desk">
                     <h3>Farver</h3>
-                    <label for="farver_storrelser">Vælg farve og størrelse</label>
-                   
                       <input type="radio" value="sort" data-filter=".sort"> <label for="farver_storrelser">Sort</label>
                       <input type="radio" value="gron" data-filter=".gron"> <label for="farver_storrelser">Grøn</label>
                       <input type="radio" value="orange" data-filter=".orange"> <label for="farver_storrelser">Orange</label>
@@ -163,36 +177,60 @@
                       <input type="radio" value="pink" data-filter=".pink"> <label for="farver_storrelser">Pink</label>
                   </fieldset>
 
-                  <fieldset data-filter-group="farve_storrelse">
+                  <fieldset data-filter-group="farve_storrelse_desk" class="farve_storrelse_desk">
                     <h3>Størrelser</h3>
-                    <label for="farver_storrelser">Vælg farve og størrelse</label>
-                   
                       <input type="radio" value="lille" data-filter=".lille"> <label for="farver_storrelser">20x27cm</label>
                       <input type="radio" value="mellem" data-filter=".mellem"> <label for="farver_storrelser">27x20cm</label>
-                      <input type="radio" value="stor" data-filter=".stor"> <label for="farver_storrelser">34x34cm</label>
+                      <input type="radio" value="stor" data-filter=".stor"> <label for="farver_storrelser">30x35cm</label>
                      
                   </fieldset>
+                </div>
+
+                  
 
 
-                  <fieldset data-filter-group="farve_storrelse">
+                    <!-- MOBIL -->
+                    <div class="forside_nav_filtrering_mobil">
+                    <fieldset data-filter-group="farver_mobil">
+                    <h3>Farve</h3>
+                    <select name="hojlav" id="hojlav1">
+                      <option value="alle" data-filter="all">Alle</option>
+                      <option value="sort" data-filter=".sort">Sort</option>
+                      <option value="gron" data-filter=".gron">Grøn</option>
+                      <option value="orange" data-filter=".orange">Orange</option>
+                      <option value="brun" data-filter=".brun">Brun</option>
+                      <option value="blaa" data-filter=".blaa">Blå</option>
+                      <option value="pink" data-filter=".pink">Pink</option>
+                      
+                    </select>
+                  </fieldset>
+
+                  <fieldset data-filter-group="storrelser_mobil">
+                    <h3>Størrelser</h3>
+                    <select name="hojlav" id="hojlav1">
+                      <option value="alle" data-filter="all">Alle</option>
+                      <option value="lille" data-filter=".lille">20x27cm</option>
+                      <option value="mellem" data-filter=".mellem">27x20cm</option>
+                      <option value="stor" data-filter=".stor">30x35cm</option>
+                    </select>
+                  </fieldset>
+
+                  <fieldset data-filter-group="hoj_lav">
                     <h3>Sortering</h3>
-                    <label for="hoj_lav">Sorter</label>
-                    <select name="hojlav" id="hojlav">
+                    <select name="hojlav" id="hojlav1">
                       <option value="alle" data-filter="all">Alle</option>
                       <option value="høj" data-sort="name:asc">Højeste til laveste pris</option>
                       <option value="sort" data-sort="name:desc">Laveste til højeste pris</option>
                     </select>
                   </fieldset>
-
+                </div>
                 </form>
               </div>
 
 
+              <!-- produktbilleder -->
 
-
-
-
-
+              <div class="forside_filtrering_produktbilleder">
               <article class="mix orange mellem" data-name="b">
               <div>
               <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
@@ -281,7 +319,7 @@
             </div>
             </div>
           </article>  
-
+        </div>
 
             </div>
 
@@ -418,12 +456,39 @@ fieldset {
 }
 
 
+/*** filtrering nav ***/
 
+.farve_storrelse_desk, .forside_top_sortering {
+  display: none;
+}
+
+
+
+.forside_nav_filtrering_mobil {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+
+#hojlav1 {
+  border: none;
+  border-radius: var(--button-radius);
+  box-shadow: var(--button-shadow);
+  background-color: var(--h2--color-secondary);
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  max-width: 5rem;
+}
 
 /*** program oversigt i responsivt grid ***/
   .forside_filtrering_produktbilleder {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
     gap: 35px;
     margin-bottom: 5rem;
   }
@@ -445,26 +510,56 @@ fieldset {
 
   @media (min-width: 640px) {
     .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  }
+
+  @media (min-width: 768px) {
+    .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  }
+  
+  @media (min-width: 1024px) {
+    .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  }
+
+
+  /*** filtrering nav ***/
+
+  .forside_nav_filtrering_mobil {
+    display: none;
+  }
+
+  .farve_storrelse_desk, .forside_top_sortering {
+  display: block;
+}
+
+.forside_desk_produkter_filtrering {
+  display: flex;
+  gap: 7rem;
+}
+
+.forside_top_sortering {
+  text-align: right;
+  margin-right: 10rem;
+}
+
+  }
+
+  @media (min-width: 1280px) {
+    .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1538px) {
     .forside_filtrering_produktbilleder {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  }
-  
-  @media (min-width: 768px) {
-    .forside_filtrering_produktbilleder {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  .forside_filtrering_produktbillede_enkelt:hover {
-    background-image: url(/img/produktbilleder/cph.01.02.webp);
-  }
-  
-  }
 
 
 

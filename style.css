@@ -118,11 +118,19 @@
 }
 
 /*-------------------------------------------------- GENERELLE REGLER -----------------------------------------------*/
-/* --------- FONTS ------------ */
-@font-face {
-  font-family: Archivo;
-  src: url(/font/Archivo-VariableFont_wdth\,wght_2.ttf) format("woff2");
-  font-weight: 100 900;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 html {
@@ -135,6 +143,7 @@ img {
   height: auto;
 }
 
+
 #forside,
 #levering_returning,
 #kontakt,
@@ -146,6 +155,15 @@ img {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: var(--margin-bottom-mobil);
 }
+
+/* --------- FONTS ------------ */
+@font-face {
+  font-family: Archivo;
+  src: url(/font/Archivo-VariableFont_wdth\,wght_2.ttf) format("woff2");
+  font-weight: 100 900;
+}
+
+
 
 h1 {
   font-size: var(--h1-size--);
@@ -257,76 +275,16 @@ button:hover {
   cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
 }
 
-/* ----------------------------------------------- HEADER ------------------------------------------ */
-.header_ikoner {
-  display: flex;
-  height: 2rem;
-  margin-left: none;
-}
+/* ----------------------------------------------- MENU ------------------------------------------ */
 
-.header_ikoner_desk
-{
-  display: none;
-}
 
-.brand {
-  margin: 0;
-}
-/* ------------------------ MENU - banner hvid----------------------- */
-.trustpilot_1 {
-  display: flex;
-  justify-content: space-evenly;
-  /* gap: 0.5rem; */
-  padding-block: 1rem;
-  padding-inline: 1rem;
-}
-
-.trustpilot_stjerner {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.trustpilot {
-  text-align: center;
-}
-
-.banner_hvid_p {
-  font-size: var(--banner--font-size--);
-  font-variation-settings: "wght" 700, "wdth" 90;
-}
-
-.banner_hvid_p_2 {
-  margin-top: 0;
-}
-
-/* ------------------------ MENU - banner sort----------------------- */
-.header_banner {
-  background-color: black;
-  height: 34px;
-}
-
-.slidingText1 p {
-  font-size: var(--p-size--);
-  color: var(--p--color-secondary);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 2rem;
-  text-align: center;
-  transform: translateX(100%);
-  animation: slidingText1 12s linear infinite;
-  font-style: italic;
-}
-
-/* --- !! vil gerne have * op i general men margin: 0; fucker med lidt ting  !! ---*/
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
-  /* height: 6rem; */
+
   list-style: none;
   list-style-type: none;
   text-decoration: none;
@@ -335,9 +293,7 @@ button:hover {
   text-rendering: optimizeLegibility;
 }
 
-/* #menu {
-  margin-left: 3rem;
-} */
+
 
 .logo {
   display: block;
@@ -459,6 +415,72 @@ button:hover {
   font-variation-settings: "wght" 700, "wdth" 90;
 }
 
+
+.header_ikoner {
+  display: flex;
+  height: 2rem;
+  margin-left: none;
+}
+
+.header_ikoner_desk
+{
+  display: none;
+}
+
+.brand {
+  margin: 0;
+}
+
+
+
+/* ------------------------ MENU - banner hvid----------------------- */
+.trustpilot_1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.trustpilot_stjerner {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.trustpilot {
+  text-align: center;
+}
+
+.banner_hvid_p {
+  font-size: var(--banner--font-size--);
+  font-variation-settings: "wght" 700, "wdth" 90;
+}
+
+.banner_hvid_p_2 {
+  margin-top: 0;
+}
+
+/* ------------------------ MENU - banner sort----------------------- */
+.header_banner {
+  background-color: var(--secondary-bg-color);
+  height: 34px;
+}
+
+.slidingText1 p {
+  font-size: var(--p-size--);
+  color: var(--p--color-secondary);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 2rem;
+  text-align: center;
+  transform: translateX(100%);
+  animation: slidingText1 12s linear infinite;
+  font-style: italic;
+}
+
+
+
 /*------------------------------------------- Forside-siden -----------------------------------------------------*/
 #forside_article {
   margin-bottom: 2em;
@@ -502,6 +524,15 @@ button:hover {
 }
 
 /*------------Forside animation-----------*/
+.animeret_txt {
+  color: var(--h2--color-third);
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+
+
+
 
 
 
@@ -529,9 +560,82 @@ button:hover {
   justify-content: center;
 }
 
+
+
+
+/*------------ Sortering og filtrering -----------*/
+
+fieldset {
+  border: none;
+ 
+}
+
+.input-field01, .input-field02 {
+  display: flex;
+  
+}
+
+.sortering, .filtrering {
+  height: auto;
+}
+
 .forside_filtrering_allaround_container {
-  grid-area: 1/1;
   margin-top: 10rem;
+}
+
+.farve_storrelse_desk, .forside_top_sortering {
+  display: none;
+}
+
+
+
+.forside_nav_filtrering_mobil {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+
+#hojlav1 {
+  border: none;
+  border-radius: var(--button-radius);
+  box-shadow: var(--button-shadow);
+  background-color: var(--h2--color-secondary);
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  max-width: 9rem;
+}
+
+.forside_univers_filtreing {
+  margin-top: 13rem;
+}
+
+
+/*** ---- program oversigt i responsivt grid ---- ***/
+.forside_filtrering_produktbilleder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
+  gap: 35px;
+  margin-bottom: 5rem;
+}
+
+.forside_filtrering_produktbilleder img {
+  box-shadow: var(--button-shadow);
+} 
+
+.forside_filtrering_produktbilleder_tekst {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  color: var(--h5--color-fourth);
+}
+
+.forside_filtrering_produktbilleder_tekst h4 {
+  color: var(--h5--color-fourth);
 }
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
@@ -1755,6 +1859,16 @@ label {
   }
 }
 
+@keyframes banner_infinite {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
 @keyframes text-a {
   0% {
     color: var(--h2--color-third);
@@ -1790,15 +1904,7 @@ label {
   }
 }
 
-@keyframes banner_infinite {
-  0% {
-    left: 0;
-  }
 
-  100% {
-    left: -100%;
-  }
-}
 
 
 @media (min-width: 1494px) {

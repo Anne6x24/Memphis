@@ -40,7 +40,7 @@
             <a href="./index.html" class="brand">
               <img
                 class="logo"
-                src="/img/logo_memphis.svg"
+                src="/img/logologo.svg"
                 alt="Memphis' logo"
               />
             </a>
@@ -48,15 +48,16 @@
             <div class="header_ikoner">
               <img src="/img/ikoner/search.svg" alt="">
               <img src="img/ikoner/kurv.svg" alt="">
-            </div>
-
-
+        
             <button type="button" class="burger" id="burger">
               <span class="burger-line"></span>
               <span class="burger-line"></span>
               <span class="burger-line"></span>
               <span class="burger-line"></span>
             </button>
+          </div>
+
+
             <div class="menu" id="menu">
               <ul class="menu-inner">
                 <li class="menu-item">
@@ -81,7 +82,7 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main id="bagom">
       <section class="bagom_top">
         <h1>HVEM ER MEMPHIS HOUSE?</h1>
         
@@ -106,7 +107,7 @@
           <h1>LAVER I SELV TASKERNE?</h1>
         </div> -->
       </section>
-      <section id="bagom" class="bagom_historie">
+      <section class="bagom_historie">
         <h2>
 
           Memphis House kommer af to veninder, der startede en
@@ -136,33 +137,54 @@
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
         </div>
         <div class="slidingText1 bagom_tags_img">
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
           <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
+        </div>
+        <div class="slidingText3 bagom_tags_img">
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
+          <img class="bagom_img_none" src="/img/markat.webp" alt="" />
         </div>
       </section>
 
-      <section id="bagom" class="bagom_bund">
+      <section class="bagom_bund">
         <h2>
-          VI GEMMER VI ALLE RESTER, OG BRUGER DEM SENERE TIL <span class="bagom_blaa">LIMITED
-          EDITION-PRODUKTIONER.</span>  VI LADER INTET GÅ TIL SPILDE. <span class="bagom_blaa">HOLD ØJE</span> PÅ DENNE
-          HJEMMESIDE OG VORES INSTAGRAM.
+          Vi gemmer alle rester og bruger dem senere til <span class="bagom_blaa">limited edition
+            produktioner.</span> Vi lader intet gå til spilde. <span class="bagom_blaa">Hold øje</span> på 
+            denne hjemmeside og vores instragram.
         </h2>
 
         <h2>
-          PÅ DEN MÅDE, <span class="bagom_blaa">UNGGÅR VI OVERPRODUKTION.</span>  DERFOR BLIVER VORES TASKER KUN
-          PRODUCERET EFTER BESTILLING.
+          På den måde, <span class="bagom_blaa">undgår vi overproduktion.</span> Derfor bliver vores
+          tasker kun produceret efter bestilling.
         </h2>
 
         <h2>
-          <span class="bagom_blaa">T-SHIRT GARN ER IKKE T-SHIRTS</span>  - MEN EN TYPE AF GARN VI BENYTTER OS AF.
+          <span class="bagom_blaa">T-shirt garn er ikke t-shirts</span>  - men en type af garn vi 
+          benytter os af.
         </h2>
 
         <h2>
-          VI FORSØGER AT FÅ ALLE VORES MATERIALER FRA <span class="bagom_blaa">DANSKE PRODUCENTER</span> FOR AT
-          MINDSKE TRANSPORTEN
+          Vi forsøger at få alle vores materialer fra <span class="bagom_blaa">danske producenter</span> for 
+          at mindske transporten.
         </h2>
       </section>
     </main>
@@ -197,13 +219,16 @@
 
 
 .bagom_tags_img {
+  opacity: 60%;
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  transform: translateX(100%);
-  animation: slidingText1 12s linear infinite;
-  position: relative;
-  
+  gap: 0.2rem;
+margin-top: 0.2rem;
+}
+
+
+
+.bagom_img_none {
+  display: none;
 }
 
   img {

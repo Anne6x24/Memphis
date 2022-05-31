@@ -1698,9 +1698,6 @@ p.knap {
   /*-------------------------------------------- Cookiesiden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-
- 
-
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
@@ -1711,7 +1708,7 @@ p.knap {
   .singleview_h1 {
     margin-bottom: 3rem !important;
   }
-/* 
+  /* 
     .forside_filtrering_produktbilleder {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
@@ -1719,40 +1716,33 @@ p.knap {
     .forside_filtrering_produktbillede_enkelt:hover {
       background-image: url(/img/produktbilleder/cph.01.02.webp);
     } */
-  }
-  .singleview_h3 {
-    font-size: 2rem !important;
-    line-height: 1.6rem;
-  }
+}
+.singleview_h3 {
+  font-size: 2rem !important;
+  line-height: 1.6rem;
+}
 
-  .singleview_h3_ekstra {
-    margin-bottom: 4rem !important;
-  }
-  .singleview_ikoner {
-    gap: 0.5rem;
-    justify-content: normal;
-    gap: 2rem;
-  }
-  .singleview_ikontekst {
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
+.singleview_h3_ekstra {
+  margin-bottom: 4rem !important;
+}
+.singleview_ikoner {
+  gap: 0.5rem;
+  justify-content: normal;
+  gap: 2rem;
+}
+.singleview_ikontekst {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
 
-  /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
+/*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
-  label {
-    height: 90px;
-  }
+label {
+  height: 90px;
+}
 
-  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
-  /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
-
-    /*-------------------------------------------- HEADER ------------------------------------------------------------*/
-    .header_ikoner_desk {
-      margin-left: 47rem;
-    }
- 
-
+/*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
+/*-------------------------------------------- FOOTER ------------------------------------------------------------*/
 
 /*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/
 @keyframes banner_infinite {
@@ -1812,11 +1802,10 @@ p.knap {
 
 
 @media (min-width: 1494px) {
- /* baggrundsbilledet */
- .forside_plet {
-  background-image: url(/img/1538.webp);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
+  /* baggrundsbilledet */
+  .forside_plet {
+    background-image: url(/img/1538.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

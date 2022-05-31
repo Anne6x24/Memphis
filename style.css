@@ -2,6 +2,7 @@
   /* backgroudcolor */
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #202020;
+  --third--bg-color: #fdfdfd;
 
   /* ------- header desk ------- */
   --desk-bg-color-header: transparant;
@@ -143,7 +144,6 @@ img {
   height: auto;
 }
 
-
 #forside,
 #levering_returning,
 #kontakt,
@@ -162,8 +162,6 @@ img {
   src: url(/font/Archivo-VariableFont_wdth\,wght_2.ttf) format("woff2");
   font-weight: 100 900;
 }
-
-
 
 h1 {
   font-size: var(--h1-size--);
@@ -277,7 +275,6 @@ button:hover {
 
 /* ----------------------------------------------- MENU ------------------------------------------ */
 
-
 *,
 *::before,
 *::after {
@@ -292,8 +289,6 @@ button:hover {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
-
 
 .logo {
   display: block;
@@ -415,23 +410,19 @@ button:hover {
   font-variation-settings: "wght" 700, "wdth" 90;
 }
 
-
 .header_ikoner {
   display: flex;
   height: 2rem;
   margin-left: none;
 }
 
-.header_ikoner_desk
-{
+.header_ikoner_desk {
   display: none;
 }
 
 .brand {
   margin: 0;
 }
-
-
 
 /* ------------------------ MENU - banner hvid----------------------- */
 .trustpilot_1 {
@@ -479,8 +470,6 @@ button:hover {
   font-style: italic;
 }
 
-
-
 /*------------------------------------------- Forside-siden -----------------------------------------------------*/
 #forside_article {
   margin-bottom: 2em;
@@ -526,15 +515,9 @@ button:hover {
 /*------------Forside animation-----------*/
 .animeret_txt {
   color: var(--h2--color-third);
-  border-right: .05em solid;
+  border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
 }
-
-
-
-
-
-
 
 /*------------------- Univers sektion ----------------------*/
 .forside_div_wrapper {
@@ -560,22 +543,19 @@ button:hover {
   justify-content: center;
 }
 
-
-
-
 /*------------ Sortering og filtrering -----------*/
 
 fieldset {
   border: none;
- 
 }
 
-.input-field01, .input-field02 {
+.input-field01,
+.input-field02 {
   display: flex;
-  
 }
 
-.sortering, .filtrering {
+.sortering,
+.filtrering {
   height: auto;
 }
 
@@ -583,18 +563,16 @@ fieldset {
   margin-top: 10rem;
 }
 
-.farve_storrelse_desk, .forside_top_sortering {
+.farve_storrelse_desk,
+.forside_top_sortering {
   display: none;
 }
-
-
 
 .forside_nav_filtrering_mobil {
   display: flex;
   margin-bottom: 2rem;
   gap: 2rem;
 }
-
 
 #hojlav1 {
   border: none;
@@ -614,7 +592,6 @@ fieldset {
   margin-top: 13rem;
 }
 
-
 /*** ---- program oversigt i responsivt grid ---- ***/
 .forside_filtrering_produktbilleder {
   display: grid;
@@ -625,7 +602,7 @@ fieldset {
 
 .forside_filtrering_produktbilleder img {
   box-shadow: var(--button-shadow);
-} 
+}
 
 .forside_filtrering_produktbilleder_tekst {
   display: flex;
@@ -1498,21 +1475,19 @@ p.knap {
   .forside_hero_img {
     width: 11rem;
   }
-   /*-------------------------------------------- HEADER ------------------------------------------------------------*/
-   .header_ikoner_desk
-   {
-     display: flex;
-   
-   gap: 1rem;
-   width: 5rem;
-   }
-   
-   .header_ikoner
-   {
-     display: none;
-   }
+  /*-------------------------------------------- HEADER ------------------------------------------------------------*/
+  .header_ikoner_desk {
+    display: flex;
 
-   .header_ikoner_desk {
+    gap: 1rem;
+    width: 5rem;
+  }
+
+  .header_ikoner {
+    display: none;
+  }
+
+  .header_ikoner_desk {
     margin-left: 8rem;
   }
 
@@ -1526,12 +1501,9 @@ p.knap {
   }
 
   .navbar .menu-inner {
-   
     margin-left: 2rem;
-    
   }
 
- 
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
@@ -1623,7 +1595,7 @@ p.knap {
     display: flex;
     /* flex-direction: column;
     justify-content: center; */
-    
+
     gap: 0.75rem;
     padding-block: 2rem;
   }
@@ -1708,12 +1680,10 @@ p.knap {
     margin-right: 8rem;
   }
 
-
-     /*-------------------------------------------- HEADER ------------------------------------------------------------*/
-     .header_ikoner_desk {
-      margin-left: 23rem;
-    }
- 
+  /*-------------------------------------------- HEADER ------------------------------------------------------------*/
+  .header_ikoner_desk {
+    margin-left: 23rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1788,7 +1758,6 @@ p.knap {
   .footer_information_links_div {
     gap: 20rem;
   }
-
 
   /*-------------------------------------------- HEADER ------------------------------------------------------------*/
   .header_ikoner_desk {
@@ -1903,9 +1872,6 @@ label {
     border-color: transparent;
   }
 }
-
-
-
 
 @media (min-width: 1494px) {
   /* baggrundsbilledet */

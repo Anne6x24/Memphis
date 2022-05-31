@@ -115,6 +115,11 @@
   /*---- GENERELLE REGLER desk --------*/
   --margin-inline-desk: 14rem;
   --margin-bottom-desk: 8rem;
+
+
+/*---- IMG REGLER--------*/
+  --img-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+  rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 /*-------------------------------------------------- GENERELLE REGLER -----------------------------------------------*/
@@ -162,8 +167,6 @@ img {
   src: url(/font/Archivo-VariableFont_wdth\,wght_2.ttf) format("woff2");
   font-weight: 100 900;
 }
-
-
 
 h1 {
   font-size: var(--h1-size--);
@@ -292,7 +295,6 @@ button:hover {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
 
 
 .logo {
@@ -482,11 +484,6 @@ button:hover {
 
 
 /*------------------------------------------- Forside-siden -----------------------------------------------------*/
-#forside_article {
-  margin-bottom: 2em;
-  background-image: url(/img/kortet.png);
-  z-index: -100;
-}
 
 /* baggrundsbillede  */
 .forside_plet {
@@ -499,14 +496,8 @@ button:hover {
   display: grid;
 }
 
-.forside_satellit_div,
 #forside_hero_wrap {
   grid-area: 1/1;
-}
-
-.forside_satellit_img {
-  width: 8rem;
-  display: block;
 }
 
 .forside_hero_img_flex {
@@ -518,10 +509,6 @@ button:hover {
   margin-top: 7rem;
 }
 
-#wrap_bubble {
-  background-size: cover;
-  position: relative;
-}
 
 /*------------Forside animation-----------*/
 .animeret_txt {
@@ -529,11 +516,6 @@ button:hover {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
 }
-
-
-
-
-
 
 
 /*------------------- Univers sektion ----------------------*/
@@ -561,10 +543,7 @@ button:hover {
 }
 
 
-
-
 /*------------ Sortering og filtrering -----------*/
-
 fieldset {
   border: none;
  
@@ -583,10 +562,9 @@ fieldset {
   margin-top: 10rem;
 }
 
-.farve_storrelse_desk, .forside_top_sortering {
+.farve_storrelse_desk, .forside_top_sortering, .forside_filtrering_h3_storrelser, .forside_filtrering_h3_farver {
   display: none;
 }
-
 
 
 .forside_nav_filtrering_mobil {
@@ -640,8 +618,6 @@ fieldset {
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
-/*------------------------------------------- Singleview --------------------------------------------------------*/
-
 .singleview_produktbillede1 img {
   max-width: 15rem;
 }
@@ -681,14 +657,6 @@ fieldset {
   margin-bottom: 1rem;
 }
 
-/* .singleview_col-1 {
-  width: 20%;
-}
-
-.singleview_col-2 {
-  width: 25%;
-} */
-
 .singleview_col-2 h2 {
   color: white;
 }
@@ -722,9 +690,6 @@ fieldset {
   border-left: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
 }
-
-/* #addtocart_btn {
-} */
 
 .single_view_underline {
   border-bottom: 1px solid #ffffff;
@@ -761,12 +726,10 @@ fieldset {
   height: 40px !important;
 }
 
-/* Single view reviews */
-
+/* Singleview reviews */
 .reviews-container {
   background-color: #fff;
   border-radius: 5px;
-  /* box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.3); */
   padding: 20px;
 }
 
@@ -783,7 +746,7 @@ fieldset {
 
 .review:hover {
   border: 1px solid #ddd;
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: var(--button-shadow);
 }
 
 .progress {
@@ -801,8 +764,8 @@ fieldset {
 }
 
 .progress-done {
-  background: #0338e1;
-  box-shadow: 0 3px 3px -5px rgb(212, 217, 241), 0 2px 5px rgb(51, 78, 231);
+  background: var(--button--bg-color);
+  box-shadow: var(--button-shadow);
   border-radius: 5px;
   height: 10px;
   width: 0;
@@ -815,9 +778,6 @@ fieldset {
 .singleview_h4stars {
   margin-bottom: 0 !important;
 }
-/* .percent {
-  color: #333;
-} */
 
 /* SOCIAL PANEL CSS */
 .social-panel-container {
@@ -981,9 +941,6 @@ fieldset {
 
 /*------------------------------------------- GODT AT VIDE-siden -------------------------------------------*/
 /*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
-/*------------------------------------------- Cookie-siden -------------------------------------------------*/
-/*------------------------------------------- Bagom-siden --------------------------------------------------*/
-
 /* ----------------- ACCORDION ------------------- */
 
 .wrapper {
@@ -1125,6 +1082,11 @@ input:checked ~ .questions {
   z-index: 100;
   transform: scaleY(1);
 }
+/*------------------------------------------- Cookie-siden -------------------------------------------------*/
+.cookie_ol_liste {
+  margin-bottom: 1rem;
+} 
+/*------------------------------------------- Bagom-siden --------------------------------------------------*/
 
 /*--------------------------------------------- Levering og returnering-siden -------------------------------------*/
 .levering_returnering_guide_ikoner_tekst {
@@ -1134,34 +1096,35 @@ input:checked ~ .questions {
 }
 
 /*--------------------------------------------- Konakt-siden ------------------------------------------------------*/
-.adresse {
+.kontakt_adresse {
   margin-bottom: 0;
 }
 
-.kort {
+.kontakt_kort {
   margin-top: 1rem;
   box-shadow: var(--button-shadow);
 }
 
-.kort:hover {
+.kontakt_kort:hover {
   transform: var(--button-transform-animation);
 }
 
-.nedenfor {
+.kontakt_nedenfor {
   margin-top: 0.5rem;
   margin-bottom: 0;
   font-style: italic;
 }
 
-.bund2 {
+.kontakt_bund2 {
   margin-top: 2rem;
 }
 
-.dm {
+.kontakt_dm {
   line-height: var(--p--lineheight);
 }
 
-/*------------------------ Konakt-formular ------------------------*/
+
+/*------------------------ Konkakt-formular ------------------------*/
 :focus {
   outline: none;
 }
@@ -1267,6 +1230,30 @@ p.knap {
   padding-bottom: 4rem;
 }
 
+/*------------------------ POPUP KONTAKT ------------------------*/
+  /*** POPUP ***/
+  .modal-kontakt {
+    padding: 1em;
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    margin-top: 15rem;
+    margin-inline: 2rem;
+  }
+  
+  .modal-kontakt-div-indramme {
+    display: flex;
+  gap: 0rem;
+  }
+  
+   .modal-singleview::backdrop {
+    background: rgb(0 0 0 / 0.8);
+  }
+  
+  .modal_kontakt_img_lyn {
+    width: 5rem;
+  } 
+
 /*------------------------ Konakt-map ------------------------*/
 /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
 /**** FOOTER ****/
@@ -1322,6 +1309,13 @@ p.knap {
   gap: 0.5rem;
 }
 
+@media (min-width: 391px) {
+  .modal-kontakt {
+    margin-inline: auto auto;
+    max-width: 60ch;
+}
+} 
+
 @media (max-width: 640px) {
   .singleview_ikon1 {
     max-width: 5rem;
@@ -1355,7 +1349,7 @@ p.knap {
   }
 
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
-  .kort {
+  .kontakt_kort {
     width: 35rem;
   }
 
@@ -1363,9 +1357,7 @@ p.knap {
 
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-  .forside_satellit_img {
-    width: 15rem;
-  }
+ 
 
   /* baggrundsbilledet */
   .forside_plet {
@@ -1383,7 +1375,7 @@ p.knap {
   .forside_hero_img {
     width: 10rem;
     height: 15rem;
-    box-shadow: var(--button-shadow);
+    box-shadow: var(--img-shadow);
   }
 
   #forside_hero_wrap {
@@ -1395,6 +1387,7 @@ p.knap {
     margin-left: 0rem;
     margin-top: 3rem;
   }
+
 
   /*-------------- Univers sektion !! ---------------*/
 
@@ -1416,6 +1409,18 @@ p.knap {
   .forside_univers_knap {
     margin-top: 4rem;
   }
+
+
+   /*-------------- SORTERING OG FILTRERING ---------------*/
+   .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .forside_univers_filtreing {
+  margin-top: 14rem;
+  margin-inline: 4rem;
+  }
+
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
@@ -1471,7 +1476,7 @@ p.knap {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*------------------------ Konakt-formular ------------------------*/
-  .bund {
+  .kontakt_bund {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -1481,9 +1486,14 @@ p.knap {
     width: 96%;
   }
 
-  .bund2 {
+  .kontakt_bund2 {
     margin-top: 0;
   }
+
+    /*------------------------ POPUP VINDUE ------------------------*/
+  .modal-kontakt-div-indramme {
+    gap: 3rem;
+}
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
@@ -1498,6 +1508,13 @@ p.knap {
   .forside_hero_img {
     width: 11rem;
   }
+
+  /*-------------- SORTERING OG FILTRERING ---------------*/
+
+  .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
    /*-------------------------------------------- HEADER ------------------------------------------------------------*/
    .header_ikoner_desk
    {
@@ -1668,6 +1685,53 @@ p.knap {
   .forside_univers_div {
     margin-top: 2rem;
   }
+
+    /*** PRODUKTER ***/
+
+  .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  }
+
+  .forside_hero_wrap {
+    margin-top: 3rem;
+  }
+
+  /*** filtrering nav ***/
+
+  .forside_nav_filtrering_mobil {
+    display: none;
+  }
+
+  .farve_storrelse_desk, .forside_top_sortering, .forside_filtrering_h3_storrelser, .forside_filtrering_h3_farver {
+  display: block;
+}
+
+.forside_desk_produkter_filtrering {
+  display: flex;
+  gap: 7rem;
+}
+
+.forside_top_sortering {
+  text-align: right;
+  margin-right: 9.8rem;
+  margin-bottom: 2rem;
+}
+
+.input_label_div {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-family: var(--p--);
+}
+
+.label {
+  height: 1rem;
+}
+
+.forside_filtrering_h3_storrelser {
+  margin-top: 3rem;
+}
+
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
@@ -1730,7 +1794,7 @@ p.knap {
   }
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
-  .kort {
+  .kontakt_kort {
     width: 30rem;
   }
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
@@ -1743,13 +1807,23 @@ p.knap {
     background-repeat: no-repeat;
   }
 
-  .forside_hero_img {
-    width: 20rem;
-    height: 28rem;
+
+
+
+/*** PRODUKTER ***/
+
+  .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  #forside_satellit_img02 {
-    display: none;
+  /*** SORTERING OG FILTRERING ***/
+
+  .forside_top_sortering {
+  margin-right: 13.8rem;
+}
+
+.forside_univers_filtreing {
+    margin-top: 25rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   .singleview_produktbillede1 img {
@@ -1796,12 +1870,26 @@ p.knap {
   }
 }
 
+@media (min-width: 1494px) {
+  /* baggrundsbilledet */
+  .forside_plet {
+    background-image: url(/img/1538.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: 1538px) {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookiesiden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+  /* PRODUKTER */
+
+  .forside_filtrering_produktbilleder {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
@@ -1820,7 +1908,7 @@ p.knap {
     .forside_filtrering_produktbillede_enkelt:hover {
       background-image: url(/img/produktbilleder/cph.01.02.webp);
     } */
-}
+
 .singleview_h3 {
   font-size: 2rem !important;
   line-height: 1.6rem;
@@ -1847,6 +1935,7 @@ label {
 
 /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
 /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
+}
 
 /*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/
 @keyframes banner_infinite {
@@ -1904,14 +1993,3 @@ label {
   }
 }
 
-
-
-
-@media (min-width: 1494px) {
-  /* baggrundsbilledet */
-  .forside_plet {
-    background-image: url(/img/1538.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}

@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memphis House</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="/script/mixitup.min.js" defer></script>
-    <script src="/script/mixitupinit.js" defer></script>
   </head>
 
   <!-- body -->
   <body>
+    
     <!-- header -->
      <header id="header">
       <div class="trustpilot">
@@ -95,7 +94,6 @@
       <article id="forside_article">
         <section class="forside_herounit_img_tekst_section">
        
-
            <!-- hero -->
         <div id="forside_hero_wrap">
 
@@ -118,6 +116,7 @@
       </div>
         </div>
         
+        <!-- univers og filtrering -->
         <div class="forside_univers_filtreing">
 
          <!-- univers sektion -->
@@ -161,9 +160,8 @@
                   <!-- DESK -->
                   
 
-
                   <div class="forside_farver_størrelser">
-                    <h3>Farver</h3>
+                    <h3 class="forside_filtrering_h3_farver">Farver</h3>
                   <fieldset data-filter-group="farve_storrelse_desk" class="farve_storrelse_desk">
                       <div class="input_label_div">
                       <input type="radio" value="sort" data-filter=".sort"> 
@@ -196,7 +194,7 @@
                     </div>
                   </fieldset>
 
-                  <h3 class="forside_filtrering_h3_størrelser">Størrelser</h3>
+                  <h3 class="forside_filtrering_h3_storrelser">Størrelser</h3>
                   <fieldset data-filter-group="farve_storrelse_desk" class="farve_storrelse_desk">
                     <div class="input_label_div">
                       <input type="radio" value="lille" data-filter=".lille"> 
@@ -215,8 +213,6 @@
                      
                   </fieldset>
                 </div>
-
-                  
 
 
                     <!-- MOBIL -->
@@ -258,9 +254,7 @@
                 </form>
               </div>
 
-
-              <!-- produktbilleder -->
-
+              <!-- PRODUKTBILLEDER -->
               <div class="forside_filtrering_produktbilleder">
               <article class="mix orange mellem all" data-name="b">
               <div>
@@ -350,17 +344,15 @@
             </div>
             </div>
           </article>  
-        </div>
+              </div>
 
             </div>
 
           </div>
 
           </div>
+
         </div>
-
-      </div>
-
 
       </section>
       </article>
@@ -461,6 +453,8 @@
     </footer>
 
     <!-- script -->
+    <script src="/script/mixitup.min.js" defer></script>
+    <script src="/script/mixitupinit.js" defer></script>
     <script src="script/burger.js"></script>
     <script src="script/hero.js"></script>
 
@@ -468,176 +462,8 @@
   </body>
 </html>
 
-<!-- styles -->
-
-<style>
-
-.animeret_txt {
-  color: var(--h2--color-third);
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-
-fieldset {
-  border: none;
- 
-}
-
-.input-field01, .input-field02 {
-  display: flex;
-  
-}
-
-.sortering, .filtrering {
-  height: auto;
-}
 
 
-/*** filtrering nav ***/
-
-.farve_storrelse_desk, .forside_top_sortering {
-  display: none;
-}
-
-
-
-.forside_nav_filtrering_mobil {
-  display: flex;
-  margin-bottom: 2rem;
-  gap: 2rem;
-}
-
-
-#hojlav1 {
-  border: none;
-  border-radius: var(--button-radius);
-  box-shadow: var(--button-shadow);
-  background-color: var(--h2--color-secondary);
-  color: #333;
-  width: 100%;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-  padding: 0.4rem;
-  margin: 0.2rem;
-  max-width: 9rem;
-}
-
-.forside_univers_filtreing {
-  margin-top: 13rem;
-}
-
-/*** program oversigt i responsivt grid ***/
-  .forside_filtrering_produktbilleder {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
-    gap: 35px;
-    margin-bottom: 5rem;
-  }
-
-  .forside_filtrering_produktbilleder img {
-    box-shadow: var(--button-shadow);
-  } 
-
-  .forside_filtrering_produktbilleder_tekst {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    color: var(--h5--color-fourth);
-  }
-
-  .forside_filtrering_produktbilleder_tekst h4 {
-    color: var(--h5--color-fourth);
-  }
-
-  @media (min-width: 640px) {
-    .forside_filtrering_produktbilleder {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .forside_univers_filtreing {
-  margin-top: 14rem;
-  margin-inline: 4rem;
-  }
-}
-
-  @media (min-width: 768px) {
-    .forside_filtrering_produktbilleder {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-  }
-  
-  @media (min-width: 1024px) {
-    .forside_filtrering_produktbilleder {
-    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-  }
-
-  .forside_hero_wrap {
-    margin-top: 3rem;
-  }
-
-  /*** filtrering nav ***/
-
-  .forside_nav_filtrering_mobil {
-    display: none;
-  }
-
-  .farve_storrelse_desk, .forside_top_sortering {
-  display: block;
-}
-
-.forside_desk_produkter_filtrering {
-  display: flex;
-  gap: 7rem;
-}
-
-.forside_top_sortering {
-  text-align: right;
-  margin-right: 9.8rem;
-  margin-bottom: 2rem;
-}
-
-.input_label_div {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  font-family: var(--p--);
-}
-
-.label {
-  height: 1rem;
-}
-
-.forside_filtrering_h3_størrelser {
-  margin-top: 3rem;
-}
-
-  }
-
-  @media (min-width: 1280px) {
-    .forside_filtrering_produktbilleder {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .forside_top_sortering {
-  margin-right: 13.8rem;
-}
-
-.forside_univers_filtreing {
-    margin-top: 25rem;
-  }
-  }
-
-  @media (min-width: 1538px) {
-    .forside_filtrering_produktbilleder {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  }
-
-
-
-
-
-  </style>
 
 
 

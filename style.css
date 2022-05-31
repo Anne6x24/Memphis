@@ -52,7 +52,7 @@
     3.75rem
   );
   --h2-size--: clamp(1.6rem, 1.3800000000000001rem + 1.1vw, 2.7rem);
-  --h2--size--forside: clamp(1rem, 0.84rem + 0.8vw, 1.8rem) ;
+  --h2--size--forside: clamp(1rem, 0.84rem + 0.8vw, 1.8rem);
   --h3--size-: clamp(1.4rem, 1.23rem + 0.8500000000000001vw, 2.25rem);
   --h4-size--: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
   --h5-size--: clamp(1.125rem, 1.09rem + 0.17500000000000004vw, 1.3rem);
@@ -62,7 +62,6 @@
     font-size:
       clamp(0.7rem, 0.6399999999999999rem + 0.30000000000000004vw, 1rem) ;
   );
-
 
   --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 
@@ -452,6 +451,13 @@ button:hover {
   z-index: -100;
 }
 
+/* baggrundsbillede  */
+.forside_plet {
+  background-image: url(/img/390.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .forside_herounit_img_tekst_section {
   display: grid;
 }
@@ -545,6 +551,7 @@ button:hover {
   grid-area: 1/1;
   margin-top: 20rem;
 }
+
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
@@ -1270,6 +1277,13 @@ p.knap {
     width: 15rem;
   }
 
+  /* baggrundsbilledet */
+  .forside_plet {
+    background-image: url(/img/640.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   .forside_hero_img_flex {
     display: flex;
     gap: 0.5rem;
@@ -1384,8 +1398,11 @@ p.knap {
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
 
-  .forside_satellit_img {
-    width: 20rem;
+  /* baggrundsbilledet */
+  .forside_plet {
+    background-image: url(/img/768.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .forside_hero_img {
@@ -1514,10 +1531,12 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-  .forside_satellit_img {
-    width: 27rem;
+  /* baggrundsbilledet */
+  .forside_plet {
+    background-image: url(/img/1024.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
-
   .forside_hero_img {
     width: 16rem;
     height: 22rem;
@@ -1595,8 +1614,11 @@ p.knap {
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
-  .forside_satellit_img {
-    width: 37rem;
+  /* baggrundsbilledet */
+  .forside_plet {
+    background-image: url(/img/1280.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .forside_hero_img {
@@ -1652,6 +1674,14 @@ p.knap {
   /*-------------------------------------------- Cookiesiden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
+
+  /* baggrundsbilledet */
+  .forside_plet {
+    background-image: url(/img/1538.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
@@ -1661,6 +1691,13 @@ p.knap {
 
   .singleview_h1 {
     margin-bottom: 3rem !important;
+    .forside_filtrering_produktbilleder {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .forside_filtrering_produktbillede_enkelt:hover {
+      background-image: url(/img/produktbilleder/cph.01.02.webp);
+    }
   }
   .singleview_h3 {
     font-size: 2rem !important;

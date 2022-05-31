@@ -478,7 +478,7 @@ button:hover {
 
 .forside_hero_wrap_tekst {
   margin-left: 9rem;
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 
 #wrap_bubble {
@@ -549,7 +549,7 @@ button:hover {
 
 .forside_filtrering_allaround_container {
   grid-area: 1/1;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/

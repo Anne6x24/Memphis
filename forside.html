@@ -89,7 +89,7 @@
         <section class="forside_herounit_img_tekst_section">
        
 
-
+           <!-- hero -->
         <div id="forside_hero_wrap">
 
           <div class="forside_hero_img_flex">
@@ -113,15 +113,11 @@
 
           <button>Udforsk vores tasker</button>
       </div>
-    </div>
-
-
-
-
-
-
-      
+        </div>
         
+        <div class="forside_univers_filtreing">
+
+         <!-- univers sektion -->
           <div class="forside_univers_div" >
 
             <div class="forside_univers_tekst">
@@ -137,19 +133,16 @@
 
           </div>
 
-
-
-
-
-<div class="forside_filtrering_allaround_container">
+           <!-- filtrering og produkter -->
+        <div class="forside_filtrering_allaround_container">
 
           <div class="forside_filtrering_div">
             
             
             <fieldset data-filter-group="hoj_lav" class="forside_top_sortering"> 
-              <h3>Sortering</h3>
+             
               <select name="hojlav" id="hojlav1">
-                <option value="alle" data-filter="all">Alle</option>
+                <option value="alle" data-filter="all">Sorter efter</option>
                 <option value="høj" data-sort="name:asc">Højeste til laveste pris</option>
                 <option value="sort" data-sort="name:desc">Laveste til højeste pris</option>
               </select>
@@ -167,21 +160,55 @@
 
 
                   <div class="forside_farver_størrelser">
-                  <fieldset data-filter-group="farve_storrelse_desk" class="farve_storrelse_desk">
                     <h3>Farver</h3>
-                      <input type="radio" value="sort" data-filter=".sort"> <label for="farver_storrelser">Sort</label>
-                      <input type="radio" value="gron" data-filter=".gron"> <label for="farver_storrelser">Grøn</label>
-                      <input type="radio" value="orange" data-filter=".orange"> <label for="farver_storrelser">Orange</label>
-                      <input type="radio" value="brun" data-filter=".brun"> <label for="farver_storrelser">Brun</label>
-                      <input type="radio" value="blaa" data-filter=".blaa"> <label for="farver_storrelser">Blå</label>
-                      <input type="radio" value="pink" data-filter=".pink"> <label for="farver_storrelser">Pink</label>
+                  <fieldset data-filter-group="farve_storrelse_desk" class="farve_storrelse_desk">
+                      <div class="input_label_div">
+                      <input type="radio" value="sort" data-filter=".sort"> 
+                      <label class="label" for="farver_storrelser">Sort</label>
+                    </div>
+
+                    <div class="input_label_div">
+                      <input type="radio" value="gron" data-filter=".gron"> 
+                      <label class="label" for="farver_storrelser">Grøn</label>
+                    </div>
+                    
+                      <div class="input_label_div">
+                      <input type="radio" value="orange" data-filter=".orange"> 
+                      <label class="label" for="farver_storrelser">Orange</label>
+                    </div>
+
+                      <div class="input_label_div">
+                      <input type="radio" value="brun" data-filter=".brun"> 
+                      <label class="label" for="farver_storrelser">Brun</label>
+                    </div>
+
+                      <div class="input_label_div">
+                      <input type="radio" value="blaa" data-filter=".blaa"> 
+                      <label class="label" for="farver_storrelser">Blå</label>
+                    </div>
+
+                      <div class="input_label_div">
+                      <input type="radio" value="pink" data-filter=".pink"> 
+                      <label class="label" for="farver_storrelser">Pink</label>
+                    </div>
                   </fieldset>
 
+                  <h3 class="forside_filtrering_h3_størrelser">Størrelser</h3>
                   <fieldset data-filter-group="farve_storrelse_desk" class="farve_storrelse_desk">
-                    <h3>Størrelser</h3>
-                      <input type="radio" value="lille" data-filter=".lille"> <label for="farver_storrelser">20x27cm</label>
-                      <input type="radio" value="mellem" data-filter=".mellem"> <label for="farver_storrelser">27x20cm</label>
-                      <input type="radio" value="stor" data-filter=".stor"> <label for="farver_storrelser">30x35cm</label>
+                    <div class="input_label_div">
+                      <input type="radio" value="lille" data-filter=".lille"> 
+                      <label class="label" for="farver_storrelser">20x27cm</label>
+                    </div>
+
+                      <div class="input_label_div">
+                      <input type="radio" value="mellem" data-filter=".mellem"> 
+                      <label class="label" for="farver_storrelser">27x20cm</label>
+                    </div>
+
+                      <div class="input_label_div">
+                      <input type="radio" value="stor" data-filter=".stor"> 
+                      <label class="label" for="farver_storrelser">30x35cm</label>
+                    </div>
                      
                   </fieldset>
                 </div>
@@ -191,10 +218,10 @@
 
                     <!-- MOBIL -->
                     <div class="forside_nav_filtrering_mobil">
+                      <h3>Farve</h3>
                     <fieldset data-filter-group="farver_mobil">
-                    <h3>Farve</h3>
                     <select name="hojlav" id="hojlav1">
-                      <option value="alle" data-filter="all">Alle</option>
+                      <option value="all" data-filter="all">Alle</option>
                       <option value="sort" data-filter=".sort">Sort</option>
                       <option value="gron" data-filter=".gron">Grøn</option>
                       <option value="orange" data-filter=".orange">Orange</option>
@@ -231,7 +258,7 @@
               <!-- produktbilleder -->
 
               <div class="forside_filtrering_produktbilleder">
-              <article class="mix orange mellem" data-name="b">
+              <article class="mix orange mellem all" data-name="b">
               <div>
               <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -241,7 +268,7 @@
             </div>
           </article>
 
-            <article class="mix pink mellem" data-name="b">
+            <article class="mix pink mellem all" data-name="b">
             <div>
               <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -252,7 +279,7 @@
           </article>
 
 
-            <article class="mix sort lille" data-name="a">
+            <article class="mix sort lille all" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/cph.03.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -264,7 +291,7 @@
 
 
 
-            <article class="mix gron sort lille" data-name="c">
+            <article class="mix gron sort lille all" data-name="c">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/cph.04.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -275,7 +302,7 @@
           </article>
 
 
-            <article class="mix gron stor" data-name="a">
+            <article class="mix gron stor all" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -286,7 +313,7 @@
         </article>
 
 
-            <article class="mix brun stor" data-name="a">
+            <article class="mix brun stor all" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -298,7 +325,7 @@
 
 
 
-            <article class="mix orange stor" data-name="a">
+            <article class="mix orange stor all" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.03.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -310,7 +337,7 @@
 
 
 
-          <article class="mix blaa mellem" data-name="a">
+          <article class="mix blaa mellem all" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.04.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -328,9 +355,8 @@
           </div>
         </div>
 
-        <!-- <section id="wrap_bubble">
-          <img src="/img/bubble.svg" alt="" />
-        </section> -->
+      </div>
+
 
       </section>
       </article>
@@ -482,7 +508,11 @@ fieldset {
   letter-spacing: 1px;
   padding: 0.4rem;
   margin: 0.2rem;
-  max-width: 5rem;
+  max-width: 9rem;
+}
+
+.forside_univers_filtreing {
+  margin-top: 13rem;
 }
 
 /*** program oversigt i responsivt grid ***/
@@ -512,6 +542,10 @@ fieldset {
     .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+
+  .forside_univers_filtreing {
+  margin-top: 14rem;
+  margin-inline: 4rem;
   }
 
   @media (min-width: 768px) {
@@ -525,6 +559,9 @@ fieldset {
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
   }
 
+  .forside_hero_wrap {
+    margin-top: 3rem;
+  }
 
   /*** filtrering nav ***/
 
@@ -543,7 +580,27 @@ fieldset {
 
 .forside_top_sortering {
   text-align: right;
-  margin-right: 10rem;
+  margin-right: 9.8rem;
+  margin-bottom: 2rem;
+}
+
+.input_label_div {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-family: var(--p--);
+}
+
+.label {
+  height: 1rem;
+}
+
+.forside_filtrering_h3_størrelser {
+  margin-top: 3rem;
+}
+
+input[type="radio"]:hover {
+  border-color: red;
 }
 
   }
@@ -551,6 +608,14 @@ fieldset {
   @media (min-width: 1280px) {
     .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .forside_top_sortering {
+  margin-right: 13.8rem;
+}
+
+.forside_univers_filtreing {
+    margin-top: 25rem;
   }
   }
 

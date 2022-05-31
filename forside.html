@@ -14,50 +14,54 @@
   <body>
     <!-- header -->
     <header id="header">
-      <!-- <div class="trustpilot">
+      <div class="trustpilot">
         <div class="trustpilot_1">
-          <p class="banner_hvid_p"><strong>Fremragende</strong></p>
-          <img src="/img/ikoner/trustpilot.svg" alt="">
-          <img src="/img/ikoner/trustpilot.svg" alt="">
-          <img src="/img/ikoner/trustpilot.svg" alt="">
-          <img src="/img/ikoner/trustpilot.svg" alt="">
-          <img src="/img/ikoner/trustpilot.svg" alt="">
-          
+          <div>
+            <p class="banner_hvid_p banner_hvid_p_1">Fremragende</p>
+          </div>
+          <div class="trustpilot_stjerner">
+            <img src="/img/ikoner/trustpilot.svg" alt="" />
+            <img src="/img/ikoner/trustpilot.svg" alt="" />
+            <img src="/img/ikoner/trustpilot.svg" alt="" />
+            <img src="/img/ikoner/trustpilot.svg" alt="" />
+            <img src="/img/ikoner/trustpilot.svg" alt="" />
+          </div>
         </div>
         <div>
-          <p class="banner_hvid_p">37 anmeldelser i alt</p>
+          <p class="banner_hvid_p banner_hvid_p_2">37 anmeldelser i alt</p>
         </div>
+      </div>
 
-      </div> -->
-
-      <!-- <div class="banner">
-        <div class="banner_1">
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-        </div>
-        <div class="banner_2">
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-          <p class="banner_p"> GRATIS FRAGT OG GRATIS RETURNERING </p>
-        </div>
-      </div> -->
-
+      <div class="slidingText1 header_banner">
+        <p>GRATIS FRAGT OG GRATIS RETURNERING</p>
+      </div>
 
       <nav class="navbar">
         <div class="container">
           <section class="wrapper_burger">
             <a href="./index.html" class="brand">
-              <img class="logo" src="/img/logo_memphis.svg" alt="Memphis' logo" />
+              <img
+                class="logo"
+                src="/img/logologo.svg"
+                alt="Memphis' logo"
+              />
             </a>
+
+            <div class="header_ikoner">
+              <img src="/img/ikoner/search.svg" alt="">
+              <img src="img/ikoner/kurv.svg" alt="">
+        
             <button type="button" class="burger" id="burger">
               <span class="burger-line"></span>
               <span class="burger-line"></span>
               <span class="burger-line"></span>
               <span class="burger-line"></span>
             </button>
+          </div>
+
+
+
+
             <div class="menu" id="menu">
               <ul class="menu-inner">
                 <li class="menu-item">
@@ -74,11 +78,14 @@
                 </li>
               </ul>
             </div>
+            <div class="header_ikoner_desk">
+              <img src="/img/ikoner/search.svg" alt="">
+              <img src="img/ikoner/kurv.svg" alt="">
+            </div>
+          
           </section>
 
-          <section>
-            <!-- SECTION TIL KURV OG SØGEIKON -->
-          </section>
+          
         </div>
       </nav>
     </header>
@@ -103,12 +110,8 @@
 
 
           <div class="forside_hero_content_h2">
-            <div class="forside_h2_start">Alle tasker er 
-            </div>
-            <div class="forside_hero_animation">
-              <div id="forside_hero_text">håndlavede
-              </div>
-            </div>
+            <h2 class="forside_h2_start">Alle tasker er <span class="animeret_txt">bæredygtige</span>
+            </h2>
           </div>
 
           <button>Udforsk vores tasker</button>
@@ -218,8 +221,9 @@
 
                     <!-- MOBIL -->
                     <div class="forside_nav_filtrering_mobil">
-                      <h3>Farve</h3>
+                     
                     <fieldset data-filter-group="farver_mobil">
+                      <h3>Farve</h3>
                     <select name="hojlav" id="hojlav1">
                       <option value="all" data-filter="all">Alle</option>
                       <option value="sort" data-filter=".sort">Sort</option>
@@ -467,6 +471,13 @@
 <!-- styles -->
 
 <style>
+
+.animeret_txt {
+  color: var(--h2--color-third);
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
 fieldset {
   border: none;
  
@@ -547,6 +558,7 @@ fieldset {
   margin-top: 14rem;
   margin-inline: 4rem;
   }
+}
 
   @media (min-width: 768px) {
     .forside_filtrering_produktbilleder {
@@ -599,10 +611,6 @@ fieldset {
   margin-top: 3rem;
 }
 
-input[type="radio"]:hover {
-  border-color: red;
-}
-
   }
 
   @media (min-width: 1280px) {
@@ -630,5 +638,56 @@ input[type="radio"]:hover {
 
 
   </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+  // array with texts to type in typewriter
+  var dataText = [
+    "lavet i København",
+    
+    "håndlavede"
+  ];
+
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < text.length) {
+      // add next character to h1
+      document.querySelector(".animeret_txt").innerHTML =
+        text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function () {
+        typeWriter(text, i + 1, fnCallback);
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == "function") {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+  function StartTextAnimation(i) {
+    if (typeof dataText[i] == "undefined") {
+      setTimeout(function () {
+        StartTextAnimation(0);
+      }, 20000);
+    }
+    // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+      typeWriter(dataText[i], 0, function () {
+        // after callback (and whole text has been animated), start next text
+        StartTextAnimation(i + 1);
+      });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+</script>
 
 

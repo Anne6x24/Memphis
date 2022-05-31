@@ -78,6 +78,7 @@
             <a class="dm" href="mailto:kontakt@memphishouse.dk">kontakt@memphishouse.dk</a>
 
             
+            <form>
           <ul>
             <p class="nedenfor">Udfyld gerne formularen nedenfor</p>
               <li>
@@ -112,8 +113,24 @@
               </li>
 
           </ul>
+
+        </form>
             
-            <button>Send</button>
+          <button class="open-button-kontakt">Send</button>
+
+          <dialog class="modal-kontakt" id="modal-kontakt">
+            <div class="modal-kontakt-div-indramme">
+            <img class="modal_kontakt_img_lyn" src="/img/ikoner/cursorlyn_4.svg" alt="Dette er en illustration af et lyn">
+            <div>
+            <h4>Vi har modtaget din henvendelse!</h4>
+            <p>Tusinde tak for din henvendelse. Vi vil vende tilbage hurtigst muligt.</p>
+          </div>
+            <div class="kryds_titel_luk">
+              <button class="button close-button-kontakt">X</button>
+            </div>
+          </div>
+          </dialog>
+
       </div>
         
     </section>
@@ -216,10 +233,49 @@
   <!-- script -->
   <script src="script/burger.js"></script>
   <script src="script/kontakt.js"></script>
+  <script src="script/popupkontakt.js"></script>
 
   <!-- body slut -->
 </body>
 </html>
+
+<style>
+  /*** POPUP ***/
+.modal-kontakt {
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  margin-top: 15rem;
+  margin-inline: 2rem;
+}
+
+.modal-kontakt-div-indramme {
+  display: flex;
+gap: 0rem;
+}
+
+ .modal-singleview::backdrop {
+  background: rgb(0 0 0 / 0.8);
+}
+
+.modal_kontakt_img_lyn {
+  width: 5rem;
+} 
+
+@media (min-width: 391px) {
+    .modal-kontakt {
+      margin-inline: auto auto;
+      max-width: 60ch;
+  }
+  }  
+
+  @media (min-width: 768px) {
+    .modal-kontakt-div-indramme {
+      gap: 3rem;
+  }
+  } 
+</style>
 
 
 

@@ -85,7 +85,14 @@
 
     <!-- main -->
     <main id="singleview">
+                      <!-- breadcrums på singleview -->
+                      <ul class="breadcrumb">
+                        <li><a href="http://katjalevring.dk/kea/10_eksamensprojekt/made_by_nicholas/">Hjem</a></li>
+                      <li><a href="http://katjalevring.dk/kea/10_eksamensprojekt/made_by_nicholas/produkter/">Produktoversigt</a></li>
+                        <li>Produktdetaljer</li>
+                        </ul>
       <article id="singleview_article">
+
          <!-- venstre sektion -->
         <section>
           <div class="singleview_produktbillede1">
@@ -231,19 +238,28 @@
         </div>
         <!-- <span class="percent">7%</span> -->
       </div>
+
+      <button class="open-button-singleview">Læs alle anmeldelser her</button>
+
+      <dialog class="modal-singleview" id="modal-singleview">
+        <div class="kryds_titel_luk">
+          <h2>Laura Nielsen</h2>
+          <button class="button close-button">X</button>
+        </div>
+        <p>Købt: 31.10.2020</p>
+        <p>Anmeldt: 12.11.2020</p>
+        <div class="singleview_modal_stjerner_img">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+          <img src="/img/ikoner/trustpilot.svg" alt="">
+        </div>
+        <p>Jeg elsker denne taske! Glæder mig så meget til at gå med den til sommer <3</p>
+        <button class="button close-button-singleview">Brugbart?</button>
+      </dialog>
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
         </section>
 
@@ -349,7 +365,83 @@
     <script src="script/addtocart.js"></script>
     <script src="script/reviews.js"></script>
     <script src="script/productgallery.js"></script>
+    <script src="script/popup.js"></script>
     
     <!-- body slut -->
   </body>
 </html>
+
+<style>
+  /* placering af brødkrummesti */
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* styling på ord */
+ul.breadcrumb li a {
+  color: var(--primary);
+  font-family: var(--a--);
+}
+
+/* styling af pil mellem links */
+ul.breadcrumb li + li:before {
+  /* color: var(--primary); */
+  padding-right: 2rem;
+  content: ">";
+}
+
+/* styling med underlinje */
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+} 
+
+/*** POPUP ***/
+.modal-singleview {
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  margin-top: 15rem;
+  margin-inline: 2rem;
+
+}
+
+.singleview_modal_stjerner_img {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.singleview_modal_stjerner_img img {
+  width: auto;
+}
+
+.modal-singleview::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.kryds_titel_luk {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 391px) {
+    .modal-singleview {
+      margin-inline: auto auto;
+  }
+  } 
+
+  @media (min-width: 768px) {
+    .modal-singleview {
+  max-width: 60ch;
+}
+  } 
+
+  @media (min-width: 1024px) {
+    .modal-singleview {
+  max-width: 70ch;
+}
+  } 
+
+</style>

@@ -675,18 +675,18 @@ fieldset {
 
 .singleview_both_btn {
   width: 20%;
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
+  border-left: 1px solid var(--third--bg-color);
+  border-right: 1px solid var(--third--bg-color);
 }
 
 .single_view_underline {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--third--bg-color)
 }
 
 #singleview_plus_btn,
 #singleview_minus_btn,
 #addtocart_btn {
-  color: #ffffff;
+  color: var(--third--bg-color);
 }
 
 .singleview_button_kurv {
@@ -705,7 +705,7 @@ fieldset {
 }
 
 .singleview_button_kurv {
-  color: #ffffff;
+  color: var(--third--bg-color);
   user-select: none;
   outline: none;
 }
@@ -716,7 +716,7 @@ fieldset {
 
 /* Singleview reviews */
 .reviews-container {
-  background-color: #fff;
+  background-color: var(--third--bg-color);
   border-radius: 5px;
   padding: 20px;
 }
@@ -733,7 +733,7 @@ fieldset {
 }
 
 .review:hover {
-  border: 1px solid #ddd;
+  border: 1px solid var(--third--bg-color);
   box-shadow: var(--button-shadow);
 }
 
@@ -781,10 +781,10 @@ fieldset {
 }
 
 .social-panel {
-  background-color: #fff;
+  background-color: var(--third--bg-color);
   border-radius: 16px;
   /* box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6); */
-  border: 5px solid #001f61;
+  border: 5px solid var(--h1--color-primary);
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
@@ -811,9 +811,9 @@ fieldset {
 }
 
 .social-panel p {
-  background-color: #001f61;
+  background-color: var(--h1--color-primary);
   border-radius: 0 0 10px 10px;
-  color: #fff;
+  color: var(--third--bg-color);
   font-size: 14px;
   line-height: 18px;
   padding: 2px 17px 6px;
@@ -858,7 +858,7 @@ fieldset {
 .social-panel ul li a {
   border: 1px solid #dce1f2;
   border-radius: 50%;
-  color: #001f61;
+  color: var(--h1--color-primary);
   font-size: 20px;
   display: flex;
   justify-content: center;

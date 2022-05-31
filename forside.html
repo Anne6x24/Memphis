@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memphis House</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="/script/mixitup.min.js" defer></script>
+    <script src="/script/mixitupinit.js" defer></script>
   </head>
 
   <!-- body -->
@@ -145,7 +147,7 @@
           <div class="forside_univers_div" >
 
             <div class="forside_univers_tekst">
-              <h3>MEMPHIS TASKE UNIVERS</h3>
+              <h2>MEMPHIS TASKE UNIVERS</h2>
               <p class="forside_univers_p">Vi er <span class="forside_univers_p_blaa">to veninder </span class="forside_univers_p_blaa"> som hækler tasker af <span class="forside_univers_p_blaa">upcyclede materialer.</span> 
                 Havde det ikke været for den store efterspørgsel på <span class="forside_univers_p_blaa">Instagram,</span> 
                 var <span class="forside_univers_p_blaa">Memphis House</span> aldrig blevet til mere end blot en hobby.</p>
@@ -179,34 +181,40 @@
             </fieldset>
             </div>
 
-            <div class="forside_sortering">
-              <h2>Størrelse</h2>
-              <fieldset class="input-field03" data-filter-group="dagnat">
-                <!-- data-logic="or" -->
-                <input type="radio" name="hojlav" value=".hoj"><label class="sortering">20x27cm</label>
-                <input type="radio" name="hojlav" value=".hoj"><label class="sortering">27x20cm</label>
-                <input type="radio" name="lavhoj" value=".lav"><label class="sortering">25x35cm</label>
-            </fieldset>
-               
-                </div>
-
-
-            <div class="forside_sortering">
-              <h2>Sortering</h2>
-              <fieldset class="input-field02" data-filter-group="dagnat">
-                <!-- data-logic="or" -->
-                <input type="radio" name="hojlav" value=".hoj"><label class="sortering">Højeste til laveste pris</label>
-                <input type="radio" name="lavhoj" value=".lav"><label class="sortering">Laveste til højeste pris</label>
-            </fieldset>
-               
-                </div>
-
-            </div>
+            
 
 
             
             <!-- produktbilleder -->
             <div id="forside" class="forside_filtrering_produktbilleder">
+
+              <div class="forside_filtrering_nav">
+                <form>
+                  <fieldset data-filter-group="farve_storrelse">
+                    <h3>Farver</h3>
+                    <label for="farver_storrelser">Vælg farve og størrelse</label>
+                    <select name="farver" id="farver">
+                      <option value="alle" data-filter="all">Alle</option>
+                    </select>
+                    
+                  </fieldset>
+
+                  <fieldset>
+                    <h3>Sortering</h3>
+                    <button type="button" data-sort="name:asc">Højeste til laveste pris</button>
+                    <button type="button" data-sort="name:desc">Laveste til højeste pris</button>
+                    <button type="button" data-sort="random">Random</button>
+                  </fieldset>
+                </form>
+              </div>
+
+
+
+
+
+
+
+              <article class="mix orange" data-name="b">
               <div>
               <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -214,6 +222,9 @@
               <h4>765.-</h4>
             </div>
             </div>
+          </article>
+
+            <article class="mix pink" data-name="b">
             <div>
               <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -221,6 +232,10 @@
               <h4>765.-</h4>
             </div>
             </div>
+          </article>
+
+
+            <article class="mix sort" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/cph.03.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -228,6 +243,11 @@
               <h4>985.-</h4>
             </div>
             </div>
+          </article>
+
+
+
+            <article class="mix gron sort" data-name="c">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/cph.04.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -235,6 +255,10 @@
               <h4>695.-</h4>
             </div>
             </div>
+          </article>
+
+
+            <article class="mix gron" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -242,6 +266,10 @@
               <h4>985.-</h4>
             </div>
           </div>
+        </article>
+
+
+            <article class="mix brun" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -249,6 +277,11 @@
               <h4>985.-</h4>
             </div>
             </div>
+          </article>
+
+
+
+            <article class="mix orange" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.03.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -256,6 +289,11 @@
               <h4>985.-</h4>
             </div>
             </div>
+          </article>
+
+
+
+          <article class="mix blaa" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.04.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -263,6 +301,9 @@
               <h4>985.-</h4>
             </div>
             </div>
+          </article>  
+
+
             </div>
 
           </div>

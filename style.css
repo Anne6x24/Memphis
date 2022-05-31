@@ -322,9 +322,9 @@ button:hover {
   text-rendering: optimizeLegibility;
 }
 
-#menu {
+/* #menu {
   margin-left: 3rem;
-}
+} */
 
 .logo {
   display: block;

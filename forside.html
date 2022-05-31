@@ -166,24 +166,7 @@
 <div class="forside_filtrering_allaround_container">
 
           <div id="forside" class="forside_filtrering_div">
-            <div class="forside_filtrering_filtrering">
-              <h2>Farve</h2>
-              <fieldset class="input-field01" data-filter-group="dagnat">
-               
-                <input type="radio" name="blaa" value=".blaa"><label class="filtrering">Blå</label>
-                <input type="radio" name="gron" value=".gron"><label class="filtrering">Grøn</label>
-                <input type="radio" name="sort" value=".sort"><label class="filtrering">Sort</label>
-                <input type="radio" name="orange" value=".orange"><label class="filtrering">Orange</label>
-                <input type="radio" name="brun" value=".brun"><label class="filtrering">Brun</label>
-                <input type="radio" name="pink" value=".pink"><label class="filtrering">Pink</label>
-          
-                
-            </fieldset>
-            </div>
-
             
-
-
             
             <!-- produktbilleder -->
             <div id="forside" class="forside_filtrering_produktbilleder">
@@ -193,18 +176,36 @@
                   <fieldset data-filter-group="farve_storrelse">
                     <h3>Farver</h3>
                     <label for="farver_storrelser">Vælg farve og størrelse</label>
-                    <select name="farver" id="farver">
-                      <option value="alle" data-filter="all">Alle</option>
-                    </select>
-                    
+                   
+                      <input type="radio" value="sort" data-filter=".sort"> <label for="farver_storrelser">Sort</label>
+                      <input type="radio" value="gron" data-filter=".gron"> <label for="farver_storrelser">Grøn</label>
+                      <input type="radio" value="orange" data-filter=".orange"> <label for="farver_storrelser">Orange</label>
+                      <input type="radio" value="brun" data-filter=".brun"> <label for="farver_storrelser">Brun</label>
+                      <input type="radio" value="blaa" data-filter=".blaa"> <label for="farver_storrelser">Blå</label>
+                      <input type="radio" value="pink" data-filter=".pink"> <label for="farver_storrelser">Pink</label>
                   </fieldset>
 
-                  <fieldset>
-                    <h3>Sortering</h3>
-                    <button type="button" data-sort="name:asc">Højeste til laveste pris</button>
-                    <button type="button" data-sort="name:desc">Laveste til højeste pris</button>
-                    <button type="button" data-sort="random">Random</button>
+                  <fieldset data-filter-group="farve_storrelse">
+                    <h3>Størrelser</h3>
+                    <label for="farver_storrelser">Vælg farve og størrelse</label>
+                   
+                      <input type="radio" value="lille" data-filter=".lille"> <label for="farver_storrelser">20x27cm</label>
+                      <input type="radio" value="mellem" data-filter=".mellem"> <label for="farver_storrelser">27x20cm</label>
+                      <input type="radio" value="stor" data-filter=".stor"> <label for="farver_storrelser">34x34cm</label>
+                     
                   </fieldset>
+
+
+                  <fieldset data-filter-group="farve_storrelse">
+                    <h3>Sortering</h3>
+                    <label for="hoj_lav">Sorter</label>
+                    <select name="hojlav" id="hojlav">
+                      <option value="alle" data-filter="all">Alle</option>
+                      <option value="høj" data-sort="name:asc">Højeste til laveste pris</option>
+                      <option value="sort" data-sort="name:desc">Laveste til højeste pris</option>
+                    </select>
+                  </fieldset>
+
                 </form>
               </div>
 
@@ -214,7 +215,7 @@
 
 
 
-              <article class="mix orange" data-name="b">
+              <article class="mix orange mellem" data-name="b">
               <div>
               <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -224,7 +225,7 @@
             </div>
           </article>
 
-            <article class="mix pink" data-name="b">
+            <article class="mix pink mellem" data-name="b">
             <div>
               <a class="forside_filtrering_produktbillede_enkelt" href="singleview.html"><img src="/img/produktbilleder/cph.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -235,7 +236,7 @@
           </article>
 
 
-            <article class="mix sort" data-name="a">
+            <article class="mix sort lille" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/cph.03.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -247,7 +248,7 @@
 
 
 
-            <article class="mix gron sort" data-name="c">
+            <article class="mix gron sort lille" data-name="c">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/cph.04.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -258,7 +259,7 @@
           </article>
 
 
-            <article class="mix gron" data-name="a">
+            <article class="mix gron stor" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.01.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -269,7 +270,7 @@
         </article>
 
 
-            <article class="mix brun" data-name="a">
+            <article class="mix brun stor" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.02.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -281,7 +282,7 @@
 
 
 
-            <article class="mix orange" data-name="a">
+            <article class="mix orange stor" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.03.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">
@@ -293,7 +294,7 @@
 
 
 
-          <article class="mix blaa" data-name="a">
+          <article class="mix blaa mellem" data-name="a">
             <div>
               <a href="singleview.html"><img src="/img/produktbilleder/mt.04.01.webp" alt="Dette er et produktbillede af en taske"></a>
               <div class="forside_filtrering_produktbilleder_tekst">

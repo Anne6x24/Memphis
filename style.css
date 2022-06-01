@@ -106,20 +106,24 @@
   --p--margin-bottom: clamp(0.8rem, 0.52rem + 1.4000000000000001vw, 2.2rem);
   --p--margin-top: clamp(0.8rem, 0.52rem + 1.4000000000000001vw, 2.2rem);
 
-  /*---- GENERELLE REGLER mobil --------*/
+  /*---- GENERELLE REGLER mobil  390 --------*/
   --margin-inline-mobil: 2rem;
   --margin-bottom-mobil: 2rem;
 
-  /*---- GENERELLE REGLER ipad --------*/
-  --margin-inline-ipad: 3rem;
+   /*---- GENERELLE REGLER ipad mini 640 --------*/
+   --margin-inline-ipadmini: 4rem;
+   --margin-bottom-ipadmini: 3rem;
+
+  /*---- GENERELLE REGLER ipad  768 --------*/
+  --margin-inline-ipad: 6rem;
   --margin-bottom-ipad: 4rem;
 
   /*---- GENERELLE REGLER desk 1024 --------*/
   --margin-inline-desk--lille: 10rem;
   --margin-bottom-desk--lille: 8rem;
 
-  /*---- GENERELLE REGLER desk --------*/
-  --margin-inline-desk: 14rem;
+  /*---- GENERELLE REGLER desk 1280 --------*/
+  --margin-inline-desk: 18rem;
   --margin-bottom-desk: 8rem;
 
 
@@ -164,6 +168,7 @@ img {
 #singleview {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: var(--margin-bottom-mobil);
+  margin-top: 2rem;
 }
 
 /* --------- FONTS ------------ */
@@ -1272,6 +1277,7 @@ p.knap {
   #singleview {
     margin-inline: var(--margin-inline-ipad);
     margin-bottom: var(--margin-bottom-ipad);
+    margin-top: 4rem;
   }
 
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
@@ -1450,6 +1456,9 @@ p.knap {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+  #cookie {
+    max-width: 80ch;
+  }
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /* baggrundsbilledet */
@@ -1568,7 +1577,7 @@ p.knap {
 }
 
 @media (min-width: 1280px) {
-  #forside,
+  
   #levering_returning,
   #kontakt,
   #handelsbetingelser,
@@ -1579,12 +1588,23 @@ p.knap {
     margin-inline: var(--margin-inline-desk);
     margin-bottom: var(--margin-bottom-desk);
   }
+
+  #forside {
+    margin-inline: 14rem;
+  }
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   .kontakt_kort {
     width: 30rem;
   }
+
+  .kontakt_p {
+    max-width: 70ch;
+  }
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
+  #cookie {
+    max-width: none;
+  }
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /* baggrundsbilledet */

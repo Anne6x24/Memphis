@@ -59,11 +59,9 @@
   --h4-size--: clamp(1rem, 0.84rem + 0.8vw, 1.8rem);
   --h5-size--: clamp(1.125rem, 1.09rem + 0.17500000000000004vw, 1.3rem);
   --p-size--: clamp(0.8rem, 0.74rem + 0.30000000000000004vw, 1.1rem);
-  --a-size--: "Prompt", sans-serif;
-  --banner--font-size--: clamp(
-    font-size:
-      clamp(0.7rem, 0.6399999999999999rem + 0.30000000000000004vw, 1rem) ;
-  );
+  --a-size--: clamp(0.8rem, 0.74rem + 0.30000000000000004vw, 1.1rem);
+  --banner--font-size--: clamp(0.7rem, 0.6399999999999999rem + 0.30000000000000004vw, 1rem) ;
+  
 
   --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 
@@ -346,6 +344,7 @@ button:hover,
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   width: 5rem;
+  margin-right: 1rem;
 }
 
 .navbar {
@@ -421,6 +420,12 @@ button:hover,
 .navbar .burger.is-active .burger-line:nth-child(3) {
   transform: rotate(-45deg);
 }
+
+#burger {
+  margin-top: 0.5rem;
+}
+
+
 .navbar .menu-inner {
   display: flex;
   flex-direction: row;
@@ -446,6 +451,10 @@ button:hover,
   display: flex;
   height: 2rem;
   margin-left: none;
+}
+
+.header_ikoner_kurv {
+  margin-right: 1rem ;
 }
 
 .header_ikoner_desk {
@@ -498,7 +507,7 @@ button:hover,
   line-height: 2rem;
   text-align: center;
   transform: translateX(100%);
-  animation: slidingText1 12s linear infinite;
+  animation: slidingText1 15s linear infinite;
   font-style: italic;
 }
 
@@ -1698,6 +1707,11 @@ p.knap {
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  /*-------------------------------------------- HEADER -------------------------------------------------------*/
+  .header_ikoner_desk {
+    margin-left: 50rem !important;
+  }
 }
 
 @media (min-width: 1538px) {
@@ -1705,6 +1719,8 @@ p.knap {
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookiesiden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+
+ 
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /* PRODUKTER */
 

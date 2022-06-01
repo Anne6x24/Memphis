@@ -286,6 +286,25 @@ button:hover,
   cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
 }
 
+.close-button-kontakt {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--button-padding);
+  gap: var(--button-gap);
+  color: black;
+  position: relative;
+  width: auto;
+  height: var(--button-height);
+  cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: var(--button-radius);
+  border-style: none;
+  font-variation-settings: "wght" 700, "wdth" 100, "opsz" 33;
+  font-size: 1rem;
+}
+
 /* ----------------------------------------------- MENU ------------------------------------------ */
 
 *,
@@ -531,10 +550,7 @@ button:hover,
   margin-inline: 2rem;
 }
 
-.forside_univers_p {
-  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
-  font-variation-settings: "wght" 600, "wdth" 90, "opsz" 64;
-}
+
 
 .forside_univers_p_blaa {
   color: var(--p--color-third);
@@ -1033,12 +1049,13 @@ p.knap {
 /*------------------------ POPUP KONTAKT ------------------------*/
 /*** POPUP ***/
 .modal-kontakt {
-  padding: 1em;
+  padding: 2rem;
   max-width: 50ch;
   border: 0;
-  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  box-shadow: var(--button-shadow);
   margin-top: 15rem;
   margin-inline: 2rem;
+  border-radius: var(--button-radius);
 }
 
 .modal-kontakt-div-indramme {
@@ -1046,8 +1063,8 @@ p.knap {
   gap: 0rem;
 }
 
-.modal-singleview::backdrop {
-  background: rgb(0 0 0 / 0.8);
+.modal-kontakt::backdrop {
+  background: rgb(0 0 0 / 0.4);
 }
 
 .modal_kontakt_img_lyn {

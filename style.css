@@ -273,6 +273,7 @@ button, .button {
   border-radius: var(--button-radius);
   border-style: none;
   font-variation-settings: "wght" 700, "wdth" 100, "opsz" 33;
+  font-size: 1rem;
 }
 
 button:hover, .button:hover {

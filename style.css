@@ -162,7 +162,7 @@ img {
 #handelsbetingelser,
 #godtatvide,
 #cookie,
-#bagom,
+#bagom_top,
 #singleview {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: var(--margin-bottom-mobil);
@@ -1298,7 +1298,7 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom,
+  #bagom_top,
   #singleview {
     margin-inline: var(--margin-inline-ipad);
     margin-bottom: var(--margin-bottom-ipad);
@@ -1473,7 +1473,7 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom,
+  #bagom_top,
   #singleview {
     margin-inline: var(--margin-inline-desk--lille);
     margin-bottom: var(--margin-bottom-desk--lille);
@@ -1611,7 +1611,7 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom,
+  #bagom_top,
   #singleview {
     margin-inline: var(--margin-inline-desk);
     margin-bottom: var(--margin-bottom-desk);

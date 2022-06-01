@@ -97,23 +97,22 @@
       </section>
 
       <section class="bagom_historie">
-        <h2>
+        <h2 class="bagom_h2">
           Memphis House kommer af to veninder, der startede en
-          <span class="bagom_blaa">hobby under corona-krisen</span> i 2020.
-          Denne hobber delte vi ud af på Instagram. Havde det ikke været for den
+          <span class="bagom_blaa">hobby under corona-krisen</span> i 2020. Havde det ikke været for den
           store efterspørgsel på Instagram, var det nok aldrig blevet til mere
           end en hobby.
-          <span class="bagom_blaa">Det er vi meget taknemmelige for. Tak</span>
+          <span class="bagom_blaa">Det er vi meget taknemmelige for. Tak.</span>
         </h2>
 
-        <h2>
+        <h2 class="bagom_h2">
           Vi hedder <span class="bagom_blaa">Amalie og Anna</span> og har fulgt
           hinanden siden 4. klasse og deler nu dette
-          <span class="bagom_blaa">eventyr og fællesskab</span> Vi kalder
+          <span class="bagom_blaa">eventyr og fællesskab</span> vi kalder
           Memphis House.
         </h2>
 
-        <h2>
+        <h2 class="bagom_h2">
           Et fælleskab der bygger på en fælles rejse gennem Memphis, Tennesee.
           Et område som er inspirations-grundlaget for de værdier Memphis House
           bygger på.
@@ -123,7 +122,7 @@
           >
         </h2>
 
-        <h2>
+        <h2 class="bagom_h2">
           Vi huser derfor i København og
           <span class="bagom_blaa">ikke i Memphis.</span>
         </h2>
@@ -163,25 +162,25 @@
       </section>
 
       <section class="bagom_bund">
-        <h2>
+        <h2 class="bagom_h2">
           Vi gemmer alle rester og bruger dem senere til
           <span class="bagom_blaa">limited edition produktioner.</span> Vi lader
           intet gå til spilde. <span class="bagom_blaa">Hold øje</span> på denne
           hjemmeside og vores instragram.
         </h2>
 
-        <h2>
+        <h2 class="bagom_h2">
           På den måde,
           <span class="bagom_blaa">undgår vi overproduktion.</span> Derfor
           bliver vores tasker kun produceret efter bestilling.
         </h2>
 
-        <h2>
+        <h2 class="bagom_h2">
           <span class="bagom_blaa">T-shirt garn er ikke t-shirts</span> - men en
           type af garn vi benytter os af.
         </h2>
 
-        <h2>
+        <h2 class="bagom_h2">
           Vi forsøger at få alle vores materialer fra
           <span class="bagom_blaa">danske producenter</span> for at mindske
           transporten.
@@ -287,12 +286,18 @@
     <script src="script/login.js"></script>
     <script src="script/burger.js"></script>
     <script src="script/accordion.js"></script>
+    <script src="/script/typetxt_bagom.js"></script>
 
     <!-- body slut-->
   </body>
 </html>
 
 <style>
+
+  .bagom_h2 {
+    line-height: var(--bagom--lineheight);
+    font-size: var(--h2--size--bagom);
+  }
   .bagom_blaa {
     color: var(--h2--color-third);
     animation: none;
@@ -324,59 +329,14 @@
     margin-block: 2rem;
   }
 
+  .bagom_bund {
+    margin-block: 3rem;
+  }
+
   span {
     border-right: 0.05em solid;
     animation: caret 1s steps(1) infinite;
   }
 </style>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-    // array with texts to type in typewriter
-    var dataText = [
-      "LÆGGER DET I MEMPHIS?",
 
-      "ER TASKERNE LAVET AF T-SHIRTS?",
-      "HVORDAN STARTEDE DET HELE?",
-    ];
-
-    // type one text in the typwriter
-    // keeps calling itself until the text is finished
-    function typeWriter(text, i, fnCallback) {
-      // chekc if text isn't finished yet
-      if (i < text.length) {
-        // add next character to h1
-        document.querySelector("h1").innerHTML =
-          text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
-
-        // wait for a while and call this function again for next character
-        setTimeout(function () {
-          typeWriter(text, i + 1, fnCallback);
-        }, 100);
-      }
-      // text finished, call callback if there is a callback function
-      else if (typeof fnCallback == "function") {
-        // call callback after timeout
-        setTimeout(fnCallback, 700);
-      }
-    }
-    // start a typewriter animation for a text in the dataText array
-    function StartTextAnimation(i) {
-      if (typeof dataText[i] == "undefined") {
-        setTimeout(function () {
-          StartTextAnimation(0);
-        }, 20000);
-      }
-      // check if dataText[i] exists
-      if (i < dataText[i].length) {
-        // text exists! start typewriter animation
-        typeWriter(dataText[i], 0, function () {
-          // after callback (and whole text has been animated), start next text
-          StartTextAnimation(i + 1);
-        });
-      }
-    }
-    // start the text animation
-    StartTextAnimation(0);
-  });
-</script>

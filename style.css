@@ -65,10 +65,6 @@
       clamp(0.7rem, 0.6399999999999999rem + 0.30000000000000004vw, 1rem) ;
   );
 
- 
-
-
-
   --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 
   /* font-colors */
@@ -122,10 +118,9 @@
   --margin-inline-desk: 14rem;
   --margin-bottom-desk: 8rem;
 
-
-/*---- IMG REGLER--------*/
+  /*---- IMG REGLER--------*/
   --img-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-  rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 /*-------------------------------------------------- GENERELLE REGLER -----------------------------------------------*/
@@ -256,7 +251,8 @@ li {
 }
 
 /* --------- BUTTONS ------------ */
-button, .button {
+button,
+.button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -275,7 +271,8 @@ button, .button {
   font-variation-settings: "wght" 700, "wdth" 100, "opsz" 33;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   transform: var(--button-transform-animation);
   cursor: pointer;
   text-decoration: var(--button-hover-secondary);
@@ -511,7 +508,6 @@ button:hover, .button:hover {
   font-size: var(--h2--size--forside);
 }
 
-
 /*------------Forside animation-----------*/
 .animeret_txt {
   color: var(--h2--color-third);
@@ -591,7 +587,10 @@ fieldset {
   margin-top: 13rem;
 }
 
-.farve_storrelse_desk, .forside_top_sortering, .forside_filtrering_h3_storrelser, .forside_filtrering_h3_farver {
+.farve_storrelse_desk,
+.forside_top_sortering,
+.forside_filtrering_h3_storrelser,
+.forside_filtrering_h3_farver {
   display: none;
 }
 
@@ -694,7 +693,7 @@ fieldset {
 }
 
 .single_view_underline {
-  border-bottom: 1px solid var(--third--bg-color)
+  border-bottom: 1px solid var(--third--bg-color);
 }
 
 #singleview_plus_btn,
@@ -780,9 +779,6 @@ fieldset {
 .singleview_h4stars {
   margin-bottom: 0 !important;
 }
-
-
-
 
 /*------------------------------------------- GODT AT VIDE-siden -------------------------------------------*/
 /*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
@@ -880,12 +876,11 @@ input:checked ~ .questions {
   transition: 1s;
 }
 
-
-
 /*------------------------------------------- Cookie-siden -------------------------------------------------*/
 .cookie_ol_liste {
   margin-bottom: 1rem;
-} 
+}
+
 /*------------------------------------------- Bagom-siden --------------------------------------------------*/
 
 /*--------------------------------------------- Levering og returnering-siden -------------------------------------*/
@@ -922,7 +917,6 @@ input:checked ~ .questions {
 .kontakt_dm {
   line-height: var(--p--lineheight);
 }
-
 
 /*------------------------ Konkakt-formular ------------------------*/
 :focus {
@@ -1031,28 +1025,28 @@ p.knap {
 }
 
 /*------------------------ POPUP KONTAKT ------------------------*/
-  /*** POPUP ***/
-  .modal-kontakt {
-    padding: 1em;
-    max-width: 50ch;
-    border: 0;
-    box-shadow: 0 0 1em rgb(0 0 0 / .3);
-    margin-top: 15rem;
-    margin-inline: 2rem;
-  }
-  
-  .modal-kontakt-div-indramme {
-    display: flex;
+/*** POPUP ***/
+.modal-kontakt {
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  margin-top: 15rem;
+  margin-inline: 2rem;
+}
+
+.modal-kontakt-div-indramme {
+  display: flex;
   gap: 0rem;
-  }
-  
-   .modal-singleview::backdrop {
-    background: rgb(0 0 0 / 0.8);
-  }
-  
-  .modal_kontakt_img_lyn {
-    width: 5rem;
-  } 
+}
+
+.modal-singleview::backdrop {
+  background: rgb(0 0 0 / 0.8);
+}
+
+.modal_kontakt_img_lyn {
+  width: 5rem;
+}
 
 /*------------------------ Konakt-map ------------------------*/
 /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
@@ -1113,8 +1107,8 @@ p.knap {
   .modal-kontakt {
     margin-inline: auto auto;
     max-width: 60ch;
+  }
 }
-} 
 
 @media (max-width: 640px) {
   .singleview_ikon1 {
@@ -1155,9 +1149,12 @@ p.knap {
 
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
 
+  #cookie {
+    max-width: 50ch;
+  }
+
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
- 
 
   /* baggrundsbilledet */
   .forside_plet {
@@ -1188,7 +1185,6 @@ p.knap {
     margin-top: 3rem;
   }
 
-
   /*-------------- Univers sektion !! ---------------*/
 
   .forside_univers_tekst {
@@ -1210,17 +1206,15 @@ p.knap {
     margin-top: 4rem;
   }
 
-
-   /*-------------- SORTERING OG FILTRERING ---------------*/
-   .forside_filtrering_produktbilleder {
+  /*-------------- SORTERING OG FILTRERING ---------------*/
+  .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .forside_univers_filtreing {
-  margin-top: 14rem;
-  margin-inline: 4rem;
+    margin-top: 14rem;
+    margin-inline: 4rem;
   }
-
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
@@ -1290,10 +1284,10 @@ p.knap {
     margin-top: 0;
   }
 
-    /*------------------------ POPUP VINDUE ------------------------*/
+  /*------------------------ POPUP VINDUE ------------------------*/
   .modal-kontakt-div-indramme {
     gap: 3rem;
-}
+  }
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
@@ -1474,7 +1468,7 @@ p.knap {
     margin-top: 2rem;
   }
 
-    /*** PRODUKTER ***/
+  /*** PRODUKTER ***/
 
   .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
@@ -1490,35 +1484,38 @@ p.knap {
     display: none;
   }
 
-  .farve_storrelse_desk, .forside_top_sortering, .forside_filtrering_h3_storrelser, .forside_filtrering_h3_farver {
-  display: block;
-}
+  .farve_storrelse_desk,
+  .forside_top_sortering,
+  .forside_filtrering_h3_storrelser,
+  .forside_filtrering_h3_farver {
+    display: block;
+  }
 
-.forside_desk_produkter_filtrering {
-  display: flex;
-  gap: 7rem;
-}
+  .forside_desk_produkter_filtrering {
+    display: flex;
+    gap: 7rem;
+  }
 
-.forside_top_sortering {
-  text-align: right;
-  margin-right: 9.8rem;
-  margin-bottom: 2rem;
-}
+  .forside_top_sortering {
+    text-align: right;
+    margin-right: 9.8rem;
+    margin-bottom: 2rem;
+  }
 
-.input_label_div {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  font-family: var(--p--);
-}
+  .input_label_div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-family: var(--p--);
+  }
 
-.label {
-  height: 1rem;
-}
+  .label {
+    height: 1rem;
+  }
 
-.forside_filtrering_h3_storrelser {
-  margin-top: 3rem;
-}
+  .forside_filtrering_h3_storrelser {
+    margin-top: 3rem;
+  }
 
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
@@ -1597,10 +1594,7 @@ p.knap {
     margin-top: 5rem;
   }
 
-
-
-
-/*** PRODUKTER ***/
+  /*** PRODUKTER ***/
 
   .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1609,10 +1603,10 @@ p.knap {
   /*** SORTERING OG FILTRERING ***/
 
   .forside_top_sortering {
-  margin-right: 13.8rem;
-}
+    margin-right: 13.8rem;
+  }
 
-.forside_univers_filtreing {
+  .forside_univers_filtreing {
     margin-top: 25rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
@@ -1698,32 +1692,32 @@ p.knap {
       background-image: url(/img/produktbilleder/cph.01.02.webp);
     } */
 
-.singleview_h3 {
-  font-size: 2rem !important;
-  line-height: 1.6rem;
-}
+  .singleview_h3 {
+    font-size: 2rem !important;
+    line-height: 1.6rem;
+  }
 
-.singleview_h3_ekstra {
-  margin-bottom: 4rem !important;
-}
-.singleview_ikoner {
-  gap: 0.5rem;
-  justify-content: normal;
-  gap: 2rem;
-}
-.singleview_ikontekst {
-  font-size: 1rem;
-  line-height: 1.6rem;
-}
+  .singleview_h3_ekstra {
+    margin-bottom: 4rem !important;
+  }
+  .singleview_ikoner {
+    gap: 0.5rem;
+    justify-content: normal;
+    gap: 2rem;
+  }
+  .singleview_ikontekst {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
 
-/*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
+  /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
-label {
-  height: 90px;
-}
+  label {
+    height: 90px;
+  }
 
-/*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
-/*-------------------------------------------- FOOTER ------------------------------------------------------------*/
+  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
+  /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
 }
 
 /*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/

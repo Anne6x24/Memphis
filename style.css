@@ -55,7 +55,8 @@
   --h2-size--: clamp(1.6rem, 1.3800000000000001rem + 1.1vw, 2.7rem);
   --h2--size--forside: clamp(1rem, 0.84rem + 0.8vw, 1.8rem);
   --h3--size-: clamp(1.4rem, 1.23rem + 0.8500000000000001vw, 2.25rem);
-  --h4-size--: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
+
+  --h4-size--: clamp(1rem, 0.84rem + 0.8vw, 1.8rem);
   --h5-size--: clamp(1.125rem, 1.09rem + 0.17500000000000004vw, 1.3rem);
   --p-size--: clamp(0.8rem, 0.74rem + 0.30000000000000004vw, 1.1rem);
   --a-size--: "Prompt", sans-serif;
@@ -63,6 +64,10 @@
     font-size:
       clamp(0.7rem, 0.6399999999999999rem + 0.30000000000000004vw, 1rem) ;
   );
+
+ 
+
+
 
   --p--lineheight: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 
@@ -251,7 +256,7 @@ li {
 }
 
 /* --------- BUTTONS ------------ */
-button {
+button, .button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -270,7 +275,7 @@ button {
   font-variation-settings: "wght" 700, "wdth" 100, "opsz" 33;
 }
 
-button:hover {
+button:hover, .button:hover {
   transform: var(--button-transform-animation);
   cursor: pointer;
   text-decoration: var(--button-hover-secondary);
@@ -490,6 +495,7 @@ button:hover {
 
 #forside_hero_wrap {
   grid-area: 1/1;
+  margin-top: 2rem;
 }
 
 .forside_hero_img_flex {
@@ -499,6 +505,10 @@ button:hover {
 .forside_hero_wrap_tekst {
   margin-left: 9rem;
   margin-top: 7rem;
+}
+
+.forside_h2_start {
+  font-size: var(--h2--size--forside);
 }
 
 
@@ -579,6 +589,10 @@ fieldset {
 
 .forside_univers_filtreing {
   margin-top: 13rem;
+}
+
+.farve_storrelse_desk, .forside_top_sortering, .forside_filtrering_h3_storrelser, .forside_filtrering_h3_farver {
+  display: none;
 }
 
 /*** ---- program oversigt i responsivt grid ---- ***/
@@ -767,165 +781,8 @@ fieldset {
   margin-bottom: 0 !important;
 }
 
-/* SOCIAL PANEL CSS */
-.social-panel-container {
-  position: fixed;
-  right: 0;
-  bottom: 80px;
-  transform: translateX(100%);
-  transition: transform 0.4s ease-in-out;
-}
 
-.social-panel-container.visible {
-  transform: translateX(-10px);
-}
 
-.social-panel {
-  background-color: var(--third--bg-color);
-  border-radius: 16px;
-  /* box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6); */
-  border: 5px solid var(--h1--color-primary);
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  font-family: "Muli";
-  position: relative;
-  height: 169px;
-  width: 370px;
-  max-width: calc(100% - 10px);
-}
-
-.social-panel button.close-btn {
-  border: 0;
-  color: #97a5ce;
-  cursor: pointer;
-  font-size: 20px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
-.social-panel button.close-btn:focus {
-  outline: none;
-}
-
-.social-panel p {
-  background-color: var(--h1--color-primary);
-  border-radius: 0 0 10px 10px;
-  color: var(--third--bg-color);
-  font-size: 14px;
-  line-height: 18px;
-  padding: 2px 17px 6px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin: 0;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 235px;
-}
-
-.social-panel p i {
-  margin: 0 5px;
-}
-
-.social-panel p a {
-  color: #ff7500;
-  text-decoration: none;
-}
-
-.social-panel h4 {
-  margin: 20px 0;
-  color: #97a5ce;
-  font-family: "Muli";
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.social-panel ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-panel ul li {
-  margin: 0 10px;
-}
-
-.social-panel ul li a {
-  border: 1px solid #dce1f2;
-  border-radius: 50%;
-  color: var(--h1--color-primary);
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  text-decoration: none;
-}
-
-.social-panel ul li a:hover {
-  border-color: #ff6a00;
-  box-shadow: 0 9px 12px -9px #ff6a00;
-}
-
-.floating-btn {
-  border-radius: 26.5px;
-  background-color: #001f61;
-  border: 1px solid #001f61;
-  box-shadow: 0 16px 22px -17px #03153b;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 12px 20px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
-.floating-btn:hover {
-  background-color: #ffffff;
-  color: #001f61;
-}
-
-.floating-btn:focus {
-  outline: none;
-}
-
-.floating-text {
-  background-color: #001f61;
-  border-radius: 10px 10px 0 0;
-  color: #fff;
-  font-family: "Muli";
-  padding: 7px 15px;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 998;
-}
-
-.floating-text a {
-  color: #0338e1;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 480px) {
-  .social-panel-container.visible {
-    transform: translateX(0px);
-  }
-
-  .floating-btn {
-    right: 10px;
-  }
-}
 
 /*------------------------------------------- GODT AT VIDE-siden -------------------------------------------*/
 /*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
@@ -1023,53 +880,8 @@ input:checked ~ .questions {
   transition: 1s;
 }
 
-/*----------tool-tip------------*/
 
-.tip {
-  color: #f03768;
-  cursor: help;
-  position: relative;
-  overflow: visible;
-  font-family: monospace;
-  font-size: 1.3em;
-}
 
-.tip:before,
-.tip:after {
-  position: absolute;
-  opacity: 0;
-  z-index: -100;
-  transform: translateY(-30%);
-  transition: 0.4s;
-}
-
-.tip:before {
-  content: "";
-  border-style: solid;
-  border-width: 0.8em 0.5em 0 0.5em;
-  border-color: #3e474f transparent transparent transparent;
-  transform: translateY(-200%);
-  bottom: 90%;
-  left: 50%;
-}
-
-.tip:after {
-  content: attr(data-tip);
-  background: #3e474f;
-  color: white;
-  width: 150px;
-  padding: 10px;
-  font-size: 0.8em;
-  bottom: 150%;
-  left: -50%;
-}
-
-.tip:hover:before,
-.tip:hover:after {
-  opacity: 1;
-  z-index: 100;
-  transform: scaleY(1);
-}
 /*------------------------------------------- Cookie-siden -------------------------------------------------*/
 .cookie_ol_liste {
   margin-bottom: 1rem;
@@ -1668,8 +1480,8 @@ p.knap {
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
   }
 
-  .forside_hero_wrap {
-    margin-top: 3rem;
+  #forside_hero_wrap {
+    margin-top: 4rem;
   }
 
   /*** filtrering nav ***/
@@ -1779,6 +1591,10 @@ p.knap {
     background-image: url(/img/1280.webp);
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  #forside_hero_wrap {
+    margin-top: 5rem;
   }
 
 

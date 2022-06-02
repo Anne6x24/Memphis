@@ -477,13 +477,13 @@ button:hover,
 .trustpilot_1 {
   display: flex;
   justify-content: space-evenly;
-  padding-block: 1rem;
+  padding-top: 1rem;
   padding-inline: 1rem;
 }
 
 .trustpilot_stjerner {
-  display: flex;
-  gap: 0.5rem;
+  width: 8rem;
+  margin-top: 0.1rem;
 }
 
 .trustpilot {
@@ -1196,12 +1196,13 @@ p.knap {
   /* ------------------------ MENU - banner hvid----------------------- */
   .trustpilot_1 {
     gap: 3rem;
+    padding-block: 1rem;
   }
 
   .trustpilot {
     display: flex;
     justify-content: space-evenly;
-    margin-block: 0.5rem;
+   
   }
 
   .banner_hvid_p {
@@ -1211,6 +1212,8 @@ p.knap {
   .banner_hvid_p_2 {
     margin-top: 1rem;
   }
+
+
 
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
 

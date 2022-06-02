@@ -313,7 +313,6 @@ button:hover,
 }
 
 /* ----------------------------------------------- MENU ------------------------------------------ */
-
 *,
 *::before,
 *::after {
@@ -410,22 +409,27 @@ button:hover,
 .navbar .burger-line:nth-child(1) {
   top: 0;
 }
+
 .navbar .burger-line:nth-child(2),
 .navbar .burger-line:nth-child(3) {
   top: 0.5rem;
 }
+
 .navbar .burger-line:nth-child(4) {
   top: 1rem;
 }
+
 .navbar .burger.is-active .burger-line:nth-child(1),
 .navbar .burger.is-active .burger-line:nth-child(4) {
   top: 1.25rem;
   width: 0%;
   left: 50%;
 }
+
 .navbar .burger.is-active .burger-line:nth-child(2) {
   transform: rotate(45deg);
 }
+
 .navbar .burger.is-active .burger-line:nth-child(3) {
   transform: rotate(-45deg);
 }
@@ -520,7 +524,6 @@ button:hover,
 }
 
 /*------------------------------------------- Forside-siden -----------------------------------------------------*/
-
 /* baggrundsbillede  */
 .forside_plet {
   background-image: url(/img/390.webp);
@@ -1057,7 +1060,6 @@ input:checked ~ .questions {
 }
 
 /*------------------------------------------- Bagom-siden --------------------------------------------------*/
-
 .bagom_h2 {
   line-height: var(--bagom--lineheight);
   font-size: var(--h2--size--bagom);
@@ -1069,7 +1071,6 @@ input:checked ~ .questions {
 }
 
 .bagom_tags_img {
-  
   display: flex;
   gap: 0.2rem;
   margin-top: 0.2rem;
@@ -1077,10 +1078,10 @@ input:checked ~ .questions {
 
 .bagom_tags {
   display: grid;
- 
 }
 
-.bagom_img__txt_div, .bagom_img_div {
+.bagom_img__txt_div,
+.bagom_img_div {
   grid-area: 1/1;
 }
 
@@ -1303,7 +1304,6 @@ p.knap {
   width: 5rem;
 }
 
-/*------------------------ Konakt-map ------------------------*/
 /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
 /**** FOOTER ****/
 /*footer allaround*/
@@ -1396,8 +1396,6 @@ p.knap {
     margin-top: 1rem;
   }
 
-  /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
-
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   .kontakt_kort {
     width: 35rem;
@@ -1409,7 +1407,6 @@ p.knap {
     max-width: 50ch;
   }
 
-  /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
 
   /* baggrundsbilledet */
@@ -1522,17 +1519,11 @@ p.knap {
     margin: 6vh auto;
   }
 
-  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
   /* footer to øverste bokse med kontakt og links */
   .footer_information_links_div {
     justify-content: space-evenly;
   }
-
-  /* FIX DEN */
-  /* .footer_betaling_levering_div {
-      display: flex;
-    } */
 }
 
 @media (min-width: 768px) {
@@ -1553,7 +1544,6 @@ p.knap {
     margin-top: 4rem;
   }
 
-  /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*------------------------ Konakt-formular ------------------------*/
   .kontakt_bund {
@@ -1574,8 +1564,7 @@ p.knap {
   .modal-kontakt-div-indramme {
     gap: 3rem;
   }
-  /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
-  /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
 
   /* baggrundsbilledet */
@@ -1671,9 +1660,7 @@ p.knap {
     margin: 6vh auto;
   }
 
-  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
-  /*footer allaround*/
   #footer_allaround {
     padding-top: 2rem;
     padding-bottom: 0rem;
@@ -1698,6 +1685,7 @@ p.knap {
     opacity: 1;
     visibility: visible;
   }
+
   .navbar .menu {
     width: 100%;
     max-height: 0rem;
@@ -1707,10 +1695,12 @@ p.knap {
     overflow: hidden;
     transition: all 0.35s ease;
   }
+
   .navbar .menu.is-active {
     opacity: 1;
     visibility: visible;
   }
+
   .navbar .menu-inner {
     display: flex;
     /* flex-direction: column;
@@ -1757,12 +1747,11 @@ p.knap {
     margin-bottom: 2rem;
   }
 
-  /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   #cookie {
     max-width: 80ch;
   }
-  /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /* baggrundsbilledet */
   .forside_plet {
@@ -1793,7 +1782,6 @@ p.knap {
     gap: 5rem;
   }
 
-  /* cookie */
   .forside_cookie_allaround {
     top: 31rem;
   }
@@ -1803,7 +1791,6 @@ p.knap {
   }
 
   /*** PRODUKTER ***/
-
   .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
   }
@@ -1813,7 +1800,6 @@ p.knap {
   }
 
   /*** filtrering nav ***/
-
   .forside_nav_filtrering_mobil {
     display: none;
   }
@@ -1852,7 +1838,6 @@ p.knap {
   }
 
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
-
   .singleview_produktbillede1 img {
     max-width: 40rem;
     margin-right: 3rem;
@@ -1876,7 +1861,6 @@ p.knap {
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
-
   label div:first-child {
     line-height: 1.5rem;
   }
@@ -1889,7 +1873,6 @@ p.knap {
     margin: 7vh auto;
   }
 
-  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
   .footer_information_links_div {
     gap: 4rem;
@@ -1917,7 +1900,7 @@ p.knap {
     margin-bottom: var(--margin-bottom-desk);
   }
 
-  /*-------------------------------------------- forside -----------------------------------------------------*/
+  /*-------------------------------------------- FORSIDE -----------------------------------------------------*/
   #forside {
     margin-inline: 14rem;
   }
@@ -1928,7 +1911,6 @@ p.knap {
   }
 
   /* cookie */
-
   .forside_cookie_container {
     display: flex;
     gap: 3rem;
@@ -1939,10 +1921,12 @@ p.knap {
   .forside_cookie_boks_tekst {
     gap: 3rem;
   }
+
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
   .levering_guide_tekst {
     max-width: 40ch;
   }
+
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   .kontakt_kort {
     width: 30rem;
@@ -1951,11 +1935,12 @@ p.knap {
   .kontakt_p {
     max-width: 70ch;
   }
+
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   #cookie {
     max-width: none;
   }
-  /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
+
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
   /* baggrundsbilledet */
   .forside_plet {
@@ -1969,13 +1954,11 @@ p.knap {
   }
 
   /*** PRODUKTER ***/
-
   .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   /*** SORTERING OG FILTRERING ***/
-
   .forside_top_sortering {
     margin-right: 13.8rem;
   }
@@ -2006,12 +1989,10 @@ p.knap {
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
-
   .wrapper {
     margin: 9vh auto;
   }
 
-  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
   .footer_instagram_copyright_tiltoppen_section {
     padding-inline: 5rem;
@@ -2028,6 +2009,7 @@ p.knap {
 }
 
 @media (min-width: 1494px) {
+  /*-------------------------------------------- FORSIDE -------------------------------------------------------*/
   /* baggrundsbilledet */
   .forside_plet {
     background-image: url(/img/1538.webp);
@@ -2043,18 +2025,13 @@ p.knap {
 
 @media (min-width: 1538px) {
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
-
   .levering_guide_tekst {
     max-width: 60ch;
   }
-  /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
-  /*-------------------------------------------- Cookiesiden ------------------------------------------------------*/
-  /*-------------------------------------------- Bagom-siden -------------------------------------------------------*/
 
   /*-------------------------------------------- Forside-siden -----------------------------------------------------*/
 
   /* PRODUKTER */
-
   .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -2068,14 +2045,6 @@ p.knap {
   .singleview_h1 {
     margin-bottom: 3rem !important;
   }
-  /* 
-    .forside_filtrering_produktbilleder {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    .forside_filtrering_produktbillede_enkelt:hover {
-      background-image: url(/img/produktbilleder/cph.01.02.webp);
-    } */
 
   .singleview_h3 {
     font-size: 2rem !important;
@@ -2100,9 +2069,6 @@ p.knap {
   label {
     height: 90px;
   }
-
-  /*-------------------------------------------- Handelsbetingelser-siden ------------------------------------------*/
-  /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
 }
 
 /*-------------------------------------------- KEYFRAMES ------------------------------------------------------------*/

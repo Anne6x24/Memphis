@@ -90,15 +90,23 @@
     
     <!-- main -->
     <main id="godtatvide">
-    <section>
+      <section class="godtatvide_section">
+        <div class="godtatvide_splat">
+          <img class="godtatvide_splat_img" src="/img/splat.png" alt="">
+        </div>
+
+
+        <div class="godtatvide_indhold">
+
+    <div>
       <h1>DET HER GAD ANDRE GODT AT VIDE</h1>
       <p>
         Måske det også er det du gerne vil have svar på, ellers kan du klikke på
         kontakt i menuen - <br> da du altid er velkommen til at kontakte os.
       </p>
-    </section>
+    </div>
 
-    <section class="wrapper">
+    <div class="wrapper">
     <div class="wrap-1">
       <input class="input1" type="radio" id="tab-1" name="tabs" />
       <label for="tab-1"
@@ -153,9 +161,12 @@
 
     <div class="wrap-4">
       <input class="input1" type="radio" id="tab-4" name="tabs" />
-      <label for="tab-4"
-        ><div> <h3> Hvor lang tid er en taske undervejs? </h3></div>
-        <div class="cross"></div
+      <label for="tab-4">
+        <div> 
+          <h3> Hvor lang tid er en taske undervejs? </h3>
+        </div>
+        <div class="cross">
+          </div
       ></label>
       <div class="content">
         <p class="first_p_accordion">
@@ -177,10 +188,13 @@
 
     <div class="wrap-5">
       <input class="input1" type="radio" id="tab-5" name="tabs" />
-      <label for="tab-5"
-        ><div> <h3 class="godtatvide_speciel_h3"> Hvad gør Memphis House med garnresterne? </h3></div>
-        <div class="cross"></div
-      ></label>
+      <label for="tab-5">
+        <div> 
+          <h3 class="godtatvide_speciel_h3"> Hvad gør Memphis House med garnresterne? </h3>
+        </div>
+        <div class="cross">
+        </div>
+      </label>
       <div class="content">
         <p class="first_p_accordion">
           Garnresterne gemmer vi selvfølgelig, vi lader intet gå til spilde! Garnresterne bruges nemlig løbende til forskellige limited edition produktioner!<br />
@@ -194,8 +208,10 @@
       </div>
     </div>
 
-  </section>
+  </div>
 
+</div>
+</section>
     </main>
 
        <!-- footer -->
@@ -303,8 +319,16 @@
 </html>
 
 <style>
-  #godtatvide {
-    background-image: url(/img/splat.png);
-  }
+.godtatvide_section {
+   display: grid;
+ }
+
+ .godtatvide_splat, .godtatvide_indhold {
+   grid-area: 1/1;
+ }
+
+ .godtatvide_splat_img {
+   height: 46rem;
+ }
 </style>
 

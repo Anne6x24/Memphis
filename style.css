@@ -514,7 +514,7 @@ button:hover,
   font-size: var(--p-size--);
   color: var(--p--color-secondary);
   position: absolute;
-  width: 100%;
+  width: 65%;
   /* height: 100%; */
   margin: 0;
   line-height: 2rem;
@@ -766,7 +766,10 @@ ul.breadcrumb li a:hover {
 .singleview_produktbillede_img {
   width: 4rem;
   height: 100%;
+  box-shadow: var(--button-shadow);
 }
+
+
 
 /* produktinfo højre sektion */
 .singleview_prouktinfo {
@@ -783,6 +786,14 @@ ul.breadcrumb li a:hover {
 
 .singleview_h3_ekstra {
   margin-bottom: 2.5rem !important;
+}
+
+.singleview_div_wrapper {
+  display: grid;
+}
+
+.singleview_info_splat, .singleview_indhold {
+  grid-area: 1/1;
 }
 
 /* ikoner */
@@ -1004,6 +1015,19 @@ ul.breadcrumb li a:hover {
 }
 
 /*------------------------------------------- GODT AT VIDE-siden -------------------------------------------*/
+
+.godtatvide_section {
+  display: grid;
+}
+
+.godtatvide_splat, .godtatvide_indhold {
+  grid-area: 1/1;
+}
+
+.godtatvide_splat_img {
+  height: 46rem;
+}
+
 /*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
 /* ----------------- ACCORDION ------------------- */
 
@@ -1109,6 +1133,21 @@ input:checked ~ .questions {
 }
 
 /*------------------------------------------- Bagom-siden --------------------------------------------------*/
+
+.bagom_section {
+  display: grid;
+}
+
+.bagom_splat, .bagom_indhold {
+  grid-area: 1/1;
+}
+
+.bagom_splat_img {
+  height: 168rem;
+}
+
+
+
 .bagom_h2 {
   line-height: var(--bagom--lineheight);
   font-size: var(--h2--size--bagom);
@@ -1227,6 +1266,18 @@ span {
   border-right: none;
 }
 
+.kontakt_bund {
+  display: grid;
+}
+
+.kontakt_splat, .kontakt_indhold_bund {
+  grid-area: 1/1;
+}
+
+.kontakt_splat_img img {
+  height: 58rem;
+}
+
 /*------------------------ Konkakt-formular ------------------------*/
 :focus {
   outline: none;
@@ -1236,7 +1287,7 @@ span {
   float: left;
   width: 90%;
   margin-block: 1rem 3%;
-  position: relative;
+  position: sticky;
 }
 
 input[type="text"] {
@@ -1427,6 +1478,15 @@ p.knap {
   .singleview_ikon1 {
     max-width: 5rem;
   }
+
+  .kontakt_splat_img {
+    height: 70rem;
+  }
+
+  .singleview_info_splat_img {
+    height: 30rem;
+    margin-top: 2.5rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1454,6 +1514,8 @@ p.knap {
   .kontakt_kort {
     width: 35rem;
   }
+
+
 
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
 
@@ -1580,6 +1642,11 @@ p.knap {
     margin: 6vh auto;
   }
 
+  /*-------------------------------------------- Bag om-siden ------------------------------------------------*/
+  .bagom_splat_img {
+    height: 115rem;
+  }
+
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
   /* footer to øverste bokse med kontakt og links */
   .footer_information_links_div {
@@ -1606,8 +1673,12 @@ p.knap {
   }
 
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
+
+  .kontakt_splat_img {
+    height: 37rem;
+  }
   /*------------------------ Konakt-formular ------------------------*/
-  .kontakt_bund {
+  .kontakt_indhold_bund {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -1688,16 +1759,17 @@ p.knap {
   }
 
   .singleview_hoejre_sektion {
-    margin-left: 1rem;
+    margin-left: 4rem;
   }
 
   .singleview_produktbillede1 img {
     max-width: 16rem;
     margin-right: 2rem;
+    box-shadow: var(--button-shadow);
   }
 
   .singleview_produktbillede_img {
-    width: 5rem;
+    width: 3rem;
   }
 
   .singleview_h1 {
@@ -1727,6 +1799,10 @@ p.knap {
     margin: 6vh auto;
   }
 
+
+  .bagom_splat_img {
+    height: 110rem;
+  }
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
   #footer_allaround {
     padding-top: 2rem;
@@ -1946,6 +2022,11 @@ p.knap {
     margin: 7vh auto;
   }
 
+
+  .bagom_splat_img {
+    height: 120rem;
+  }
+
   /*-------------------------------------------- FOOTER ------------------------------------------------------------*/
   .footer_information_links_div {
     gap: 4rem;
@@ -2050,16 +2131,7 @@ p.knap {
     left: 51rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
-  .singleview_hoejre_sektion {
-    display: grid;
-  }
 
-  .singleview_info_splat,
-  .singleview_prouktinfo,
-  .singleview_ikoner,
-  .singleview_center {
-    grid-area: 1/1;
-  }
 
   .singleview_info_splat img {
     height: 37rem;
@@ -2069,16 +2141,10 @@ p.knap {
     margin-top: 5rem;
   }
 
-  .singleview_ikoner {
-    margin-top: 21rem;
-  }
 
-  .singleview_center {
-    margin-top: 33rem;
-  }
 
   .singleview_produktbillede1 img {
-    max-width: 50rem;
+    max-width: 40rem;
     margin-right: 3rem;
   }
 
@@ -2132,6 +2198,17 @@ p.knap {
     left: 67rem !important;
   }
 
+    /*-------------------------------------------- Singleview --------------------------------------------------------*/
+
+  .singleview_info_splat img {
+    height: 42rem;
+  }
+
+  .singleview_produktbillede_img {
+    width: 6rem;
+  }
+
+
   /*-------------------------------------------- HEADER -------------------------------------------------------*/
   .header_ikoner_desk {
     margin-left: 50rem !important;
@@ -2178,6 +2255,10 @@ p.knap {
   .singleview_ikontekst {
     font-size: 1rem;
     line-height: 1.6rem;
+  }
+
+  .singleview_info_splat img {
+    height: 42rem;
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/

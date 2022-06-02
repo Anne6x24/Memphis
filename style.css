@@ -839,7 +839,7 @@ ul.breadcrumb li a:hover {
 
 /* accordion */
 .singleview_accordion {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .singleview_accordion h3 {
@@ -1967,6 +1967,33 @@ p.knap {
     margin-top: 25rem;
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
+  .singleview_hoejre_sektion {
+    display: grid;
+  }
+
+  .singleview_info_splat,
+  .singleview_prouktinfo,
+  .singleview_ikoner,
+  .singleview_center {
+    grid-area: 1/1;
+  }
+
+  .singleview_info_splat img {
+    height: 37rem;
+  }
+
+  .singleview_prouktinfo div {
+    margin-top: 5rem;
+  }
+
+  .singleview_ikoner {
+    margin-top: 21rem;
+  }
+
+  .singleview_center {
+    margin-top: 33rem;
+  }
+
   .singleview_produktbillede1 img {
     max-width: 50rem;
     margin-right: 3rem;

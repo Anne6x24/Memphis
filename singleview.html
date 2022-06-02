@@ -90,58 +90,60 @@
 
     <!-- main -->
     <main id="singleview">
-                      <!-- breadcrums på singleview -->
-                      <ul class="breadcrumb">
+
+      <!-- breadcrums på singleview -->
+      <ul class="breadcrumb">
                         <li><a href="forside.html">Hjem</a></li>
-                      <li><a href="forside.html">Produktoversigt</a></li>
+                      <li><a href="forside.html">Shop</a></li>
                         <li>Produktdetaljer</li>
-                        </ul>
+      </ul>
+
       <article id="singleview_article">
 
-         <!-- venstre sektion -->
+         <!-- venstre sektion --> <!-- produktbilleder -->
         <section>
           <div class="singleview_produktbillede1">
             <img src="/img/produktbilleder/cph.01.01.webp" alt="taske">
           </div>
-          <div>
-            <img src="" alt="">
+          <div class="singleview_produktbillede_flex">
+            <img class="singleview_produktbillede_img" src="/img/produktbilleder/cph.01.02.webp" alt="taske">
+            <img class="singleview_produktbillede_img" src="/img/produktbilleder/cph.01.02.webp" alt="taske">
+            <img class="singleview_produktbillede_img" src="/img/produktbilleder/cph.01.02.webp" alt="taske">
           </div>
           
-
-        
-
-
-      
 
       </section>
 
          <!-- højre sektion -->
-        <section>
+        <section class="singleview_hoejre_sektion">
 
-        <section>
+          <!-- info -->
+        <div class="singleview_prouktinfo">
           <h1 class="singleview_h1">UMA</h1>
-          <h3 class="singleview_h3">-- 100% genanvendt bomuld</h3>
-          <h3 class="singleview_h3">-- 20x27cm.</h3>
-          <h3 class="singleview_h3 singleview_h3_ekstra">-- Inkl. sort opbevaringspose</h3>
-        </section>
+          <h3 class="singleview_h3">// 100% genanvendt bomuld</h3>
+          <h3 class="singleview_h3">// 20x27cm.</h3>
+          <h3 class="singleview_h3 singleview_h3_ekstra">// Inkl. sort opbevaringspose</h3>
+        </div>
 
-        <section class="singleview_ikoner">
+        <!-- ikoner -->
+        <div class="singleview_ikoner">
           <div>
           <img class="singleview_ikon1" src="/img/ikoner/bad.svg" alt="et ikon af en taske i bad">
           <p class="singleview_ikontekst">// 30° <br> maskinevask</p>
         </div>
         <div>
           <img class="singleview_ikon1" src="/img/ikoner/obs.svg" alt="et ikon som siger obs">
-          <p class="singleview_ikontekst"></p>
+          <p class="singleview_ikontekst">// Udtryk kan <br> variere</p>
         </div>
         <div>
           <img class="singleview_ikon1" src="/img/ikoner/ur.svg" alt="et ikon af et ur">
           <p class="singleview_ikontekst">// Ca. 3 ugers <br> leveringstid</p>
         </div>
-      </section>
+      </div>
       
         
-          <section class="singleview_center singleview_container">
+      <!-- kurv -->
+          <div class="singleview_center singleview_container">
 
             <div class="singleview_number singleview_col singleview_col-2">
               <h2 id="singleview_count">0</h2>
@@ -158,12 +160,12 @@
           <div class="singleview_addtocart">
             <h4 id="addtocart_btn">Tilføj til kurv</h4>
           </div>
-        </section>
+        </div>
 
 
-
-        <section class="singleview_accordion">
-          <section class="wrapper">
+        <!-- accordian -->
+        <div class="singleview_accordion">
+          <div class="wrapper">
             <div class="wrap-1">
               <input class="input1" type="radio" id="tab-1" name="tabs" />
               <label for="tab-1" class="singleview_label"
@@ -173,21 +175,20 @@
               <div class="content">
                 <p class="first_p_accordion">
                   Uma tasken er en del af Memphis House nummer 2 kollektion. Kollektionen er inspireret af sommeren i København, hvor farverige og lette outfits pryder gadebilledet. <br> Taskerne i denne kollektion er blandt andet designet med tanke på sene sommeraftener, hvor man blot har brug for at have et par essentials med sig. 
-    
                 </p>
                   <p>
-                  
                     Det er vigtigt at være opmærksom på, at taskernes farve og chunkyness varierer en smule, da de produceres i genbrugsmateriale. <br> Skriv en kommentar til din bestilling, hvis du har et specifikt ønske til din taskes farve eller chunkyness.
                 </p>
               </div>
             </div>
     
-        </section>
+          </div>
+
+      </div>
 
 
-        <section id="singleview_reviews">
-
-
+      <!-- anmeldelser -->
+        <div id="singleview_reviews">
 
     <div class="reviews-container">
       <h3>Anmeldelser (7)</h3>
@@ -195,7 +196,11 @@
       <div class="singleview_stars"> 
         <div><h4 class="singleview_h4stars">4.0 / 5</h4></div>
         <div class="singleview_stjerner">
-          <img src="http://res.cloudinary.com/dcwodeda4/image/upload/v1503000014/stars_fysiop.png" alt="Stjerner">
+          <img class="singleview_anmeldelser_stjerner" src="img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_anmeldelser_stjerner" src="img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_anmeldelser_stjerner" src="img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_anmeldelser_stjerner" src="img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_anmeldelser_stjerner" src="img/ikoner/stjerne.svg" alt="Stjerner">
       </div>
 
       </div>
@@ -247,17 +252,19 @@
         <p>Købt: 31.10.2020</p>
         <p>Anmeldt: 12.11.2020</p>
         <div class="singleview_modal_stjerner_img">
-          <img src="/img/ikoner/stjerne.svg" alt="Stjerner">
-          <img src="/img/ikoner/stjerne.svg" alt="Stjerner">
-          <img src="/img/ikoner/stjerne.svg" alt="Stjerner">
-          <img src="/img/ikoner/stjerne.svg" alt="Stjerner">
-          <img src="/img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_review_img" src="/img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_review_img" src="/img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_review_img" src="/img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_review_img" src="/img/ikoner/stjerne.svg" alt="Stjerner">
+          <img class="singleview_review_img" src="/img/ikoner/stjerne.svg" alt="Stjerner">
         </div>
         <p>Jeg elsker denne taske! Glæder mig så meget til at gå med den til sommer <3</p>
         <button class="button close-button-singleview">Brugbart?</button>
       </dialog>
 
     </div>
+
+        </div>
 
         </section>
 
@@ -371,71 +378,6 @@
 </html>
 
 <style>
-  /* placering af brødkrummesti */
-.breadcrumb {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-}
-
-/* styling på ord */
-ul.breadcrumb li a {
-  color: var(--primary);
-  font-family: var(--a--);
-}
-
-/* styling af pil mellem links */
-ul.breadcrumb li + li:before {
-  /* color: var(--primary); */
-  padding-right: 2rem;
-  content: ">";
-}
-
-/* styling med underlinje */
-ul.breadcrumb li a:hover {
-  text-decoration: underline;
-} 
-
-/*** POPUP ***/
-.modal-singleview {
-  padding: 1em;
-  max-width: 50ch;
-  border: 0;
-  box-shadow: 0 0 1em rgb(0 0 0 / .3);
-  margin-top: 15rem;
-  margin-inline: 2rem;
-
-}
-
-.singleview_modal_stjerner_img {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.singleview_modal_stjerner_img img {
-  width: auto;
-}
-
-.modal-singleview::backdrop {
-  background: rgb(0 0 0 / 0.6);
-}
-
-.kryds_titel_luk {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (min-width: 391px) {
-    .modal-singleview {
-      margin-inline: auto auto;
-  }
-  } 
-
-  @media (min-width: 768px) {
-    .modal-singleview {
-  max-width: 60ch;
-}
-  } 
 
   @media (min-width: 1024px) {
     .modal-singleview {

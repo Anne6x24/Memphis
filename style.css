@@ -676,33 +676,55 @@ fieldset {
 }
 
 /*------------------------------------------- Singleview --------------------------------------------------------*/
+/* placering af brødkrummesti */
+.breadcrumb {
+  display: flex;
+  gap: 1rem;
+}
 
+/* styling på ord */
+ul.breadcrumb li a {
+  color: var(--a--color--third);
+  font-family: var(--li--);
+}
+
+/* styling af pil mellem links */
+ul.breadcrumb li + li:before {
+  color: var(--a--color--third);
+  padding-right: 1rem;
+  content: ">";
+}
+
+/* styling med underlinje */
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+/* produktbilleder venstre sektion */
 .singleview_produktbillede1 img {
-  max-width: 15rem;
+  margin-top: 2rem;
 }
 
-.singleview_ikoner {
+.singleview_produktbillede_flex {
   display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-.singleview_ikoner img {
-  border: 4px solid #202020;
+.singleview_produktbillede_img {
+  width: 4rem;
+  height: 100%;
 }
 
-/* botton kurv */
-
-.singleview_container {
-  display: flex;
-  background-color: #0338e1;
-  /* height: 4rem; */
-  border-radius: 0.3rem;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+/* produktinfo højre sektion */
+.singleview_prouktinfo {
+  margin-top: 3rem;
 }
 
 .singleview_h1 {
   margin-bottom: 2rem !important;
 }
+
 .singleview_h3 {
   line-height: 1.5rem;
 }
@@ -710,10 +732,37 @@ fieldset {
 .singleview_h3_ekstra {
   margin-bottom: 2.5rem !important;
 }
+
+/* ikoner */
 .singleview_ikoner {
-  justify-content: normal;
-  gap: 0.5rem;
+  justify-content: space-between;
   margin-bottom: 1rem;
+}
+
+.singleview_ikon1 {
+  width: 4rem;
+}
+
+.singleview_ikoner {
+  display: flex;
+}
+
+.singleview_ikoner img {
+  border: 2px solid var(--secondary-bg-color);
+}
+
+.singleview_ikontekst {
+  font-size: 0.7rem;
+  margin-bottom: 0 !important;
+}
+
+/* botton kurv */
+.singleview_container {
+  display: flex;
+  background-color: var(--button--bg-color);
+  border-radius: var(--button-radius);
+  box-shadow: var(--button-shadow);
+  margin-top: 3rem;
 }
 
 .singleview_col-2 h2 {
@@ -785,11 +834,19 @@ fieldset {
   height: 40px !important;
 }
 
+/* accordion */
+.singleview_accordion {
+  margin-top: 4rem;
+}
+
+.singleview_accordion h3 {
+  margin-top: 0.8rem;
+}
+
 /* Singleview reviews */
 .reviews-container {
   background-color: var(--third--bg-color);
   border-radius: 5px;
-  padding: 20px;
 }
 
 .review {
@@ -814,12 +871,22 @@ fieldset {
   position: relative;
   margin: 0 10px;
   height: 10px;
-  width: 200px;
+  width: 100%;
 }
 
 .singleview_stars {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.singleview_stjerner {
+  display: flex;
+}
+
+.singleview_anmeldelser_stjerner {
+  width: 1.5rem;
+  height: auto;
 }
 
 .progress-done {
@@ -836,6 +903,52 @@ fieldset {
 }
 .singleview_h4stars {
   margin-bottom: 0 !important;
+}
+
+.open-button-singleview {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  margin-inline: auto auto;
+}
+
+/*** POPUP ***/
+.modal-singleview {
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  margin-top: 15rem;
+  margin-inline: 2rem;
+  border-radius: var(--button-radius);
+}
+
+.singleview_modal_stjerner_img {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.singleview_review_img {
+  width: 2rem;
+  height: auto;
+}
+
+.modal-singleview::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+.kryds_titel_luk {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-button {
+  background-color: transparent;
+  color: #202020;
+  box-shadow: none;
+}
+
+.modal-singleview p {
+  margin-top: 1rem;
 }
 
 /*------------------------------------------- GODT AT VIDE-siden -------------------------------------------*/
@@ -1183,6 +1296,10 @@ p.knap {
     margin-inline: auto auto;
     max-width: 60ch;
   }
+
+  .modal-singleview {
+    margin-inline: auto auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1202,7 +1319,6 @@ p.knap {
   .trustpilot {
     display: flex;
     justify-content: space-evenly;
-   
   }
 
   .banner_hvid_p {
@@ -1212,8 +1328,6 @@ p.knap {
   .banner_hvid_p_2 {
     margin-top: 1rem;
   }
-
-
 
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
 
@@ -1300,6 +1414,26 @@ p.knap {
     margin-inline: 4rem;
   }
 
+  /*-------------------------------------------- Singleview ------------------------------------------------*/
+  .singleview_produktbillede_img {
+    width: 7rem;
+    height: 100%;
+  }
+
+  .singleview_ikoner {
+    justify-content: left;
+    gap: 4rem;
+    margin-block: 1rem;
+  }
+
+  .singleview_ikontekst {
+    font-size: 0.8rem;
+    margin-bottom: 0 !important;
+  }
+
+  .singleview_container {
+    width: 20rem;
+  }
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
 
   .godtatvide_speciel_h3 {
@@ -1426,32 +1560,25 @@ p.knap {
   }
 
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
-
-  .singleview_produktbillede1 img {
-    max-width: 20rem;
-  }
-
-  .singleview_container {
-    max-width: 20rem;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .singleview_ikoner {
-    margin-top: 2rem;
-  }
-
-  .singleview_ikon1 {
-    max-width: none;
-  }
-
   #singleview_article {
     display: flex;
   }
 
+  .singleview_hoejre_sektion {
+    margin-left: 1rem;
+  }
+
   .singleview_produktbillede1 img {
-    max-width: 20rem;
+    max-width: 16rem;
     margin-right: 2rem;
+  }
+
+  .singleview_produktbillede_img {
+    width: 5rem;
+  }
+
+  .singleview_h1 {
+    margin-top: -1.5rem;
   }
 
   .singleview_h3 {
@@ -1459,12 +1586,17 @@ p.knap {
   }
 
   .singleview_ikoner {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .singleview_ikontekst {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     margin-bottom: 0 !important;
+  }
+
+  /* popup */
+  .modal-singleview {
+    max-width: 60ch;
   }
 
   /*-------------------------------------------- Godt at vide-siden ------------------------------------------------*/
@@ -1546,7 +1678,6 @@ p.knap {
 
   .levering_returnering_guide_allaround {
     display: flex;
-  
   }
 
   .levering_returnering_guide_ikoner_tekst {
@@ -1558,7 +1689,6 @@ p.knap {
     height: 8rem;
     margin-bottom: 2rem;
   }
-
 
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
@@ -1657,8 +1787,12 @@ p.knap {
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
-    max-width: 24rem;
+    max-width: 40rem;
     margin-right: 3rem;
+  }
+
+  .singleview_hoejre_sektion {
+    margin-left: 3rem;
   }
 
   .singleview_h3 {
@@ -1735,9 +1869,9 @@ p.knap {
     gap: 3rem;
   }
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
-.levering_guide_tekst {
-  max-width: 40ch;
-}
+  .levering_guide_tekst {
+    max-width: 40ch;
+  }
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   .kontakt_kort {
     width: 30rem;
@@ -1780,7 +1914,7 @@ p.knap {
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   .singleview_produktbillede1 img {
-    max-width: 25rem;
+    max-width: 50rem;
     margin-right: 3rem;
   }
 

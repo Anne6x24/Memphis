@@ -359,17 +359,22 @@
       <div class="blog-signup">
         <h4 class="blog-signup__header">Tilmeld dig her og få adgang til vores limited edition tasker før alle andre!</h4>
         <div class="blog-signup__footer">
+
+
           <div class="input-postfix">
-            <div class="input-postfix__input">
-              <label for="blog-signup-email" class="sr-only">Email</label>
-              <input type="email" name="blog-signup__email" id="blog-signup-email" placeholder="Email Address">
-            </div>
+
+           
+<div class="col-3 input-effect">
+            <input class="effect-23 input" type="text" placeholder="Email" id="nr2">
+            <label class="label">Email</label>
+            <span class="focus-bg"></span>
+        </div>
+
+
             <div class="input-postfix__btn">
               <button role="button" class="btn btn-signup">Tilmeld</button>
             </div>
-            <button class="blog-signup__close btn">
-              <span class="sr-only">Close</span>
-            </button>
+           
           </div>
         
         </div>
@@ -480,6 +485,7 @@
     <script src="/script/mixitup.min.js" defer></script>
     <script src="/script/mixitupinit.js" defer></script>
     <script src="/script/burger.js"></script>
+    <script src="/script/kontakt.js"></script>
     <script src="/script/typetxt.js"></script>
     
 
@@ -490,14 +496,13 @@
 <style>
 
 .input-postfix {
-  display: flex;
+  display: block;
   flex-flow: row nowrap;
   align-items: stretch;
   margin-bottom: 0.75em;
 }
 
-.input-postfix__input input,
-.input-postfix__btn .btn {
+.input-postfix__input input {
   height: 100%;
   width: 100%;
 }
@@ -506,17 +511,17 @@
   flex-grow: 2;
 }
 
+.btn-signup{
+  margin-inline: auto auto ;
+}
+
 .input-postfix__input input {
   border-right: var(--button-radius);
   border-bottom-left-radius: var(--button-radius);
   border-top-left-radius: var(--button-radius);
 }
 
-.input-postfix__btn .btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  
-}
+
 
 
   .blog-signup {
@@ -534,6 +539,7 @@
   opacity: 100;
   -webkit-animation-duration: 0.26s;
           animation-duration: 0.26s;
+  box-shadow: var(--button-shadow);
 }
 
 .blog-signup a {
@@ -541,7 +547,7 @@
 }
 
 .blog-signup__header {
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
   color: var(--h2--color-primary);
 }
 

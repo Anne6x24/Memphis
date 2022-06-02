@@ -293,7 +293,8 @@ button:hover,
   cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
 }
 
-.close-button-kontakt {
+.close-button-kontakt,
+.close-button-email {
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -678,6 +679,38 @@ fieldset {
   color: var(--h5--color-fourth);
 }
 
+/* popup email */
+.open-button-email {
+  position: fixed;
+  bottom: 4rem;
+  right: 0rem;
+  rotate: 90deg;
+}
+
+.modal-email {
+  position: fixed;
+  bottom: 4rem;
+  right: 0rem;
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: var(--button-shadow);
+  border-radius: var(--button-radius);
+  margin-top: 15rem;
+  margin-inline: 2rem;
+}
+
+.modal-email::backdrop {
+  background: rgb(0 0 0 / 0);
+}
+
+.modal-email-luk {
+  display: flex;
+}
+
+.close-button-email_tilmeld {
+  margin-inline: auto auto;
+}
 /*------------------------------------------- Singleview --------------------------------------------------------*/
 /* placering af brødkrummesti */
 .breadcrumb {
@@ -1478,6 +1511,13 @@ p.knap {
     margin-inline: 4rem;
   }
 
+  /* popup email */
+  .modal-email {
+    position: absolute fixed;
+    top: 21rem;
+    left: 11rem;
+  }
+
   /*-------------------------------------------- Singleview ------------------------------------------------*/
   .singleview_produktbillede_img {
     width: 7rem;
@@ -1585,6 +1625,12 @@ p.knap {
 
   .forside_cookie_container {
     padding-block: 3rem;
+  }
+
+  /* popup email */
+  .modal-email {
+    top: 24rem;
+    left: 19rem;
   }
   /*-------------------------------------------- HEADER ------------------------------------------------------------*/
   .header_ikoner_desk {
@@ -1837,6 +1883,12 @@ p.knap {
     margin-top: 3rem;
   }
 
+  /* popup email */
+  .modal-email {
+    top: 22rem;
+    left: 35rem;
+  }
+
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   .singleview_produktbillede1 img {
     max-width: 40rem;
@@ -1966,6 +2018,11 @@ p.knap {
   .forside_univers_filtreing {
     margin-top: 25rem;
   }
+
+  .modal-email {
+    top: 21rem;
+    left: 51rem;
+  }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
   .singleview_hoejre_sektion {
     display: grid;
@@ -2044,6 +2101,11 @@ p.knap {
     background-repeat: no-repeat;
   }
 
+  .modal-email {
+    top: 18rem;
+    left: 67rem !important;
+  }
+
   /*-------------------------------------------- HEADER -------------------------------------------------------*/
   .header_ikoner_desk {
     margin-left: 50rem !important;
@@ -2062,6 +2124,7 @@ p.knap {
   .forside_filtrering_produktbilleder {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_produktbillede1 img {
@@ -2151,14 +2214,5 @@ p.knap {
 @keyframes caret {
   50% {
     border-color: transparent;
-  }
-}
-
-@media (min-width: 1494px) {
-  /* baggrundsbilledet */
-  .forside_plet {
-    background-image: url(/img/1538.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 }

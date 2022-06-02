@@ -1029,6 +1029,7 @@ ul.breadcrumb li a:hover {
   height: 46rem;
 }
 
+
 /*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
 /* ----------------- ACCORDION ------------------- */
 
@@ -1444,6 +1445,10 @@ p.knap {
 
 .footer_leveringsmuligheder_ikoner {
   margin-bottom: 3rem;
+}
+
+.footer_leveringsmuligheder_ikoner_img {
+  width: 4rem;
 }
 
 .footer_betalingsmuligheder_ikoner,

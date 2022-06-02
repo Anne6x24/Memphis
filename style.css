@@ -582,6 +582,14 @@ button:hover,
   margin-bottom: 1rem;
 }
 
+.forside_cookie_boks_knapper a {
+  text-align: center;
+}
+
+.forside_cookie_container h2 {
+  line-height: 2.3rem;
+}
+
 /*------------------- Univers sektion ----------------------*/
 .forside_div_wrapper {
   display: grid;
@@ -1958,7 +1966,12 @@ p.knap {
   }
 
   .forside_cookie_allaround {
-    position: absolute;
+    position: absolute fixed;
+    top: 37rem;
+  }
+
+  .forside_cookie_container {
+    position: absolute fixed;
     top: 37rem;
   }
 

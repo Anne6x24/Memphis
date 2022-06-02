@@ -166,7 +166,7 @@ img {
 #handelsbetingelser,
 #godtatvide,
 #cookie,
-#bagom_top,
+#bagom,
 #singleview {
   margin-inline: var(--margin-inline-mobil);
   margin-bottom: var(--margin-bottom-mobil);
@@ -510,7 +510,7 @@ button:hover,
   color: var(--p--color-secondary);
   position: absolute;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin: 0;
   line-height: 2rem;
   text-align: center;
@@ -1329,7 +1329,7 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom_top,
+  #bagom,
   #singleview {
     margin-inline: var(--margin-inline-ipad);
     margin-bottom: var(--margin-bottom-ipad);
@@ -1513,7 +1513,7 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom_top,
+  #bagom,
   #singleview {
     margin-inline: var(--margin-inline-desk--lille);
     margin-bottom: var(--margin-bottom-desk--lille);
@@ -1665,7 +1665,7 @@ p.knap {
   #handelsbetingelser,
   #godtatvide,
   #cookie,
-  #bagom_top,
+  #bagom,
   #singleview {
     margin-inline: var(--margin-inline-desk);
     margin-bottom: var(--margin-bottom-desk);
@@ -1769,7 +1769,7 @@ p.knap {
   }
 
   .footer_information_links_div {
-    gap: 20rem;
+    gap: 14rem;
   }
 
   /*-------------------------------------------- HEADER ------------------------------------------------------------*/

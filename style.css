@@ -668,10 +668,13 @@ fieldset {
 
 /*** ---- program oversigt i responsivt grid ---- ***/
 
-.forside_filtrering_produktbillede_enkelt:hover, .hojlav_curser:hover, input:hover, .forside_top_sortering:hover, #hojlav1:hover {
-cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
+.forside_filtrering_produktbillede_enkelt:hover,
+.hojlav_curser:hover,
+input:hover,
+.forside_top_sortering:hover,
+#hojlav1:hover {
+  cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
 }
-
 
 .forside_filtrering_produktbilleder {
   display: grid;
@@ -702,7 +705,6 @@ cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
   right: 0rem;
   rotate: 90deg;
 }
-
 
 .modal-email {
   position: fixed;
@@ -770,8 +772,6 @@ ul.breadcrumb li a:hover {
   box-shadow: var(--button-shadow);
 }
 
-
-
 /* produktinfo højre sektion */
 .singleview_prouktinfo {
   margin-top: 3rem;
@@ -793,7 +793,8 @@ ul.breadcrumb li a:hover {
   display: grid;
 }
 
-.singleview_info_splat, .singleview_indhold {
+.singleview_info_splat,
+.singleview_indhold {
   grid-area: 1/1;
 }
 
@@ -1021,14 +1022,14 @@ ul.breadcrumb li a:hover {
   display: grid;
 }
 
-.godtatvide_splat, .godtatvide_indhold {
+.godtatvide_splat,
+.godtatvide_indhold {
   grid-area: 1/1;
 }
 
 .godtatvide_splat_img {
   height: 46rem;
 }
-
 
 /*------------------------------------------- Handelsbetingelser-siden -------------------------------------*/
 /* ----------------- ACCORDION ------------------- */
@@ -1140,15 +1141,14 @@ input:checked ~ .questions {
   display: grid;
 }
 
-.bagom_splat, .bagom_indhold {
+.bagom_splat,
+.bagom_indhold {
   grid-area: 1/1;
 }
 
 .bagom_splat_img {
   height: 168rem;
 }
-
-
 
 .bagom_h2 {
   line-height: var(--bagom--lineheight);
@@ -1202,8 +1202,6 @@ img {
 .bagom_historie {
   margin-top: 4rem;
 }
-
-
 
 .bagom_bund {
   margin-block: 3rem;
@@ -1270,7 +1268,8 @@ span {
   display: grid;
 }
 
-.kontakt_splat, .kontakt_indhold_bund {
+.kontakt_splat,
+.kontakt_indhold_bund {
   grid-area: 1/1;
 }
 
@@ -1467,6 +1466,20 @@ p.knap {
   gap: 0.5rem;
 }
 
+.footer_information_div_img {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer_information_div_trustpilot,
+.footer_information_div_trustpilot1 {
+  width: 6rem;
+}
+
+.footer_information_div_trustpilot {
+  margin-top: 0.3rem;
+}
+
 @media (min-width: 391px) {
   .modal-kontakt {
     margin-inline: auto auto;
@@ -1518,8 +1531,6 @@ p.knap {
   .kontakt_kort {
     width: 35rem;
   }
-
-
 
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
 
@@ -1655,6 +1666,10 @@ p.knap {
   /* footer to øverste bokse med kontakt og links */
   .footer_information_links_div {
     justify-content: space-evenly;
+  }
+
+  .footer_betalingsmuligheder_div {
+    margin-left: 4.5rem;
   }
 }
 
@@ -1802,7 +1817,6 @@ p.knap {
   .wrapper {
     margin: 6vh auto;
   }
-
 
   .bagom_splat_img {
     height: 110rem;
@@ -2026,7 +2040,6 @@ p.knap {
     margin: 7vh auto;
   }
 
-
   .bagom_splat_img {
     height: 120rem;
   }
@@ -2136,7 +2149,6 @@ p.knap {
   }
   /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
-
   .singleview_info_splat img {
     height: 37rem;
   }
@@ -2144,8 +2156,6 @@ p.knap {
   .singleview_prouktinfo div {
     margin-top: 5rem;
   }
-
-
 
   .singleview_produktbillede1 img {
     max-width: 40rem;
@@ -2202,7 +2212,7 @@ p.knap {
     left: 67rem !important;
   }
 
-    /*-------------------------------------------- Singleview --------------------------------------------------------*/
+  /*-------------------------------------------- Singleview --------------------------------------------------------*/
 
   .singleview_info_splat img {
     height: 42rem;
@@ -2211,7 +2221,6 @@ p.knap {
   .singleview_produktbillede_img {
     width: 6rem;
   }
-
 
   /*-------------------------------------------- HEADER -------------------------------------------------------*/
   .header_ikoner_desk {

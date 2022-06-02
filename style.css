@@ -939,6 +939,10 @@ input:checked ~ .questions {
   margin-bottom: 1rem;
 }
 
+.cookie_h2 {
+  margin-top: 4rem;
+}
+
 /*------------------------------------------- Bagom-siden --------------------------------------------------*/
 
 /*--------------------------------------------- Levering og returnering-siden -------------------------------------*/
@@ -950,6 +954,14 @@ input:checked ~ .questions {
 
 .levering_ikoner {
   width: auto;
+}
+
+.levering_returnering_guide_mobil {
+  display: block;
+}
+
+.levering_returnering_guide_desk {
+  display: none;
 }
 
 /*--------------------------------------------- Konakt-siden ------------------------------------------------------*/
@@ -1520,6 +1532,31 @@ p.knap {
     margin-bottom: var(--margin-bottom-desk--lille);
   }
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
+
+  .levering_returnering_guide_mobil {
+    display: none;
+  }
+
+  .levering_returnering_guide_desk {
+    display: block;
+  }
+
+  .levering_returnering_guide_allaround {
+    display: flex;
+  
+  }
+
+  .levering_returnering_guide_ikoner_tekst {
+    display: block;
+  }
+
+  .levering_ikoner {
+    width: auto;
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+
+
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   /*-------------------------------------------- Cookie-siden ------------------------------------------------------*/
   #cookie {
@@ -1695,9 +1732,9 @@ p.knap {
     gap: 3rem;
   }
   /*-------------------------------------------- Levering og returnering-siden -------------------------------------*/
-  .levering_returnering_guide_allaround {
-    display: block;
-  }
+.levering_guide_tekst {
+  max-width: 40ch;
+}
   /*-------------------------------------------- Kontakt-siden -----------------------------------------------------*/
   .kontakt_kort {
     width: 30rem;

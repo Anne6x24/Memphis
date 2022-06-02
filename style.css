@@ -602,6 +602,8 @@ button:hover,
 
 .forside_univers_p_blaa {
   color: var(--p--color-third);
+  animation: none;
+  border-right: none;
 }
 
 .forside_univers_knap {
@@ -665,6 +667,12 @@ fieldset {
 }
 
 /*** ---- program oversigt i responsivt grid ---- ***/
+
+.forside_filtrering_produktbillede_enkelt:hover, .hojlav_curser:hover, input:hover, .forside_top_sortering:hover, #hojlav1:hover {
+cursor: url(/img/ikoner/cursorlyn_4.svg), auto;
+}
+
+
 .forside_filtrering_produktbilleder {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
@@ -1212,6 +1220,11 @@ span {
 
 .kontakt_dm {
   line-height: var(--p--lineheight);
+}
+
+.focus-bg {
+  animation: none;
+  border-right: none;
 }
 
 /*------------------------ Konkakt-formular ------------------------*/
